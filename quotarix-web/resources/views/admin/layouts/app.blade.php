@@ -235,32 +235,44 @@
             box-sizing: border-box !important;
         }
 
-        /* Responsive Table Rules - Prevents card widening and character squishing */
+        /* Dual Responsive Mode: Desktop Table vs Mobile Cards */
+        @media (max-width: 767.98px) {
+            .desktop-only-table {
+                display: none !important;
+            }
+            .mobile-only-cards {
+                display: block !important;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .desktop-only-table {
+                display: block !important;
+            }
+            .mobile-only-cards {
+                display: none !important;
+            }
+        }
+
         .table-responsive {
-            width: 100% !important;
-            max-width: 100% !important;
-            overflow-x: auto !important;
-            overflow-y: hidden !important;
-            display: block !important;
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto;
             -webkit-overflow-scrolling: touch;
             border-radius: 12px;
         }
 
         .table-responsive table {
-            min-width: 600px;
             width: 100%;
             margin-bottom: 0;
         }
 
         .table-responsive th {
-            white-space: nowrap !important;
-            word-break: normal !important;
+            white-space: nowrap;
         }
 
         .table-responsive td {
             white-space: normal;
-            word-break: normal;
-            overflow-wrap: break-word;
         }
 
         .card-dashboard {

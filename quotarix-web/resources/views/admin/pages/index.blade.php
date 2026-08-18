@@ -13,7 +13,7 @@
     <h5 class="fw-bold text-navy mb-3"><i class="bi bi-shield-check text-teal me-2"></i> Yasal Metin Sayfaları</h5>
     
     <!-- Desktop Table View (>= 768px) -->
-    <div class="d-none d-md-block table-responsive">
+    <div class="desktop-only-table table-responsive">
         <table class="table table-hover align-middle mb-0">
             <thead>
                 <tr class="text-secondary small border-bottom">
@@ -56,7 +56,7 @@
     </div>
 
     <!-- Mobile Cards View (< 768px) -->
-    <div class="d-block d-md-none">
+    <div class="mobile-only-cards">
         @foreach($legalPages as $page)
             <div class="card border border-light-subtle rounded-3 p-3 mb-3 shadow-none bg-light bg-opacity-25">
                 <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
@@ -87,7 +87,7 @@
     <p class="text-secondary small mb-3">Ana sayfa, özellikler, blog, fiyatlandırma vb. rotaların arama motoru başlık ve açıklamaları.</p>
     
     <!-- Desktop Table View (>= 768px) -->
-    <div class="d-none d-md-block table-responsive">
+    <div class="desktop-only-table table-responsive">
         <table class="table table-hover align-middle mb-0">
             <thead>
                 <tr class="text-secondary small border-bottom">
@@ -125,7 +125,7 @@
     </div>
 
     <!-- Mobile Cards View (< 768px) -->
-    <div class="d-block d-md-none">
+    <div class="mobile-only-cards">
         @foreach($metaPages as $page)
             <div class="card border border-light-subtle rounded-3 p-3 mb-3 shadow-none bg-light bg-opacity-25">
                 <div class="d-flex align-items-start justify-content-between gap-2 mb-2">

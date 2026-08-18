@@ -227,4 +227,45 @@ class AdminPanelTest extends TestCase
         $this->assertEquals('905551112233', setting('whatsapp'));
         $this->assertEquals('G-ABC123XYZ', setting('ga4_id'));
     }
+
+    public function test_admin_layout_enforces_media_query_isolation(): void
+    {
+        $response = $this->actingAs($this->admin, 'admin')->get('/admin');
+        $response->assertStatus(200);
+
+        // Verify media queries in CSS
+        $response->assertSee('@media (max-width: 767.98px)', false);
+        $response->assertSee('.desktop-only-table {', false);
+        $response->assertSee('display: none !important;', false);
+        $response->assertSee('.mobile-only-cards {', false);
+        $response->assertSee('display: block !important;', false);
+
+        $response->assertSee('@media (min-width: 768px)', false);
+        $response->assertSee('display: none !important;', false);
+    }
+
+    public function test_all_admin_index_views_render_with_dual_responsive_containers(): void
+    {
+        $adminRoutes = [
+            '/admin' => 'Son Gelen Talepler',
+            '/admin/sections' => 'Ana Sayfa Bölümleri',
+            '/admin/features' => 'Özellikler & Yol Haritası',
+            '/admin/posts' => 'Blog Yazıları',
+            '/admin/faqs' => 'Sıkça Sorulan Sorular',
+            '/admin/plans' => 'Fiyatlandırma Paketleri',
+            '/admin/testimonials' => 'Müşteri Yorumları',
+            '/admin/videos' => 'Tanıtım Videoları',
+            '/admin/leads' => 'Demo & İletişim Talepleri',
+            '/admin/pages' => 'Sayfalar & Meta Yönetimi',
+        ];
+
+        foreach ($adminRoutes as $route => $expectedHeading) {
+            $response = $this->actingAs($this->admin, 'admin')->get($route);
+            $response->assertStatus(200, "Route {$route} failed to load");
+            $response->assertSee($expectedHeading);
+            $response->assertSee('desktop-only-table');
+            $response->assertSee('mobile-only-cards');
+        }
+    }
 }
+

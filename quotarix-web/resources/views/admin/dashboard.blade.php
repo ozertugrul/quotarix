@@ -108,7 +108,7 @@
             </div>
 
             <!-- Desktop Table View (>= 768px) -->
-            <div class="d-none d-md-block table-responsive">
+            <div class="desktop-only-table table-responsive">
                 <table class="table table-hover align-middle mb-0">
                     <thead>
                         <tr class="text-secondary small border-bottom">
@@ -157,7 +157,7 @@
             </div>
 
             <!-- Mobile Cards View (< 768px) -->
-            <div class="d-block d-md-none">
+            <div class="mobile-only-cards">
                 @forelse($recentLeads as $lead)
                     <div class="card border rounded-3 p-3 mb-3 shadow-none {{ is_null($lead->read_at) ? 'border-warning bg-warning bg-opacity-10' : 'border-light-subtle bg-light bg-opacity-25' }}">
                         <div class="d-flex align-items-start justify-content-between gap-2 mb-1">

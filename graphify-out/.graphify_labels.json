@@ -4,7 +4,7 @@
   "2": "composer.json",
   "3": "scripts",
   "4": "package.json",
-  "5": "Admin",
+  "5": "AdminPanelTest",
   "6": "qx-redirects.js",
   "7": "0001_01_01_000000_create_users_table.php",
   "8": "README.md",
@@ -19,9 +19,8 @@
   "17": "console.php",
   "18": "rules/graphify.md",
   "19": "workflows/graphify.md",
-  "20": "Illuminate\\View\\View",
+  "20": "artisan",
   "21": "404.blade.php",
-  "22": "artisan",
   "23": "config/app.php",
   "24": "filesystems.php",
   "25": "mail.php",
@@ -91,7 +90,9 @@
   "89": "videos/create.blade.php",
   "90": "videos/edit.blade.php",
   "91": "videos/index.blade.php",
-  "92": "Feature",
+  "92": "Illuminate\\View\\View",
   "93": "build-package.sh",
-  "94": "quotarix-web/index.php"
+  "94": "quotarix-web/index.php",
+  "95": "Plan",
+  "96": "Video"
 }

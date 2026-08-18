@@ -1,1046 +1,1051 @@
 {
   "quotarix-web/app/Http/Controllers/Controller.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.318819,
+    "seen": 1787082597.5898628,
     "ast_hash": "25a307335c0719bc9a91b3f7babd186d",
     "semantic_hash": ""
   },
   "quotarix-web/app/Models/User.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.318828,
+    "seen": 1787082597.5898721,
     "ast_hash": "ca00ef9e587df52eeb3f687855f5c234",
     "semantic_hash": ""
   },
   "quotarix-web/app/Providers/AppServiceProvider.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.318828,
+    "seen": 1787082597.5898728,
     "ast_hash": "c0094f35cad6bba7636002a62186dae4",
     "semantic_hash": ""
   },
   "quotarix-web/artisan": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.318829,
+    "seen": 1787082597.5898728,
     "ast_hash": "e66bb13691f6184c762c196427d8e685",
     "semantic_hash": ""
   },
   "quotarix-web/bootstrap/app.php": {
     "mtime": 1787050258.6276598,
-    "seen": 1787082363.318829,
+    "seen": 1787082597.589874,
     "ast_hash": "dd158f820d50e9b5a1aa3be880cfe518",
     "semantic_hash": ""
   },
   "quotarix-web/bootstrap/providers.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.31883,
+    "seen": 1787082597.589874,
     "ast_hash": "888c810b5a4720916f07aa05dd2c2dd3",
     "semantic_hash": ""
   },
   "quotarix-web/composer.json": {
     "mtime": 1787048885.5211043,
-    "seen": 1787082363.31883,
+    "seen": 1787082597.589874,
     "ast_hash": "c0c5c0a6ee35010a7b16ff8e56d18fd1",
     "semantic_hash": ""
   },
   "quotarix-web/config/app.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188312,
+    "seen": 1787082597.589875,
     "ast_hash": "8befef279da74e4a8e393cb3d59fd354",
     "semantic_hash": ""
   },
   "quotarix-web/config/auth.php": {
     "mtime": 1787050036.5575464,
-    "seen": 1787082363.3188312,
+    "seen": 1787082597.589875,
     "ast_hash": "6e2f7899eae478aa6de37b2f1b9a307c",
     "semantic_hash": ""
   },
   "quotarix-web/config/cache.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188322,
+    "seen": 1787082597.589876,
     "ast_hash": "399c7a3b4bca7e3cb9b622828682ab56",
     "semantic_hash": ""
   },
   "quotarix-web/config/database.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188322,
+    "seen": 1787082597.589876,
     "ast_hash": "594a01554ab7583541a8fb05a69f935f",
     "semantic_hash": ""
   },
   "quotarix-web/config/filesystems.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188322,
+    "seen": 1787082597.589877,
     "ast_hash": "bde1aa1027f0448f17348dbd93f3d7ea",
     "semantic_hash": ""
   },
   "quotarix-web/config/logging.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188329,
+    "seen": 1787082597.589877,
     "ast_hash": "53d833ca3a672127b7298d17271050f9",
     "semantic_hash": ""
   },
   "quotarix-web/config/mail.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188329,
+    "seen": 1787082597.589878,
     "ast_hash": "18601a927b48d38337ba2077426a7d60",
     "semantic_hash": ""
   },
   "quotarix-web/config/queue.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188338,
+    "seen": 1787082597.589878,
     "ast_hash": "f98ce92e7bf51db1fabaf8a30e12fc5a",
     "semantic_hash": ""
   },
   "quotarix-web/config/services.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188338,
+    "seen": 1787082597.589878,
     "ast_hash": "918f5aa09663e375f4570301a91548f9",
     "semantic_hash": ""
   },
   "quotarix-web/config/session.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188338,
+    "seen": 1787082597.589879,
     "ast_hash": "5ea7169252ec3cc7fad471f5cd0d7678",
     "semantic_hash": ""
   },
   "quotarix-web/database/factories/UserFactory.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.318835,
+    "seen": 1787082597.589879,
     "ast_hash": "1c9f381f9c2bc3027971a3bfdbe99164",
     "semantic_hash": ""
   },
   "quotarix-web/database/migrations/0001_01_01_000000_create_users_table.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.318835,
+    "seen": 1787082597.58988,
     "ast_hash": "138280095e9d19f2ba6fb830415602e2",
     "semantic_hash": ""
   },
   "quotarix-web/database/migrations/0001_01_01_000001_create_cache_table.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.318836,
+    "seen": 1787082597.58988,
     "ast_hash": "6952fb360e8d8b84e6f47573e4459d48",
     "semantic_hash": ""
   },
   "quotarix-web/database/migrations/0001_01_01_000002_create_jobs_table.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.318836,
+    "seen": 1787082597.5898812,
     "ast_hash": "b0603b9fa0a27473971da76bb0c42ee1",
     "semantic_hash": ""
   },
   "quotarix-web/database/seeders/DatabaseSeeder.php": {
     "mtime": 1787048937.4767358,
-    "seen": 1787082363.3188381,
+    "seen": 1787082597.5898821,
     "ast_hash": "240373d5a9c3ebb6f53b27d005491d93",
     "semantic_hash": ""
   },
   "quotarix-web/package.json": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.318841,
+    "seen": 1787082597.589885,
     "ast_hash": "59ec21ff5f1f5b3acb8f2f82c8b6dc77",
     "semantic_hash": ""
   },
   "quotarix-web/public/index.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188422,
+    "seen": 1787082597.589886,
     "ast_hash": "d8eda274115af5fd2aaa8230af329ef7",
     "semantic_hash": ""
   },
   "quotarix-web/resources/js/app.js": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188422,
+    "seen": 1787082597.589887,
     "ast_hash": "b519d08ef66fd54910edbedba6181ec2",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/welcome.blade.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188689,
+    "seen": 1787082597.589921,
     "ast_hash": "1a03818ea91deb4f3989c6c994e5867c",
     "semantic_hash": ""
   },
   "quotarix-web/routes/console.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.31887,
+    "seen": 1787082597.589921,
     "ast_hash": "3c6ce2e6d16444282b24a9aa63885563",
     "semantic_hash": ""
   },
   "quotarix-web/routes/web.php": {
     "mtime": 1787050272.0391057,
-    "seen": 1787082363.31887,
+    "seen": 1787082597.589922,
     "ast_hash": "ef3b1759f4081385ea88c55ce9017867",
     "semantic_hash": ""
   },
   "quotarix-web/tests/Feature/ExampleTest.php": {
     "mtime": 1787049090.3740382,
-    "seen": 1787082363.318871,
+    "seen": 1787082597.589924,
     "ast_hash": "75c24f6ed45df8c63c7b151b64092100",
     "semantic_hash": ""
   },
   "quotarix-web/tests/TestCase.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188732,
+    "seen": 1787082597.589926,
     "ast_hash": "7e567dc27e68d5b57bae16af07f68907",
     "semantic_hash": ""
   },
   "quotarix-web/tests/Unit/ExampleTest.php": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188732,
+    "seen": 1787082597.589927,
     "ast_hash": "3f679e9508c834f0ad95943455fcd836",
     "semantic_hash": ""
   },
   "quotarix-web/vite.config.js": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.3188741,
+    "seen": 1787082597.589928,
     "ast_hash": "8ef22d264079dab94f6d36526b0cb1bc",
     "semantic_hash": ""
   },
   ".agents/rules/graphify.md": {
     "mtime": 1787048225.6339722,
-    "seen": 1787082363.3188741,
+    "seen": 1787082597.589928,
     "ast_hash": "f1e53ecc9194573d3c28fc116c743a2e",
     "semantic_hash": ""
   },
   ".agents/workflows/graphify.md": {
     "mtime": 1787048225.6356084,
-    "seen": 1787082363.3188748,
+    "seen": 1787082597.5899289,
     "ast_hash": "6d73634a678cf1e1c71930adf80bd1f0",
     "semantic_hash": ""
   },
   "_index.html": {
     "mtime": 1781296090.0,
-    "seen": 1787082363.3188748,
+    "seen": 1787082597.5899289,
     "ast_hash": "4ccdc50b8d7e75a4129487fc5d5eab15",
     "semantic_hash": ""
   },
   "firsat-form-mockup.html": {
     "mtime": 1781377650.0,
-    "seen": 1787082363.3188758,
+    "seen": 1787082597.58993,
     "ast_hash": "3c40d6d077b7dedf73f6074236008d0f",
     "semantic_hash": ""
   },
   "index copy.html": {
     "mtime": 1779478912.0,
-    "seen": 1787082363.3188758,
+    "seen": 1787082597.589931,
     "ast_hash": "6ab6a52b3226439d211266089ea5b3bd",
     "semantic_hash": ""
   },
   "index.html": {
     "mtime": 1784566218.0,
-    "seen": 1787082363.318877,
+    "seen": 1787082597.589931,
     "ast_hash": "5230fb9e9f8cffe5fa43181a24362c66",
     "semantic_hash": ""
   },
   "iptal-iade-politikasi.html": {
     "mtime": 1781295418.0,
-    "seen": 1787082363.318877,
+    "seen": 1787082597.589932,
     "ast_hash": "f1d5f9017177f48909bf3a7af30924fb",
     "semantic_hash": ""
   },
   "kvkk.html": {
     "mtime": 1781295418.0,
-    "seen": 1787082363.318877,
+    "seen": 1787082597.589932,
     "ast_hash": "3cdbfd97b4781942e145ff5c4118b8d1",
     "semantic_hash": ""
   },
   "mesafeli-satis-sozlesmesi.html": {
     "mtime": 1781295418.0,
-    "seen": 1787082363.318878,
+    "seen": 1787082597.5899332,
     "ast_hash": "3230f2b9e808c03dee86e315ef4f90c6",
     "semantic_hash": ""
   },
   "on-bilgilendirme.html": {
     "mtime": 1781295418.0,
-    "seen": 1787082363.318878,
+    "seen": 1787082597.5899332,
     "ast_hash": "e044af2e6b14b969637fdf3cb0283007",
     "semantic_hash": ""
   },
   "privacy-policy.html": {
     "mtime": 1780405220.0,
-    "seen": 1787082363.318879,
+    "seen": 1787082597.589934,
     "ast_hash": "a91820436f5d94479590a13c316e8516",
     "semantic_hash": ""
   },
   "quotarix-web/README.md": {
     "mtime": 1786509017.0,
-    "seen": 1787082363.318879,
+    "seen": 1787082597.589935,
     "ast_hash": "d2661a31fed7f254f5b7d3b6fe19330a",
     "semantic_hash": ""
   },
   "quotarix-web/public/robots.txt": {
     "mtime": 1787049581.035498,
-    "seen": 1787082363.31888,
+    "seen": 1787082597.589936,
     "ast_hash": "c357c674383e518c6599cb703e6f0609",
     "semantic_hash": ""
   },
   "robots.txt": {
     "mtime": 1779538834.0,
-    "seen": 1787082363.318881,
+    "seen": 1787082597.589936,
     "ast_hash": "bbbcde0b15cabd06aace1df82d335978",
     "semantic_hash": ""
   },
   "rules.md": {
     "mtime": 1787048272.8458977,
-    "seen": 1787082363.318881,
+    "seen": 1787082597.589937,
     "ast_hash": "e8b231b1f1aec459c6356c34b5c2971e",
     "semantic_hash": ""
   },
   "terms-of-service.html": {
     "mtime": 1780405220.0,
-    "seen": 1787082363.318881,
+    "seen": 1787082597.589937,
     "ast_hash": "d184911cde3cae78f735d37a34c57dc7",
     "semantic_hash": ""
   },
   "teslimat-bilgileri.html": {
     "mtime": 1781295418.0,
-    "seen": 1787082363.318882,
+    "seen": 1787082597.589938,
     "ast_hash": "3c5426f5eb839c1326fe835074ee94d0",
     "semantic_hash": ""
   },
   "favicon/android-chrome-192x192.png": {
     "mtime": 1779527738.0,
-    "seen": 1787082363.318882,
+    "seen": 1787082597.5899389,
     "ast_hash": "3397645622bef3ba58ae65605b24c1bf",
     "semantic_hash": ""
   },
   "favicon/android-chrome-512x512.png": {
     "mtime": 1779527738.0,
-    "seen": 1787082363.3188832,
+    "seen": 1787082597.5899389,
     "ast_hash": "65244a5b8539b2bcdea97608dc0c531c",
     "semantic_hash": ""
   },
   "favicon/apple-touch-icon.png": {
     "mtime": 1779527738.0,
-    "seen": 1787082363.3188832,
+    "seen": 1787082597.58994,
     "ast_hash": "34294ba13a7f173909e4c7b14586c2df",
     "semantic_hash": ""
   },
   "favicon/favicon-16x16.png": {
     "mtime": 1779527738.0,
-    "seen": 1787082363.3188841,
+    "seen": 1787082597.58994,
     "ast_hash": "0e7d214d475a4d3b5b35e337f35cd743",
     "semantic_hash": ""
   },
   "favicon/favicon-32x32.png": {
     "mtime": 1779527738.0,
-    "seen": 1787082363.3188841,
+    "seen": 1787082597.589941,
     "ast_hash": "9eb74ea8da7de8da6d61118fe8e6eb5d",
     "semantic_hash": ""
   },
   "hero.png": {
     "mtime": 1779478420.0,
-    "seen": 1787082363.3188841,
+    "seen": 1787082597.589941,
     "ast_hash": "ade3b3f7e7ed9c02d7f2ca6817f39733",
     "semantic_hash": ""
   },
   "icon.png": {
     "mtime": 1779487052.0,
-    "seen": 1787082363.318885,
+    "seen": 1787082597.589942,
     "ast_hash": "f6846edd994fcf7958e971a04dc7db67",
     "semantic_hash": ""
   },
   "quotarix-web/public/assets/img/hero.png": {
     "mtime": 1787048651.855334,
-    "seen": 1787082363.318885,
+    "seen": 1787082597.589943,
     "ast_hash": "ade3b3f7e7ed9c02d7f2ca6817f39733",
     "semantic_hash": ""
   },
   "quotarix-web/public/assets/img/hero.webp": {
     "mtime": 1787048673.0525355,
-    "seen": 1787082363.3188858,
+    "seen": 1787082597.589943,
     "ast_hash": "aeaab9a4e2f2673fe0bb18a703a8bdc5",
     "semantic_hash": ""
   },
   "quotarix-web/public/assets/img/icon.png": {
     "mtime": 1787048651.8562143,
-    "seen": 1787082363.3188858,
+    "seen": 1787082597.5899441,
     "ast_hash": "f6846edd994fcf7958e971a04dc7db67",
     "semantic_hash": ""
   },
   "quotarix-web/public/favicon/android-chrome-192x192.png": {
     "mtime": 1787048651.8460293,
-    "seen": 1787082363.318887,
+    "seen": 1787082597.589945,
     "ast_hash": "3397645622bef3ba58ae65605b24c1bf",
     "semantic_hash": ""
   },
   "quotarix-web/public/favicon/android-chrome-512x512.png": {
     "mtime": 1787048651.8468082,
-    "seen": 1787082363.318887,
+    "seen": 1787082597.589946,
     "ast_hash": "65244a5b8539b2bcdea97608dc0c531c",
     "semantic_hash": ""
   },
   "quotarix-web/public/favicon/apple-touch-icon.png": {
     "mtime": 1787048651.8473227,
-    "seen": 1787082363.318888,
+    "seen": 1787082597.589946,
     "ast_hash": "34294ba13a7f173909e4c7b14586c2df",
     "semantic_hash": ""
   },
   "quotarix-web/public/favicon/favicon-16x16.png": {
     "mtime": 1787048651.8477755,
-    "seen": 1787082363.318888,
+    "seen": 1787082597.589947,
     "ast_hash": "0e7d214d475a4d3b5b35e337f35cd743",
     "semantic_hash": ""
   },
   "quotarix-web/public/favicon/favicon-32x32.png": {
     "mtime": 1787048651.848159,
-    "seen": 1787082363.318889,
+    "seen": 1787082597.589947,
     "ast_hash": "9eb74ea8da7de8da6d61118fe8e6eb5d",
     "semantic_hash": ""
   },
   "quotarix-web/app/Helpers/site.php": {
     "mtime": 1787078323.253764,
-    "seen": 1787082363.318809,
+    "seen": 1787082597.589854,
     "ast_hash": "10393d7c10a29a0a91ffa073ab41a3a4",
     "semantic_hash": ""
   },
   "quotarix-web/app/Models/Admin.php": {
     "mtime": 1787048877.6307542,
-    "seen": 1787082363.3188229,
+    "seen": 1787082597.589867,
     "ast_hash": "037b8d5133d1b6b64563364e9725c23c",
     "semantic_hash": ""
   },
   "quotarix-web/app/Models/Faq.php": {
     "mtime": 1787048863.1497483,
-    "seen": 1787082363.318824,
+    "seen": 1787082597.589868,
     "ast_hash": "83915c68a500307c7435d340a375d436",
     "semantic_hash": ""
   },
   "quotarix-web/app/Models/Feature.php": {
     "mtime": 1787050899.6504927,
-    "seen": 1787082363.318824,
+    "seen": 1787082597.589868,
     "ast_hash": "c57e4b0099b2c65b17e9265ca825d4d3",
     "semantic_hash": ""
   },
   "quotarix-web/app/Models/Lead.php": {
     "mtime": 1787048875.140257,
-    "seen": 1787082363.318825,
+    "seen": 1787082597.589869,
     "ast_hash": "4fe6424ebdc666f2cc348cb73ad2625f",
     "semantic_hash": ""
   },
   "quotarix-web/app/Models/Page.php": {
     "mtime": 1787050891.450572,
-    "seen": 1787082363.318825,
+    "seen": 1787082597.589869,
     "ast_hash": "28a4240cf824ab071dd9c10657bf872f",
     "semantic_hash": ""
   },
   "quotarix-web/app/Models/Plan.php": {
     "mtime": 1787048866.0519705,
-    "seen": 1787082363.318825,
+    "seen": 1787082597.58987,
     "ast_hash": "7ba457794e6db0dc8545d208d457b73a",
     "semantic_hash": ""
   },
   "quotarix-web/app/Models/Post.php": {
     "mtime": 1787050895.8290815,
-    "seen": 1787082363.318826,
+    "seen": 1787082597.58987,
     "ast_hash": "3175c7d87dfe8ccac6a334f762698320",
     "semantic_hash": ""
   },
   "quotarix-web/app/Models/Section.php": {
     "mtime": 1787048848.1780076,
-    "seen": 1787082363.318826,
+    "seen": 1787082597.5898712,
     "ast_hash": "2059cc31e0b5cede631009fd55d23e7e",
     "semantic_hash": ""
   },
   "quotarix-web/app/Models/Setting.php": {
     "mtime": 1787048852.6485798,
-    "seen": 1787082363.318827,
+    "seen": 1787082597.5898712,
     "ast_hash": "b90b270b184253a7dc46c4cf0e885998",
     "semantic_hash": ""
   },
   "quotarix-web/app/Models/Testimonial.php": {
     "mtime": 1787048868.5709043,
-    "seen": 1787082363.318827,
+    "seen": 1787082597.5898712,
     "ast_hash": "73f1b5aa678f0d642de6f2150e4cf2c2",
     "semantic_hash": ""
   },
   "quotarix-web/app/Models/Video.php": {
     "mtime": 1787048872.6059153,
-    "seen": 1787082363.318828,
+    "seen": 1787082597.5898721,
     "ast_hash": "39ad60379fcfc8febd616ea03c9ba033",
     "semantic_hash": ""
   },
   "quotarix-web/database/migrations/2026_08_18_000001_create_quotarix_tables.php": {
     "mtime": 1787048845.2285984,
-    "seen": 1787082363.318837,
+    "seen": 1787082597.5898812,
     "ast_hash": "d337e1ae26a3b99263e74ee8b483aa47",
     "semantic_hash": ""
   },
   "quotarix-web/database/seeders/AdminSeeder.php": {
     "mtime": 1787048931.9006262,
-    "seen": 1787082363.318837,
+    "seen": 1787082597.5898821,
     "ast_hash": "0b9c592f3e683d829129892c374ac753",
     "semantic_hash": ""
   },
   "quotarix-web/database/seeders/ContentSeeder.php": {
     "mtime": 1787049643.9351583,
-    "seen": 1787082363.3188381,
+    "seen": 1787082597.5898821,
     "ast_hash": "6ba8715ef4637e66a10db4c1fd23e118",
     "semantic_hash": ""
   },
   "quotarix-web/database/seeders/SectionSeeder.php": {
     "mtime": 1787048897.4805665,
-    "seen": 1787082363.3188381,
+    "seen": 1787082597.5898829,
     "ast_hash": "b27855b4452ed3919ea3c064a2ff5252",
     "semantic_hash": ""
   },
   "quotarix-web/database/seeders/SettingSeeder.php": {
     "mtime": 1787048900.8854787,
-    "seen": 1787082363.318839,
+    "seen": 1787082597.5898829,
     "ast_hash": "c1c178a417f82a8936d490a59cf7ef23",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/BlogController.php": {
     "mtime": 1787049615.7871606,
-    "seen": 1787082363.318819,
+    "seen": 1787082597.5898628,
     "ast_hash": "bb052b49e0400401c5a154cdb95ffece",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/FaqController.php": {
     "mtime": 1787049621.499436,
-    "seen": 1787082363.31882,
+    "seen": 1787082597.589864,
     "ast_hash": "ead97c281fa490642d2c1e084ee8c057",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/FeatureController.php": {
     "mtime": 1787049597.505236,
-    "seen": 1787082363.31882,
+    "seen": 1787082597.589864,
     "ast_hash": "858e27a34024fc0564118815dd04d342",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/HomeController.php": {
     "mtime": 1787049670.7300508,
-    "seen": 1787082363.31882,
+    "seen": 1787082597.589865,
     "ast_hash": "d4fc8fa7079e23ce3cd807ed4dddfb79",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/LeadController.php": {
     "mtime": 1787078308.8689182,
-    "seen": 1787082363.3188212,
+    "seen": 1787082597.589865,
     "ast_hash": "b0cb33011d1e931a31ee86246c092572",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/PageController.php": {
     "mtime": 1787050907.913342,
-    "seen": 1787082363.3188212,
+    "seen": 1787082597.589866,
     "ast_hash": "03b90051ebe9c01caab8f22b7a468992",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/PlanController.php": {
     "mtime": 1787049610.4743478,
-    "seen": 1787082363.318822,
+    "seen": 1787082597.589866,
     "ast_hash": "3947bc334f3ad62b568997165817754b",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/SitemapController.php": {
     "mtime": 1787049586.275922,
-    "seen": 1787082363.318822,
+    "seen": 1787082597.589866,
     "ast_hash": "2247fad5dc645ceb1972dde94e5f0451",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Middleware/RedirectLegacyHtml.php": {
     "mtime": 1787050912.7553027,
-    "seen": 1787082363.3188229,
+    "seen": 1787082597.589867,
     "ast_hash": "56ee742c3661382b7ec51dffe19169ef",
     "semantic_hash": ""
   },
   "quotarix-web/public/assets/js/qx-redirects.js": {
     "mtime": 1787049034.564989,
-    "seen": 1787082363.318841,
+    "seen": 1787082597.589886,
     "ast_hash": "331a24684ced4a8881320b70aa6a3d3e",
     "semantic_hash": ""
   },
   "quotarix-web/tests/Feature/RouteTest.php": {
     "mtime": 1787049083.6676369,
-    "seen": 1787082363.318872,
+    "seen": 1787082597.589925,
     "ast_hash": "644f1cae2f69fa5e8f19142b310cb07d",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/errors/404.blade.php": {
     "mtime": 1787049349.319891,
-    "seen": 1787082363.3188548,
+    "seen": 1787082597.5899,
     "ast_hash": "c870c831b6af31b6b9ca548b7bcee2c4",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/layouts/app.blade.php": {
     "mtime": 1787078178.55223,
-    "seen": 1787082363.3188548,
+    "seen": 1787082597.589901,
     "ast_hash": "733fee034a66d01eec4da385107a26ea",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/pages/blog-detail.blade.php": {
     "mtime": 1787050921.3894758,
-    "seen": 1787082363.318856,
+    "seen": 1787082597.5899022,
     "ast_hash": "b67c1259e7dedd9dd166ef42b7ad20aa",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/pages/blog.blade.php": {
     "mtime": 1787049314.1376176,
-    "seen": 1787082363.318856,
+    "seen": 1787082597.5899022,
     "ast_hash": "b539e59e35a6885e95a06151c3d06d44",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/pages/contact.blade.php": {
     "mtime": 1787049336.2545187,
-    "seen": 1787082363.318857,
+    "seen": 1787082597.589903,
     "ast_hash": "86fcb23999a791c4a8074bb6d2769944",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/pages/demo.blade.php": {
     "mtime": 1787049330.0402734,
-    "seen": 1787082363.318857,
+    "seen": 1787082597.589903,
     "ast_hash": "b530be6904c0b7f80ca91c4f19fe1266",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/pages/faq.blade.php": {
     "mtime": 1787050925.7774277,
-    "seen": 1787082363.318857,
+    "seen": 1787082597.5899038,
     "ast_hash": "689b4c58175819b392617c66968d1f72",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/pages/feature-detail.blade.php": {
     "mtime": 1787049284.144053,
-    "seen": 1787082363.318858,
+    "seen": 1787082597.5899048,
     "ast_hash": "0f96677bd7baec8f0e205a8384a8f0f0",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/pages/features.blade.php": {
     "mtime": 1787049279.64561,
-    "seen": 1787082363.318858,
+    "seen": 1787082597.5899048,
     "ast_hash": "a622d5c69729603d64372c9d5112c88f",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/pages/home.blade.php": {
     "mtime": 1787049275.1298966,
-    "seen": 1787082363.318859,
+    "seen": 1787082597.589906,
     "ast_hash": "f581126e61669f4d3ccf7a47a2766791",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/pages/legal.blade.php": {
     "mtime": 1787049339.1571066,
-    "seen": 1787082363.318859,
+    "seen": 1787082597.589906,
     "ast_hash": "c263cc6db4a69532817043c1a16ee346",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/pages/pricing.blade.php": {
     "mtime": 1787049307.2556095,
-    "seen": 1787082363.31886,
+    "seen": 1787082597.589907,
     "ast_hash": "b170b84cbe057a142ccf9b85b0f86458",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/pages/roadmap.blade.php": {
     "mtime": 1787049302.8509324,
-    "seen": 1787082363.31886,
+    "seen": 1787082597.589907,
     "ast_hash": "55094cc4045de916260c71911d98714a",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/pages/why.blade.php": {
     "mtime": 1787049290.6478424,
-    "seen": 1787082363.31886,
+    "seen": 1787082597.589908,
     "ast_hash": "9f792209671e566eb4a3aff392264d96",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/partials/cookie-consent.blade.php": {
     "mtime": 1787049571.468516,
-    "seen": 1787082363.318861,
+    "seen": 1787082597.589909,
     "ast_hash": "6a486e57aa24fd53a66ebbaf5c7f7024",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/partials/demo-modal.blade.php": {
     "mtime": 1787049201.840463,
-    "seen": 1787082363.318861,
+    "seen": 1787082597.589909,
     "ast_hash": "6e3d6156860651a810b41f4271339d27",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/partials/footer.blade.php": {
     "mtime": 1787049192.0585341,
-    "seen": 1787082363.318862,
+    "seen": 1787082597.58991,
     "ast_hash": "e44601f7476253bed36a213d40c7273f",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/partials/navbar.blade.php": {
     "mtime": 1787049187.0546093,
-    "seen": 1787082363.318862,
+    "seen": 1787082597.589911,
     "ast_hash": "5a560a81ec5875a11c9b92f5ae13e2be",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/partials/seo.blade.php": {
     "mtime": 1787049565.8458061,
-    "seen": 1787082363.3188632,
+    "seen": 1787082597.589911,
     "ast_hash": "a5ed946b7e46b37fc425f02963f998e8",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/band.blade.php": {
     "mtime": 1787077905.749495,
-    "seen": 1787082363.3188632,
+    "seen": 1787082597.5899122,
     "ast_hash": "32a50634ce9a7643041ff3094320b1af",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/blog.blade.php": {
     "mtime": 1787049262.9720752,
-    "seen": 1787082363.3188632,
+    "seen": 1787082597.5899122,
     "ast_hash": "a60b8a729565abeaa7081c93efbbcbd9",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/cta.blade.php": {
     "mtime": 1787049272.7016184,
-    "seen": 1787082363.3188639,
+    "seen": 1787082597.5899131,
     "ast_hash": "a5d6ba8b792edd1c51d5ef6afc1480e3",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/faq.blade.php": {
     "mtime": 1787049268.8543057,
-    "seen": 1787082363.3188639,
+    "seen": 1787082597.5899131,
     "ast_hash": "2bad90f3994b5ceaa3cbd35fe2374153",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/features.blade.php": {
     "mtime": 1787049218.91137,
-    "seen": 1787082363.3188648,
+    "seen": 1787082597.589914,
     "ast_hash": "3072a56eebe08134a4083b53280f315f",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/hero.blade.php": {
     "mtime": 1787049211.5301917,
-    "seen": 1787082363.3188648,
+    "seen": 1787082597.5899148,
     "ast_hash": "ca97c3b85cef712b456d0943df09e9d6",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/manager.blade.php": {
     "mtime": 1787049239.4846342,
-    "seen": 1787082363.3188648,
+    "seen": 1787082597.5899148,
     "ast_hash": "e88c266d96a0a59c8451f6a48cf0ffa6",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/ocr.blade.php": {
     "mtime": 1787049222.9610474,
-    "seen": 1787082363.318866,
+    "seen": 1787082597.589916,
     "ast_hash": "af2b9a4c7e52582049f42703849af3b5",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/pricing.blade.php": {
     "mtime": 1787049253.0199804,
-    "seen": 1787082363.318866,
+    "seen": 1787082597.589916,
     "ast_hash": "4eecf3142044c4f7782992fdbd80d966",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/problem.blade.php": {
     "mtime": 1787049215.2005188,
-    "seen": 1787082363.318867,
+    "seen": 1787082597.589917,
     "ast_hash": "d3b1f400863da2fb0a9afee3f117a4ff",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/roadmap.blade.php": {
     "mtime": 1787049247.062144,
-    "seen": 1787082363.318867,
+    "seen": 1787082597.589918,
     "ast_hash": "f5d685ca13a89ee48fa054ca699a8dd8",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/steps.blade.php": {
     "mtime": 1787049234.5139663,
-    "seen": 1787082363.318868,
+    "seen": 1787082597.589918,
     "ast_hash": "7bf57eff66321ef84fbea1b7d108e3b2",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/testimonials.blade.php": {
     "mtime": 1787049256.4340546,
-    "seen": 1787082363.318868,
+    "seen": 1787082597.589919,
     "ast_hash": "cb23bcff610bd2bea9bac25f17617b3a",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/video.blade.php": {
     "mtime": 1787049260.0327442,
-    "seen": 1787082363.318868,
+    "seen": 1787082597.589919,
     "ast_hash": "b235f78f17210fc09711577cc58ccc6c",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/sections/why.blade.php": {
     "mtime": 1787049243.8281822,
-    "seen": 1787082363.3188689,
+    "seen": 1787082597.58992,
     "ast_hash": "90b4a075947fa27adfdd3399400cf93e",
     "semantic_hash": ""
   },
   "quotarix-web/tests/Feature/BladeAndFormTest.php": {
     "mtime": 1787049419.4128082,
-    "seen": 1787082363.318871,
+    "seen": 1787082597.5899231,
     "ast_hash": "6ec35f3a3cb7d782451f2f2fd1c4460d",
     "semantic_hash": ""
   },
   "quotarix-web/tests/Feature/SeoAndKvkkTest.php": {
     "mtime": 1787049656.6684256,
-    "seen": 1787082363.3188732,
+    "seen": 1787082597.589926,
     "ast_hash": "d03a8ae6bfeb91639f241178a56110d4",
     "semantic_hash": ""
   },
   "quotarix-web/public/assets/img/og-default.png": {
     "mtime": 1787049559.2373028,
-    "seen": 1787082363.318887,
+    "seen": 1787082597.5899441,
     "ast_hash": "21a8848f6eb3651cb872e6c9cce33c2c",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/Admin/AuthController.php": {
     "mtime": 1787050048.6136525,
-    "seen": 1787082363.318811,
+    "seen": 1787082597.589856,
     "ast_hash": "6893df8e2914b6f420039825d43f54d9",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/Admin/DashboardController.php": {
     "mtime": 1787050052.906043,
-    "seen": 1787082363.3188128,
+    "seen": 1787082597.589857,
     "ast_hash": "91cde4a13a9c8c1c88080f0f99185ecf",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/Admin/FaqController.php": {
     "mtime": 1787050887.472537,
-    "seen": 1787082363.318814,
+    "seen": 1787082597.589858,
     "ast_hash": "dbc56ba1b9a57b74521a752162ce7177",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/Admin/FeatureController.php": {
     "mtime": 1787050063.342383,
-    "seen": 1787082363.318814,
+    "seen": 1787082597.589859,
     "ast_hash": "41a4bec4e46b12407f2ab378da06d19f",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/Admin/LeadController.php": {
     "mtime": 1787050089.6839569,
-    "seen": 1787082363.318815,
+    "seen": 1787082597.589859,
     "ast_hash": "7b42c8d252d0d20bf7c679a71aca4427",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/Admin/PageController.php": {
     "mtime": 1787050093.6993265,
-    "seen": 1787082363.318815,
+    "seen": 1787082597.589859,
     "ast_hash": "9956f59a940e389b1499fd5e7e23c07c",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/Admin/PlanController.php": {
     "mtime": 1787050076.3792021,
-    "seen": 1787082363.318816,
+    "seen": 1787082597.5898602,
     "ast_hash": "5c498926a22132700930fe8a1134fcd0",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/Admin/PostController.php": {
     "mtime": 1787050068.4492297,
-    "seen": 1787082363.318816,
+    "seen": 1787082597.5898602,
     "ast_hash": "29226ebdb3637dd1dbcb8007c339ec94",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/Admin/SectionController.php": {
     "mtime": 1787050883.7000666,
-    "seen": 1787082363.3188171,
+    "seen": 1787082597.5898612,
     "ast_hash": "f56273c6fa1b325dc21545ed1bba727f",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/Admin/SettingController.php": {
     "mtime": 1787050096.7295048,
-    "seen": 1787082363.3188171,
+    "seen": 1787082597.5898612,
     "ast_hash": "cd0d3a98b73eca853de5e18cf23c2ca6",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php": {
     "mtime": 1787050081.2603168,
-    "seen": 1787082363.318818,
+    "seen": 1787082597.5898619,
     "ast_hash": "c75235686615f456af40e255dd2dbf99",
     "semantic_hash": ""
   },
   "quotarix-web/app/Http/Controllers/Admin/VideoController.php": {
     "mtime": 1787050085.092373,
-    "seen": 1787082363.318818,
+    "seen": 1787082597.5898619,
     "ast_hash": "29622c8522c93b1dc89d3bbe40e48b10",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/auth/login.blade.php": {
     "mtime": 1787078194.5335743,
-    "seen": 1787082363.318843,
+    "seen": 1787082597.589887,
     "ast_hash": "54574dcd1c45ea2df3d34bd4410450a8",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/dashboard.blade.php": {
-    "mtime": 1787082269.9927428,
-    "seen": 1787082363.318843,
-    "ast_hash": "da4c15dc1253ef5e4c6aded85e3c3ce8",
+    "mtime": 1787082485.728252,
+    "seen": 1787082597.589887,
+    "ast_hash": "5db8645bfe8cf6fc2e53ff25629cfcf5",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/faqs/create.blade.php": {
     "mtime": 1787050176.1792722,
-    "seen": 1787082363.318843,
+    "seen": 1787082597.589888,
     "ast_hash": "57926cd458e4df477a6dd64497cc108c",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/faqs/edit.blade.php": {
     "mtime": 1787050181.8487039,
-    "seen": 1787082363.3188438,
+    "seen": 1787082597.589888,
     "ast_hash": "f82eb1fe9e1b5bab806e94bc7c63ee68",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/faqs/index.blade.php": {
-    "mtime": 1787082232.9410098,
-    "seen": 1787082363.3188438,
-    "ast_hash": "d554ce8b95a10fa53057b68eace4185f",
+    "mtime": 1787082446.2002308,
+    "seen": 1787082597.589889,
+    "ast_hash": "7be3c91260d524d7f22b5de9c6ecb6bf",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/features/create.blade.php": {
     "mtime": 1787050149.01939,
-    "seen": 1787082363.318845,
+    "seen": 1787082597.589889,
     "ast_hash": "92c93654db43cc639d6351ac43298755",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/features/edit.blade.php": {
     "mtime": 1787050154.23312,
-    "seen": 1787082363.318845,
+    "seen": 1787082597.58989,
     "ast_hash": "512b85d8af1b7a4bbdd36ec6d0f8de6c",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/features/index.blade.php": {
-    "mtime": 1787082205.297253,
-    "seen": 1787082363.318846,
-    "ast_hash": "bfbf7eeaa34d13ad298092f37a000b1a",
+    "mtime": 1787082424.3620257,
+    "seen": 1787082597.58989,
+    "ast_hash": "abc68937b17dadd3b313b64f1cf3deb9",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/layouts/app.blade.php": {
-    "mtime": 1787081990.7000775,
-    "seen": 1787082363.318846,
-    "ast_hash": "c701ee9a58938e8a5bf67f7a748794f9",
+    "mtime": 1787082408.4599245,
+    "seen": 1787082597.589891,
+    "ast_hash": "7e3f4dbd6f6e8b402caab4351237611a",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/leads/index.blade.php": {
-    "mtime": 1787082255.4503498,
-    "seen": 1787082363.318847,
-    "ast_hash": "735668da7deaaddb728b028398ae1239",
+    "mtime": 1787082468.9462547,
+    "seen": 1787082597.589891,
+    "ast_hash": "d4ef18f16892f885b3976d3c6f54b1f3",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/leads/show.blade.php": {
     "mtime": 1787081665.9297261,
-    "seen": 1787082363.318847,
+    "seen": 1787082597.5898921,
     "ast_hash": "1cb37d4bc99739706b12bcd05c7ccaaa",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/pages/edit.blade.php": {
     "mtime": 1787050236.8689346,
-    "seen": 1787082363.318848,
+    "seen": 1787082597.5898921,
     "ast_hash": "ca41cb829638bc6c07ed71144151c607",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/pages/index.blade.php": {
-    "mtime": 1787082263.0183945,
-    "seen": 1787082363.318848,
-    "ast_hash": "5b4b95a202ff99512ed87426f31fa685",
+    "mtime": 1787082481.2739305,
+    "seen": 1787082597.589893,
+    "ast_hash": "c72f68f8ea22300c4d272c28dc414242",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/plans/create.blade.php": {
     "mtime": 1787050189.7728624,
-    "seen": 1787082363.318849,
+    "seen": 1787082597.589893,
     "ast_hash": "b3ba088b4f39defd04281a6efa304493",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/plans/edit.blade.php": {
     "mtime": 1787050194.0403519,
-    "seen": 1787082363.318849,
+    "seen": 1787082597.589893,
     "ast_hash": "32c78341d7d2f394f30762d764576645",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/plans/index.blade.php": {
-    "mtime": 1787082194.603084,
-    "seen": 1787082363.318849,
-    "ast_hash": "000c13d0b96e3f2442d0dc7affbf9b4e",
+    "mtime": 1787082416.3636692,
+    "seen": 1787082597.5898938,
+    "ast_hash": "5dded21836d48ab5e07634d9b53c0a41",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/posts/create.blade.php": {
     "mtime": 1787050163.1862383,
-    "seen": 1787082363.31885,
+    "seen": 1787082597.5898938,
     "ast_hash": "dd33ec3a01b5abad8ab046d92a58782d",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/posts/edit.blade.php": {
     "mtime": 1787050168.9475756,
-    "seen": 1787082363.31885,
+    "seen": 1787082597.589895,
     "ast_hash": "348be4d7ce2638a72f1375c5996fd3d3",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/posts/index.blade.php": {
-    "mtime": 1787082225.2674258,
-    "seen": 1787082363.318851,
-    "ast_hash": "cc7c207499c976f5dc4421734abe812a",
+    "mtime": 1787082438.822678,
+    "seen": 1787082597.589895,
+    "ast_hash": "df5860c7697a1bc96fcb1877f8532d24",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/sections/index.blade.php": {
-    "mtime": 1787082219.0609987,
-    "seen": 1787082363.318851,
-    "ast_hash": "61a4e78a93df0a422a270458bafacf6f",
+    "mtime": 1787082431.517635,
+    "seen": 1787082597.589896,
+    "ast_hash": "5ebaa5f7f7cae739b45006b962c7762b",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/settings/index.blade.php": {
     "mtime": 1787081505.5032158,
-    "seen": 1787082363.3188522,
+    "seen": 1787082597.589896,
     "ast_hash": "ea5bed6c4fd882edeceef22fc4381962",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/testimonials/create.blade.php": {
     "mtime": 1787050201.646439,
-    "seen": 1787082363.3188522,
+    "seen": 1787082597.589897,
     "ast_hash": "573ea563844f3c5207806e5df4ca5e19",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/testimonials/edit.blade.php": {
     "mtime": 1787050206.0298717,
-    "seen": 1787082363.3188531,
+    "seen": 1787082597.589897,
     "ast_hash": "214bc0663a3c0470210a11b8b2562893",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/testimonials/index.blade.php": {
-    "mtime": 1787082240.1333644,
-    "seen": 1787082363.3188531,
-    "ast_hash": "509f9c3cd1e2e7aaac6f811efca0a356",
+    "mtime": 1787082453.308197,
+    "seen": 1787082597.5898979,
+    "ast_hash": "8eaadcc52a1d0b6b7e371a4bd7813470",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/videos/create.blade.php": {
     "mtime": 1787050216.1292937,
-    "seen": 1787082363.3188539,
+    "seen": 1787082597.589899,
     "ast_hash": "9fc9425d8e3597bfac75a39498879aac",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/videos/edit.blade.php": {
     "mtime": 1787050220.2086499,
-    "seen": 1787082363.3188539,
+    "seen": 1787082597.589899,
     "ast_hash": "1516234ab944167c9f3db875eede5003",
     "semantic_hash": ""
   },
   "quotarix-web/resources/views/admin/videos/index.blade.php": {
-    "mtime": 1787082247.5137439,
-    "seen": 1787082363.3188548,
-    "ast_hash": "90ab99cdf43da9080cd54219e03f00a1",
+    "mtime": 1787082459.8387365,
+    "seen": 1787082597.5899,
+    "ast_hash": "8967f06ba065f146cb46336965837cb9",
     "semantic_hash": ""
   },
   "quotarix-web/tests/Feature/AdminPanelTest.php": {
-    "mtime": 1787050248.9070313,
-    "seen": 1787082363.31887,
-    "ast_hash": "2a434ed44100197dcba68cf7d18bb98b",
+    "mtime": 1787082556.2904253,
+    "seen": 1787082597.5899231,
+    "ast_hash": "c2acb298b0d49ad8d3d0d18e59413fbb",
     "semantic_hash": ""
   },
   "quotarix-web/deploy/shared-hosting/build-package.sh": {
     "mtime": 1787050332.2564042,
-    "seen": 1787082363.318839,
+    "seen": 1787082597.5898838,
     "ast_hash": "0a666f8806036be28e023244047b1b5c",
     "semantic_hash": ""
   },
   "quotarix-web/deploy/shared-hosting/index.php": {
     "mtime": 1787050312.0755947,
-    "seen": 1787082363.31884,
+    "seen": 1787082597.5898838,
     "ast_hash": "13836357fc123a4a91d4f96df9a8b1d2",
     "semantic_hash": ""
   },
   "quotarix-web/deploy/shared-hosting/DEPLOYMENT-GUIDE.md": {
     "mtime": 1787050358.249726,
-    "seen": 1787082363.31888,
+    "seen": 1787082597.589935,
     "ast_hash": "e292f70f8502db554a88f738c64446bf",
     "semantic_hash": ""
   },
   "quotarix-web/tests/Feature/SecurityAndRateLimitTest.php": {
     "mtime": 1787078266.2047458,
-    "seen": 1787082363.318872,
+    "seen": 1787082597.589925,
     "ast_hash": "71b4febbf316a65b3e65fee73a78203a",
     "semantic_hash": ""
   },
   "quotarix-web/index.php": {
     "mtime": 1787080895.2577963,
-    "seen": 1787082363.31884,
+    "seen": 1787082597.589885,
     "ast_hash": "c49fd910c0c427996e41e79657fa6e45",
+    "semantic_hash": ""
+  },
+  "quotarix-web/quotarix_web_dump.sql": {
+    "mtime": 1787080779.2724788,
+    "ast_hash": "",
     "semantic_hash": ""
   }
 }

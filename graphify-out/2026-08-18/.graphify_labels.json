@@ -92,5 +92,17 @@
   "90": "videos/edit.blade.php",
   "91": "videos/index.blade.php",
   "92": "Feature",
-  "93": "build-package.sh"
+  "93": "build-package.sh",
+  "94": "quotarix-web/index.php",
+  "95": "Plan",
+  "96": "ContentSeeder",
+  "97": "RedirectLegacyHtml.php",
+  "98": "0001_01_01_000001_create_cache_table.php",
+  "99": "0001_01_01_000002_create_jobs_table.php",
+  "100": "2026_08_18_000001_create_quotarix_tables.php",
+  "101": "bootstrap/app.php",
+  "102": "database.php",
+  "103": "session.php",
+  "104": "shared-hosting/index.php",
+  "105": "public/index.php"
 }
