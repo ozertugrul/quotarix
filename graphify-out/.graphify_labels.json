@@ -4,12 +4,12 @@
   "2": "composer.json",
   "3": "scripts",
   "4": "package.json",
-  "5": "Illuminate\\Support\\Str",
+  "5": "Admin",
   "6": "qx-redirects.js",
   "7": "0001_01_01_000000_create_users_table.php",
   "8": "README.md",
   "9": "Lead",
-  "10": "Video",
+  "10": "Illuminate\\Http\\Request",
   "11": "app.blade.php",
   "12": "AppServiceProvider",
   "13": "QUOTARIX-WEB — Geliştirme Kuralları ve Bağlam/Token Optimizasyon Rehberi (`rules.md`)",
@@ -31,7 +31,7 @@
   "29": "welcome.blade.php",
   "30": "vite.config.js",
   "31": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
-  "32": "ContentSeeder",
+  "32": "AdminPanelTest.php",
   "33": "pages/blog.blade.php",
   "34": "blog-detail.blade.php",
   "35": "contact.blade.php",
@@ -92,7 +92,5 @@
   "90": "videos/edit.blade.php",
   "91": "videos/index.blade.php",
   "92": "Feature",
-  "93": "build-package.sh",
-  "94": "RedirectLegacyHtml.php",
-  "95": "bootstrap/app.php"
+  "93": "build-package.sh"
 }

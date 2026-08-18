@@ -44,6 +44,13 @@
         </div>
     @endif
 
+    @if($errors->any())
+        <div class="alert alert-danger alert-dismissible fade show position-fixed top-0 start-50 translate-middle-x mt-4 shadow-lg" role="alert" style="z-index: 1080; border-radius: 12px;">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i> {{ $errors->first() }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Kapat"></button>
+        </div>
+    @endif
+
     @include('partials.navbar')
 
     <main>

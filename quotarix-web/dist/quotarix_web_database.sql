@@ -1,5 +1,5 @@
 -- Quotarix Web Production Database Dump
--- Generated at: 2026-08-18 18:31:58
+-- Generated at: 2026-08-18 18:39:23
 SET FOREIGN_KEY_CHECKS=0;
 
 DROP TABLE IF EXISTS `admins`;
@@ -25,324 +25,6 @@ CREATE TABLE `cache` (
   PRIMARY KEY (`key`),
   KEY `cache_expiration_index` (`expiration`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
-INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES ('quotarix-cache-site_page_metas', 'a:16:{s:4:\"kvkk\";a:11:{s:2:\"id\";i:1;s:3:\"key\";s:4:\"kvkk\";s:4:\"slug\";s:4:\"kvkk\";s:5:\"title\";s:22:\"KVKK Aydınlatma Metni\";s:10:\"meta_title\";s:33:\"KVKK Aydınlatma Metni | Quotarix\";s:16:\"meta_description\";s:113:\"Pekvera Yazılım Teknoloji A.Ş. 6698 sayılı Kişisel Verilerin Korunması Kanunu uyarınca aydınlatma metni.\";s:8:\"og_image\";N;s:4:\"body\";s:2810:\"<div class=\"seller-box\">
-            <strong>SATICI BİLGİLERİ</strong><br>
-            Ünvan: Pekvera Yazılım Teknoloji A.Ş.<br>
-            Adres: İTOB Mah. 10032 Sk. No:2 İçkapı No:Z13 Menderes / İzmir — İzmir Bilimpark Teknokent<br>
-            Vergi Dairesi / No: Menderes V.D. – 7280891746<br>
-            Telefon: 0546 971 52 49<br>
-            E-posta: info@quotarix.com<br>
-            Web: quotarix.com
-        </div>
-
-<h2>KVKK AYDINLATMA METNİ</h2>
-<p>6698 sayılı Kişisel Verilerin Korunması Kanunu (\"KVKK\") uyarınca, veri sorumlusu sıfatıyla Pekvera Yazılım Teknoloji A.Ş. tarafından kişisel verilerinizin işlenmesine ilişkin aşağıdaki bilgilendirme yapılmaktadır.</p>
-<h3>1. İŞLENEN VERİLER</h3>
-<p>Ad-soyad, e-posta, telefon, firma/fatura bilgileri, kullanım kayıtları ve hizmetin sunumu için gerekli teknik veriler (IP, cihaz bilgileri) işlenmektedir.</p>
-<h3>2. İŞLEME AMAÇLARI</h3>
-<p>Hizmetin sunulması, abonelik ve ödeme süreçlerinin yürütülmesi, müşteri desteği, yasal yükümlülüklerin yerine getirilmesi ve hizmet kalitesinin iyileştirilmesi.</p>
-<h3>3. AKTARIM</h3>
-<p>Veriler; ödeme işlemleri için ödeme kuruluşu (PayTR), barındırma ve bildirim hizmetleri için altyapı sağlayıcıları ile yalnızca hizmetin gereği ve yasal sınırlar dahilinde paylaşılır.</p>
-<h3>4. HUKUKİ SEBEP</h3>
-<p>Sözleşmenin kurulması/ifası, hukuki yükümlülük ve meşru menfaat (KVKK md. 5).</p>
-<h3>5. HAKLARINIZ</h3>
-<p>KVKK md. 11 kapsamında; verilerinize erişme, düzeltme, silinmesini isteme ve işlemeye itiraz etme haklarına sahipsiniz. Başvurularınızı info@quotarix.com adresine iletebilirsiniz.</p><div class=\"cookie-policy-box mt-4 p-4\" style=\"background: #f8fafc; border-radius: 12px; border: 1px solid #e2e8f0; margin-top: 24px;\"><h3 style=\"color: #0a1628; font-size: 18px; font-weight: 700; margin-bottom: 12px;\">Çerez (Cookie) Politikası ve Kullanılan Çerezler</h3><p style=\"margin-bottom: 12px;\">Platformumuzda hizmetlerimizin güvenli, hızlı ve kullanıcı dostu sunulabilmesi amacıyla aşağıdaki çerezler kullanılmaktadır:</p><ul style=\"margin-bottom: 0; padding-left: 20px; line-height: 1.7;\"><li><strong>laravel_session:</strong> Zorunlu oturum çerezi. Kullanıcı oturumunun güvenliğini ve sürekliliğini sağlar.</li><li><strong>XSRF-TOKEN:</strong> Zorunlu güvenlik çerezi. Siteler arası istek sahteciliği (CSRF) saldırılarına karşı koruma sağlar.</li><li><strong>qx_consent:</strong> Tercih çerezi. Ziyaretçinin çerez onay/ret tercihini tarayıcıda saklar.</li><li><strong>_ga, _ga_*:</strong> İsteğe bağlı analitik çerezleri (Google Analytics 4). Yalnızca ziyaretçi açık onay verdiğinde, IP anonimleştirme aktif olarak çalıştırılır.</li></ul></div>\";s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:40:47\";}s:7:\"privacy\";a:11:{s:2:\"id\";i:2;s:3:\"key\";s:7:\"privacy\";s:4:\"slug\";s:19:\"gizlilik-politikasi\";s:5:\"title\";s:37:\"Gizlilik Politikası / Privacy Policy\";s:10:\"meta_title\";s:48:\"Gizlilik Politikası / Privacy Policy | Quotarix\";s:16:\"meta_description\";s:94:\"Quotarix mobil ve web platformu kişisel veri işleme, cihaz izinleri ve gizlilik politikası.\";s:8:\"og_image\";N;s:4:\"body\";s:12169:\"<!-- ============================ TÜRKÇE ============================ -->
-<h1>Gizlilik Politikası</h1>
-<p class=\"meta\">Son güncelleme: <span class=\"ph\">02.06.2026</span> &nbsp;|&nbsp; Yürürlük tarihi: <span class=\"ph\">02.06.2026</span></p>
-
-<p>Bu Gizlilik Politikası, <strong>Quotarix</strong> mobil uygulamasının (“Uygulama”) kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu açıklar. Veri sorumlusu <strong>Pekvera Yazılım Teknoloji A.Ş.</strong> (“Pekvera”, “biz”) — <span class=\"ph\">İtob mah. 10032 sk. no:2 d:z13 İzmir Bilimpark Teknokent  Menderes / İZMİR</span>, İzmir, Türkiye — şirketidir.</p>
-
-<p><strong>Quotarix bir kurumsal (B2B) uygulamadır.</strong> Kullanıcı hesapları son kullanıcı tarafından oluşturulmaz; müşteri firmanın (işverenin) yöneticisi tarafından oluşturulur ve yönetilir. Bu kapsamda, çalışan tarafından girilen müşteri/satış verileri için ilgili <strong>işveren firma veri sorumlusudur</strong>; Pekvera bu veriler için veri işleyen olarak hareket eder.</p>
-
-<h2>1. Topladığımız Veriler</h2>
-<table>
-  <tr><th>Veri kategorisi</th><th>Örnekler</th><th>Amaç</th></tr>
-  <tr><td>Kimlik & iletişim</td><td>Ad-soyad, e-posta, telefon, profil fotoğrafı, rol/bölge</td><td>Hesap girişi, profil, iletişim</td></tr>
-  <tr><td>Konum (hassas)</td><td>GPS koordinatları ve bu koordinattan elde edilen adres</td><td>Müşteri/ziyaret konumunu kaydetme</td></tr>
-  <tr><td>Kamera & fotoğraflar</td><td>Kartvizit görselleri, profil fotoğrafı</td><td>Kartvizit tarama, profil görseli</td></tr>
-  <tr><td>Mikrofon & ses</td><td>Sesli not kaydı (konuşmadan metne)</td><td>Notları sesle yazma</td></tr>
-  <tr><td>Bildirim verisi</td><td>Cihaz push (FCM) jetonu</td><td>Anlık bildirim gönderme</td></tr>
-  <tr><td>İş/CRM verisi</td><td>Müşteriler, fırsatlar, teklifler, ziyaretler</td><td>Uygulamanın temel işlevi (işverene ait veri)</td></tr>
-  <tr><td>Teknik veri</td><td>Cihaz tanımlayıcıları, uygulama sürümü, oturum jetonu</td><td>Güvenlik, hata ayıklama, oturum yönetimi</td></tr>
-</table>
-
-<h2>2. Cihaz İzinleri</h2>
-<ul>
-  <li><strong>Kamera:</strong> kartvizit taramak ve profil fotoğrafı çekmek için.</li>
-  <li><strong>Fotoğraf galerisi:</strong> kartvizit/profil görseli seçmek için.</li>
-  <li><strong>Konum:</strong> yalnızca uygulama açıkken; müşteri/ziyaret konumu için.</li>
-  <li><strong>Mikrofon & konuşma tanıma:</strong> sesli notları metne dönüştürmek için.</li>
-  <li><strong>Bildirimler:</strong> görev/ziyaret hatırlatmaları için.</li>
-</ul>
-<p>İzinleri cihaz ayarlarınızdan dilediğiniz zaman geri alabilirsiniz.</p>
-
-<h2>3. Verilerin Kullanım Amaçları</h2>
-<p>Verileriniz; hizmeti sunmak, hesabınızı yönetmek, güvenliği sağlamak, yasal yükümlülükleri yerine getirmek ve hizmeti iyileştirmek için işlenir.</p>
-
-<h2>4. Verilerin Paylaşımı ve Üçüncü Taraflar</h2>
-<p>Kişisel verilerinizi satmıyoruz. Verileri yalnızca aşağıdaki hizmet sağlayıcılarla (veri işleyenlerle) ve yasal zorunluluk halinde resmi makamlarla paylaşırız:</p>
-<ul>
-  <li><strong>Google Firebase (Cloud Messaging):</strong> anlık bildirim altyapısı.</li>
-  <li><strong>Apple Konuşma Tanıma (iOS):</strong> sesli not özelliğinde, ses verisi metne dönüştürülürken Apple tarafından işlenebilir.</li>
-  <li><strong>Barındırma/sunucu sağlayıcımız:</strong> verilerin güvenli şekilde saklanması.</li>
-  <li><strong>OpenAI:</strong> Kartvizit tarama ve fırsat/müşteri analizi özelliklerinde, ilgili kartvizit görselleri ve müşteri/fırsat metin verileri OpenAI\'nin yapay zekâ servisi tarafından işlenir. Bu paylaşım, özelliği ilk kez kullanımınızda alınan açık onayınız üzerine gerçekleştirilir; onay vermezseniz bu özellikler kullanılmaz.</li>
-</ul>
-
-<h2>5. Yurt Dışına Aktarım</h2>
-<p>Yukarıdaki sağlayıcıların sunucuları yurt dışında bulunabilir; bu durumda veriler KVKK ve (uygulanabilirse) GDPR’nin öngördüğü güvenceler çerçevesinde aktarılır.</p>
-
-<h2>6. Saklama Süresi</h2>
-<p>Verileri, hizmetin sunulması için gerekli olduğu ve yasal saklama süreleri boyunca tutarız; süre sonunda sileriz veya anonimleştiririz.</p>
-
-<h2>7. Güvenlik</h2>
-<p>Veriler aktarımda SSL/TLS ile şifrelenir; oturum jetonu cihazda güvenli depolama alanında tutulur. Erişim, yetkili kişilerle sınırlandırılmıştır.</p>
-
-<h2>8. Haklarınız (KVKK / GDPR)</h2>
-<p>KVKK md. 11 ve (uygulanabilirse) GDPR kapsamında; verilerinize erişme, düzeltme, silme, işlemeye itiraz ve veri taşınabilirliği haklarına sahipsiniz. Hesabınız işveren firma tarafından yönetildiğinden, hesap silme dahil talepleriniz için <strong>önce işveren firmanızın yöneticisine</strong>, ya da doğrudan bize <span class=\"ph\">support@quotarix.com</span> adresinden başvurabilirsiniz.</p>
-
-<h2>9. Çocukların Gizliliği</h2>
-<p>Uygulama çocuklara yönelik değildir ve yalnızca 18 yaş ve üzeri profesyonel kullanıcılara yöneliktir. Bilerek çocuk verisi toplamayız.</p>
-
-<h2>10. Değişiklikler</h2>
-<p>Bu politikayı zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yayımlanır.</p>
-
-<h2>11. İletişim</h2>
-<p>Pekvera Yazılım Teknoloji A.Ş. — <span class=\"ph\">İtob mah. 10032 sk. no:2 d:z13 İzmir Bilimpark Teknokent  Menderes / İZMİR</span>, İzmir, Türkiye<br>
-E-posta: <span class=\"ph\">support@quotarix.com</span></p>
-
-<hr class=\"lang-divider\">
-
-<!-- ============================ ENGLISH ============================ -->
-<h1>Privacy Policy</h1>
-<p class=\"meta\">Last updated: <span class=\"ph\">02.06.2026</span> &nbsp;|&nbsp; Effective date: <span class=\"ph\">02.06.2026</span></p>
-
-<p>This Privacy Policy explains how the <strong>Quotarix</strong> mobile application (the “App”) collects, uses and protects your personal data. The data controller is <strong>Pekvera Yazılım Teknoloji A.Ş.</strong> (“Pekvera”, “we”) — <span class=\"ph\">İtob mah. 10032 sk. no:2 d:z13 İzmir Bilimpark Teknokent  Menderes / İZMİR</span>, İzmir, Türkiye.</p>
-
-<p><strong>Quotarix is a business (B2B) application.</strong> User accounts are not created by end users; they are created and managed by the administrator of the customer company (the employer). For customer/sales data entered by an employee, the <strong>employer company is the data controller</strong> and Pekvera acts as a data processor.</p>
-
-<h2>1. Data We Collect</h2>
-<table>
-  <tr><th>Category</th><th>Examples</th><th>Purpose</th></tr>
-  <tr><td>Identity & contact</td><td>Name, email, phone, profile photo, role/region</td><td>Sign-in, profile, contact</td></tr>
-  <tr><td>Location (precise)</td><td>GPS coordinates and the address derived from them</td><td>Recording customer/visit location</td></tr>
-  <tr><td>Camera & photos</td><td>Business card images, profile photo</td><td>Business card scanning, profile image</td></tr>
-  <tr><td>Microphone & audio</td><td>Voice note recording (speech-to-text)</td><td>Dictating notes</td></tr>
-  <tr><td>Notification data</td><td>Device push (FCM) token</td><td>Sending push notifications</td></tr>
-  <tr><td>Business/CRM data</td><td>Customers, opportunities, quotes, visits</td><td>Core app functionality (owned by employer)</td></tr>
-  <tr><td>Technical data</td><td>Device identifiers, app version, session token</td><td>Security, debugging, session management</td></tr>
-</table>
-
-<h2>2. Device Permissions</h2>
-<ul>
-  <li><strong>Camera:</strong> to scan business cards and take a profile photo.</li>
-  <li><strong>Photo library:</strong> to select a business card / profile image.</li>
-  <li><strong>Location:</strong> while the app is in use only; for customer/visit location.</li>
-  <li><strong>Microphone & speech recognition:</strong> to convert voice notes to text.</li>
-  <li><strong>Notifications:</strong> for task/visit reminders.</li>
-</ul>
-<p>You can revoke any permission at any time in your device settings.</p>
-
-<h2>3. How We Use Data</h2>
-<p>Your data is processed to provide the service, manage your account, ensure security, meet legal obligations and improve the service.</p>
-
-<h2>4. Data Sharing and Third Parties</h2>
-<p>We do not sell your personal data. We share data only with the following service providers (processors) and, where legally required, with authorities:</p>
-<ul>
-  <li><strong>Google Firebase (Cloud Messaging):</strong> push notification infrastructure.</li>
-  <li><strong>Apple Speech Recognition (iOS):</strong> for the voice-note feature, audio may be processed by Apple to produce text.</li>
-  <li><strong>Our hosting/server provider:</strong> secure storage of data.</li>
-  <li><strong>OpenAI:</strong> For the business-card scanning and opportunity/customer analysis features, the relevant business-card images and customer/opportunity text data are processed by the OpenAI AI service. This sharing occurs only after your explicit consent obtained on first use of the feature; if you do not consent, these features are not used.</li>
-</ul>
-
-<h2>5. International Transfers</h2>
-<p>The providers above may store data outside Türkiye; in that case data is transferred with the safeguards required by KVKK and (where applicable) GDPR.</p>
-
-<h2>6. Retention</h2>
-<p>We keep data for as long as needed to provide the service and for statutory retention periods, then delete or anonymise it.</p>
-
-<h2>7. Security</h2>
-<p>Data is encrypted in transit with SSL/TLS; the session token is held in secure device storage. Access is restricted to authorised personnel.</p>
-
-<h2>8. Your Rights (KVKK / GDPR)</h2>
-<p>Under KVKK art. 11 and (where applicable) GDPR you have rights to access, rectify, erase, object to processing and data portability. As your account is managed by the employer company, for requests including account deletion please contact <strong>your employer’s administrator first</strong>, or contact us directly at <span class=\"ph\">support@quotarix.com</span>.</p>
-
-<h2>9. Children’s Privacy</h2>
-<p>The App is not directed at children and is intended only for professional users aged 18 and over. We do not knowingly collect data from children.</p>
-
-<h2>10. Changes</h2>
-<p>We may update this policy from time to time. The current version is always published on this page.</p>
-
-<h2>11. Contact</h2>
-<p>Pekvera Yazılım Teknoloji A.Ş. — <span class=\"ph\">İtob mah. 10032 sk. no:2 d:z13 İzmir Bilimpark Teknokent  Menderes / İZMİR</span>, İzmir, Türkiye<br>
-Email: <span class=\"ph\">support@quotarix.com</span></p>
-
-<p class=\"meta\" style=\"margin-top:40px;border-top:1px solid #eee;padding-top:12px;\">Bu belge bir şablondur ve hukuki danışmanlık yerine geçmez; yayımlamadan önce bir hukukçuya gözden geçirtmeniz önerilir. / This document is a template and not legal advice; have it reviewed by a lawyer before publishing.</p><div class=\"cookie-policy-box mt-4 p-4\" style=\"background: #f8fafc; border-radius: 12px; border: 1px solid #e2e8f0; margin-top: 24px;\"><h3 style=\"color: #0a1628; font-size: 18px; font-weight: 700; margin-bottom: 12px;\">Çerez (Cookie) Politikası ve Kullanılan Çerezler</h3><p style=\"margin-bottom: 12px;\">Platformumuzda hizmetlerimizin güvenli, hızlı ve kullanıcı dostu sunulabilmesi amacıyla aşağıdaki çerezler kullanılmaktadır:</p><ul style=\"margin-bottom: 0; padding-left: 20px; line-height: 1.7;\"><li><strong>laravel_session:</strong> Zorunlu oturum çerezi. Kullanıcı oturumunun güvenliğini ve sürekliliğini sağlar.</li><li><strong>XSRF-TOKEN:</strong> Zorunlu güvenlik çerezi. Siteler arası istek sahteciliği (CSRF) saldırılarına karşı koruma sağlar.</li><li><strong>qx_consent:</strong> Tercih çerezi. Ziyaretçinin çerez onay/ret tercihini tarayıcıda saklar.</li><li><strong>_ga, _ga_*:</strong> İsteğe bağlı analitik çerezleri (Google Analytics 4). Yalnızca ziyaretçi açık onay verdiğinde, IP anonimleştirme aktif olarak çalıştırılır.</li></ul></div>\";s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:40:47\";}s:5:\"terms\";a:11:{s:2:\"id\";i:3;s:3:\"key\";s:5:\"terms\";s:4:\"slug\";s:18:\"kullanim-kosullari\";s:5:\"title\";s:40:\"Kullanım Koşulları / Terms of Service\";s:10:\"meta_title\";s:51:\"Kullanım Koşulları / Terms of Service | Quotarix\";s:16:\"meta_description\";s:89:\"Quotarix B2B CRM ve teklif yönetim platformu kullanım koşulları ve lisans şartları.\";s:8:\"og_image\";N;s:4:\"body\";s:5184:\"<!-- ============================ TÜRKÇE ============================ -->
-<h1>Kullanım Şartları</h1>
-<p class=\"meta\">Son güncelleme: <span class=\"ph\">02.06.2026</span></p>
-
-<p>Bu Kullanım Şartları, <strong>Pekvera Yazılım Teknoloji A.Ş.</strong> (“Pekvera”) tarafından sunulan <strong>Quotarix</strong> mobil uygulamasının (“Hizmet”) kullanımını düzenler. Hizmeti kullanarak bu şartları kabul etmiş sayılırsınız.</p>
-
-<h2>1. Hizmetin Niteliği</h2>
-<p>Quotarix, lojistik/nakliye sektörüne yönelik bir kurumsal (B2B) müşteri ilişkileri ve teklif yönetimi uygulamasıdır. Hizmet, müşteri firmalara ve onların yetkilendirdiği satış temsilcilerine sunulur.</p>
-
-<h2>2. Hesaplar</h2>
-<p>Kullanıcı hesapları, müşteri firmanın yöneticisi tarafından oluşturulur ve yönetilir. Giriş bilgilerinizin gizliliğinden siz sorumlusunuz. Hesabınız üzerinden yapılan işlemlerden hesap sahibi sorumludur.</p>
-
-<h2>3. Kabul Edilebilir Kullanım</h2>
-<p>Hizmeti yalnızca yasalara uygun ve yetkilendirildiğiniz amaçlarla kullanırsınız. Hizmete zarar vermek, izinsiz erişim sağlamak veya üçüncü kişilerin haklarını ihlal etmek yasaktır.</p>
-
-<h2>4. Veriler ve Gizlilik</h2>
-<p>Kişisel verilerin işlenmesi, ayrı yayımlanan <a href=\"privacy-policy.html\">Gizlilik Politikası</a> kapsamında yürütülür. Uygulamaya girilen iş/CRM verilerinin sahibi ilgili müşteri firmadır.</p>
-
-<h2>5. Fikri Mülkiyet</h2>
-<p>Hizmete ilişkin tüm fikri mülkiyet hakları Pekvera’ya aittir. Size yalnızca Hizmeti kullanma yönünde sınırlı, devredilemez bir lisans verilir.</p>
-
-<h2>6. Hizmetin Sürekliliği</h2>
-<p>Hizmeti geliştirebilir, değiştirebilir veya geçici olarak askıya alabiliriz. Kesintisiz veya hatasız çalışacağına dair garanti verilmez.</p>
-
-<h2>7. Sorumluluğun Sınırlandırılması</h2>
-<p>Yürürlükteki hukukun izin verdiği azami ölçüde, Hizmetin kullanımından doğan dolaylı zararlardan Pekvera sorumlu tutulamaz.</p>
-
-<h2>8. Değişiklikler</h2>
-<p>Bu şartları güncelleyebiliriz. Güncel sürüm bu sayfada yayımlanır; Hizmeti kullanmaya devam etmeniz güncel şartları kabul ettiğiniz anlamına gelir.</p>
-
-<h2>9. Uygulanacak Hukuk</h2>
-<p>Bu şartlar Türkiye Cumhuriyeti hukukuna tabidir. Uyuşmazlıklarda <span class=\"ph\">İZMİR</span> mahkemeleri ve icra daireleri yetkilidir.</p>
-
-<h2>10. İletişim</h2>
-<p>Pekvera Yazılım Teknoloji A.Ş. — E-posta: <span class=\"ph\">support@quotarix.com</span></p>
-
-<hr class=\"lang-divider\">
-
-<!-- ============================ ENGLISH ============================ -->
-<h1>Terms of Service</h1>
-<p class=\"meta\">Last updated: <span class=\"ph\">02.06.2026</span></p>
-
-<p>These Terms of Service govern your use of the <strong>Quotarix</strong> mobile application (the “Service”) provided by <strong>Pekvera Yazılım Teknoloji A.Ş.</strong> (“Pekvera”). By using the Service you agree to these terms.</p>
-
-<h2>1. Nature of the Service</h2>
-<p>Quotarix is a business (B2B) customer-relationship and quote-management application for the logistics/freight industry. The Service is provided to customer companies and the sales representatives they authorise.</p>
-
-<h2>2. Accounts</h2>
-<p>User accounts are created and managed by the customer company’s administrator. You are responsible for keeping your credentials confidential. The account holder is responsible for activity performed through the account.</p>
-
-<h2>3. Acceptable Use</h2>
-<p>You will use the Service only for lawful purposes for which you are authorised. Harming the Service, gaining unauthorised access, or infringing third-party rights is prohibited.</p>
-
-<h2>4. Data and Privacy</h2>
-<p>Processing of personal data is governed by our separately published <a href=\"privacy-policy.html\">Privacy Policy</a>. Business/CRM data entered into the app is owned by the relevant customer company.</p>
-
-<h2>5. Intellectual Property</h2>
-<p>All intellectual property rights in the Service belong to Pekvera. You are granted only a limited, non-transferable licence to use the Service.</p>
-
-<h2>6. Service Availability</h2>
-<p>We may improve, change or temporarily suspend the Service. We do not warrant that it will operate uninterrupted or error-free.</p>
-
-<h2>7. Limitation of Liability</h2>
-<p>To the maximum extent permitted by applicable law, Pekvera shall not be liable for indirect damages arising from use of the Service.</p>
-
-<h2>8. Changes</h2>
-<p>We may update these terms. The current version is published on this page; continued use means you accept the current terms.</p>
-
-<h2>9. Governing Law</h2>
-<p>These terms are governed by the laws of the Republic of Türkiye. The courts of <span class=\"ph\">İzmir</span> shall have jurisdiction over disputes.</p>
-
-<h2>10. Contact</h2>
-<p>Pekvera Yazılım Teknoloji A.Ş. — Email: <span class=\"ph\">support@quotarix.com</span></p>
-
-<p class=\"meta\" style=\"margin-top:40px;border-top:1px solid #eee;padding-top:12px;\">Bu belge bir şablondur ve hukuki danışmanlık yerine geçmez. / This document is a template and not legal advice.</p>\";s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}s:14:\"distance_sales\";a:11:{s:2:\"id\";i:4;s:3:\"key\";s:14:\"distance_sales\";s:4:\"slug\";s:25:\"mesafeli-satis-sozlesmesi\";s:5:\"title\";s:29:\"Mesafeli Satış Sözleşmesi\";s:10:\"meta_title\";s:40:\"Mesafeli Satış Sözleşmesi | Quotarix\";s:16:\"meta_description\";s:84:\"app.quotarix.com SaaS abonelik hizmeti mesafeli satış sözleşmesi ve hükümleri.\";s:8:\"og_image\";N;s:4:\"body\";s:2642:\"<div class=\"seller-box\">
-            <strong>SATICI BİLGİLERİ</strong><br>
-            Ünvan: Pekvera Yazılım Teknoloji A.Ş.<br>
-            Adres: İTOB Mah. 10032 Sk. No:2 İçkapı No:Z13 Menderes / İzmir — İzmir Bilimpark Teknokent<br>
-            Vergi Dairesi / No: Menderes V.D. – 7280891746<br>
-            Telefon: 0546 971 52 49<br>
-            E-posta: info@quotarix.com<br>
-            Web: quotarix.com
-        </div>
-
-<h2>MESAFELİ SATIŞ SÖZLEŞMESİ</h2>
-<h3>1. TARAFLAR</h3>
-<p><strong>SATICI:</strong> Yukarıda bilgileri yer alan Pekvera Yazılım Teknoloji A.Ş.<br>
-<strong>ALICI:</strong> app.quotarix.com üzerinden abonelik oluşturan gerçek/tüzel kişi (\"Abone\").</p>
-<h3>2. KONU</h3>
-<p>İşbu sözleşme, ALICI\'nın SATICI\'ya ait <strong>Quotarix</strong> (saha satış CRM ve teklif yönetimi yazılımı) hizmetine, app.quotarix.com üzerinden abonelik yoluyla erişimine ilişkin 6502 sayılı Tüketicinin Korunması Hakkında Kanun ve Mesafeli Sözleşmeler Yönetmeliği uyarınca tarafların hak ve yükümlülüklerini düzenler.</p>
-<h3>3. HİZMETİN NİTELİĞİ VE BEDELİ</h3>
-<p>Quotarix bulut tabanlı (SaaS) bir yazılım hizmetidir; fiziksel ürün teslimi içermez. Hizmet, kullanıcı başına aylık abonelik bedeli üzerinden ücretlendirilir. Güncel fiyat ödeme adımında açıkça gösterilir. Ödemeler PayTR altyapısı ile güvenli şekilde tahsil edilir.</p>
-<h3>4. ABONELİK VE SÜRE</h3>
-<p>Abonelik, ödeme onayı ile başlar ve seçilen periyot (aylık) boyunca geçerlidir. İptal edilmediği sürece her dönem sonunda yenilenebilir. ALICI dilediği zaman iptal edebilir; iptal halinde ödenmiş mevcut dönem sonuna kadar hizmet devam eder.</p>
-<h3>5. CAYMA HAKKI</h3>
-<p>ALICI, sözleşmenin kurulduğu tarihten itibaren <strong>14 (on dört) gün</strong> içinde gerekçe göstermeksizin cayma hakkına sahiptir. ALICI\'nın açık onayı ile cayma süresi dolmadan hizmetin ifasına başlanması halinde, Yönetmelik md. 15 uyarınca ifası tamamlanan hizmet bakımından cayma hakkı kullanılamaz. Cayma talepleri info@quotarix.com adresine iletilir.</p>
-<h3>6. YÜKÜMLÜLÜKLER</h3>
-<p>SATICI, hizmetin sözleşmeye uygun ve kesintisiz sunulması için makul çabayı gösterir. ALICI, hesap bilgilerinin gizliliğinden ve hizmeti hukuka uygun kullanmaktan sorumludur.</p>
-<h3>7. UYUŞMAZLIK</h3>
-<p>Uyuşmazlıklarda, mevzuatta belirlenen parasal sınırlar dahilinde Tüketici Hakem Heyetleri ve Tüketici Mahkemeleri yetkilidir.</p>
-<h3>8. YÜRÜRLÜK</h3>
-<p>ALICI, ödeme adımında bu sözleşmeyi onayladığında sözleşme yürürlüğe girer.</p>\";s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}s:12:\"cancellation\";a:11:{s:2:\"id\";i:5;s:3:\"key\";s:12:\"cancellation\";s:4:\"slug\";s:24:\"iptal-ve-iade-politikasi\";s:5:\"title\";s:27:\"İptal ve İade Politikası\";s:10:\"meta_title\";s:38:\"İptal ve İade Politikası | Quotarix\";s:16:\"meta_description\";s:84:\"Quotarix SaaS abonelik hizmetlerinde anında ifa, cayma hakkı ve iptal koşulları.\";s:8:\"og_image\";N;s:4:\"body\";s:1901:\"<div class=\"seller-box\">
-            <strong>SATICI BİLGİLERİ</strong><br>
-            Ünvan: Pekvera Yazılım Teknoloji A.Ş.<br>
-            Adres: İTOB Mah. 10032 Sk. No:2 İçkapı No:Z13 Menderes / İzmir — İzmir Bilimpark Teknokent<br>
-            Vergi Dairesi / No: Menderes V.D. – 7280891746<br>
-            Telefon: 0546 971 52 49<br>
-            E-posta: info@quotarix.com<br>
-            Web: quotarix.com
-        </div>
-
-<h2>İPTAL VE İADE POLİTİKASI</h2>
-<h3>1. CAYMA HAKKI (14 GÜN)</h3>
-<p>ALICI, abonelik sözleşmesinin kurulduğu tarihten itibaren <strong>14 (on dört) gün</strong> içinde herhangi bir gerekçe göstermeksizin cayma hakkına sahiptir. Cayma bildirimi info@quotarix.com adresine yapılır. Cayma hakkının geçerli olduğu durumlarda, tahsil edilen bedel 14 gün içinde aynı ödeme yöntemiyle iade edilir.</p>
-<h3>2. CAYMA HAKKININ İSTİSNASI</h3>
-<p>Quotarix dijital bir hizmettir. ALICI\'nın açık onayı ile cayma süresi dolmadan hizmetin ifasına başlanması (yazılıma tam erişim sağlanması) halinde, Mesafeli Sözleşmeler Yönetmeliği md. 15 uyarınca ifa edilen hizmet bakımından cayma hakkı kullanılamaz.</p>
-<h3>3. ABONELİK İPTALİ</h3>
-<p>ALICI, dilediği zaman aboneliğini hesap panelinden veya info@quotarix.com üzerinden iptal edebilir. İptal halinde:</p>
-<ul>
-<li>Ödenmiş mevcut dönem sonuna kadar hizmet erişimi devam eder.</li>
-<li>Abonelik, dönem sonunda otomatik olarak yenilenmez.</li>
-<li>Mevcut dönem için, hizmet sunulduğundan kısmi/orantılı iade yapılmaz (14 günlük cayma hakkı saklıdır).</li>
-</ul>
-<h3>4. İADE SÜRECİ</h3>
-<p>İade hakkının doğduğu durumlarda iade, ödeme yapılan karta/yönteme yapılır ve ödeme kuruluşu süreçlerine bağlı olarak makul sürede tamamlanır.</p>
-<h3>5. İLETİŞİM</h3>
-<p>İptal/iade talepleri: info@quotarix.com – 0546 971 52 49</p>\";s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}s:8:\"delivery\";a:11:{s:2:\"id\";i:6;s:3:\"key\";s:8:\"delivery\";s:4:\"slug\";s:18:\"teslimat-bilgileri\";s:5:\"title\";s:18:\"Teslimat Bilgileri\";s:10:\"meta_title\";s:29:\"Teslimat Bilgileri | Quotarix\";s:16:\"meta_description\";s:93:\"Quotarix dijital yazılım hizmeti anlık çevrimiçi teslimat ve hesap aktivasyon esasları.\";s:8:\"og_image\";N;s:4:\"body\";s:1332:\"<div class=\"seller-box\">
-            <strong>SATICI BİLGİLERİ</strong><br>
-            Ünvan: Pekvera Yazılım Teknoloji A.Ş.<br>
-            Adres: İTOB Mah. 10032 Sk. No:2 İçkapı No:Z13 Menderes / İzmir — İzmir Bilimpark Teknokent<br>
-            Vergi Dairesi / No: Menderes V.D. – 7280891746<br>
-            Telefon: 0546 971 52 49<br>
-            E-posta: info@quotarix.com<br>
-            Web: quotarix.com
-        </div>
-
-<h2>TESLİMAT VE HİZMET SUNUM BİLGİLERİ</h2>
-<h3>1. HİZMETİN NİTELİĞİ</h3>
-<p>Quotarix, bulut tabanlı (SaaS) bir yazılım hizmetidir. Fiziksel bir ürün gönderimi/kargo teslimatı söz konusu değildir.</p>
-<h3>2. ERİŞİM VE \"TESLİMAT\"</h3>
-<p>Ödeme onaylandıktan sonra hizmete erişim <strong>anında</strong> sağlanır. ALICI, app.quotarix.com web paneli ve Quotarix mobil uygulaması (App Store / Google Play) üzerinden hesabına giriş yaparak hizmeti kullanmaya başlar. Hesap, abonelik oluşturulurken belirtilen yönetici e-posta adresi ile aktif edilir.</p>
-<h3>3. HİZMETİN SÜREKLİLİĞİ</h3>
-<p>Hizmet, abonelik süresi boyunca 7/24 erişilebilir olacak şekilde sunulur. Planlı bakım çalışmaları önceden duyurulmaya çalışılır.</p>
-<h3>4. DESTEK</h3>
-<p>Kurulum, erişim ve kullanım desteği için: info@quotarix.com – 0546 971 52 49</p>\";s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}s:15:\"pre_information\";a:11:{s:2:\"id\";i:7;s:3:\"key\";s:15:\"pre_information\";s:4:\"slug\";s:16:\"on-bilgilendirme\";s:5:\"title\";s:23:\"Ön Bilgilendirme Formu\";s:10:\"meta_title\";s:34:\"Ön Bilgilendirme Formu | Quotarix\";s:16:\"meta_description\";s:108:\"6502 sayılı Kanun uyarınca abonelik öncesi satıcı ve hizmet temel nitelikleri ön bilgilendirme formu.\";s:8:\"og_image\";N;s:4:\"body\";s:1628:\"<div class=\"seller-box\">
-            <strong>SATICI BİLGİLERİ</strong><br>
-            Ünvan: Pekvera Yazılım Teknoloji A.Ş.<br>
-            Adres: İTOB Mah. 10032 Sk. No:2 İçkapı No:Z13 Menderes / İzmir — İzmir Bilimpark Teknokent<br>
-            Vergi Dairesi / No: Menderes V.D. – 7280891746<br>
-            Telefon: 0546 971 52 49<br>
-            E-posta: info@quotarix.com<br>
-            Web: quotarix.com
-        </div>
-
-<h2>ÖN BİLGİLENDİRME FORMU</h2>
-<h3>1. HİZMETİN TEMEL NİTELİKLERİ</h3>
-<p>Quotarix, saha satış ekipleri için bulut tabanlı (SaaS) bir CRM ve teklif yönetimi yazılımıdır. Hizmet, app.quotarix.com web paneli ve mobil uygulama üzerinden, abonelik karşılığında sunulur. Fiziksel ürün teslimatı yoktur.</p>
-<h3>2. BEDEL VE ÖDEME</h3>
-<p>Hizmet bedeli, kullanıcı başına aylık abonelik ücreti olarak hesaplanır ve ödeme adımında KDV dahil/hariç açıkça gösterilir. Ödeme, PayTR güvenli ödeme altyapısı ile kredi/banka kartı üzerinden yapılır.</p>
-<h3>3. CAYMA HAKKI</h3>
-<p>ALICI, sözleşme tarihinden itibaren 14 gün içinde cayma hakkına sahiptir. Hizmetin ifasına ALICI onayıyla başlanması halinde, ifa edilen kısım için cayma hakkı kullanılamaz (Yönetmelik md. 15).</p>
-<h3>4. İPTAL VE İADE</h3>
-<p>Abonelik iptali ve iade koşulları İptal ve İade Politikası\'nda düzenlenmiştir. Talepler info@quotarix.com adresine iletilir.</p>
-<h3>5. ŞİKAYET VE İTİRAZ</h3>
-<p>Talep ve şikayetler için: info@quotarix.com / 0546 971 52 49. Uyuşmazlıklarda Tüketici Hakem Heyetleri ve Tüketici Mahkemeleri yetkilidir.</p>\";s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}s:4:\"home\";a:11:{s:2:\"id\";i:8;s:3:\"key\";s:4:\"home\";s:4:\"slug\";s:4:\"home\";s:5:\"title\";s:9:\"Ana Sayfa\";s:10:\"meta_title\";s:83:\"Quotarix | Forwarder Satış Ekibiniz İçin CRM — Müşteriniz Şirkette Kalsın\";s:16:\"meta_description\";s:181:\"Freight forwarder firmalar için satış yönetimi. Satışçı ayrılsa bile müşteri ilişkisi, ziyaretler ve teklifler şirketinizde kalır. Ekip performansını anlık görün.\";s:8:\"og_image\";N;s:4:\"body\";N;s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}s:14:\"features_index\";a:11:{s:2:\"id\";i:9;s:3:\"key\";s:14:\"features_index\";s:4:\"slug\";s:10:\"ozellikler\";s:5:\"title\";s:11:\"Özellikler\";s:10:\"meta_title\";s:38:\"Özellikler — Quotarix Forwarder CRM\";s:16:\"meta_description\";s:111:\"Hızlı teklif hazırlama, akıllı CRM, yönetici dashboard\'u ve AI kartvizit tarama özelliklerini keşfedin.\";s:8:\"og_image\";N;s:4:\"body\";N;s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}s:3:\"why\";a:11:{s:2:\"id\";i:10;s:3:\"key\";s:3:\"why\";s:4:\"slug\";s:14:\"neden-quotarix\";s:5:\"title\";s:15:\"Neden Quotarix?\";s:10:\"meta_title\";s:50:\"Neden Quotarix? — Forwarder Diliyle Konuşan CRM\";s:16:\"meta_description\";s:110:\"Genel CRM\'ler yerine lojistik ve forwarder iş süreçlerine özel tasarlanmış Quotarix farkını inceleyin.\";s:8:\"og_image\";N;s:4:\"body\";N;s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}s:7:\"roadmap\";a:11:{s:2:\"id\";i:11;s:3:\"key\";s:7:\"roadmap\";s:4:\"slug\";s:12:\"yol-haritasi\";s:5:\"title\";s:13:\"Yol Haritası\";s:10:\"meta_title\";s:46:\"Yol Haritası — Quotarix Gelecek Özellikler\";s:16:\"meta_description\";s:76:\"WhatsApp\'tan teklif, akıllı teklif skoru ve yakında eklenecek yenilikler.\";s:8:\"og_image\";N;s:4:\"body\";N;s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}s:7:\"pricing\";a:11:{s:2:\"id\";i:12;s:3:\"key\";s:7:\"pricing\";s:4:\"slug\";s:13:\"fiyatlandirma\";s:5:\"title\";s:14:\"Fiyatlandırma\";s:10:\"meta_title\";s:31:\"Fiyatlandırma — Quotarix CRM\";s:16:\"meta_description\";s:98:\"Şeffaf ve esnek fiyatlandırma paketleri. Satış ekibinizin büyüklüğüne göre ölçekleyin.\";s:8:\"og_image\";N;s:4:\"body\";N;s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}s:10:\"blog_index\";a:11:{s:2:\"id\";i:13;s:3:\"key\";s:10:\"blog_index\";s:4:\"slug\";s:4:\"blog\";s:5:\"title\";s:27:\"Blog & Lojistik İpuçları\";s:10:\"meta_title\";s:31:\"Blog — Quotarix Forwarder CRM\";s:16:\"meta_description\";s:108:\"Freight forwarder ve lojistik satış ekipleri için verimlilik, satış stratejisi ve teknoloji makaleleri.\";s:8:\"og_image\";N;s:4:\"body\";N;s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}s:3:\"faq\";a:11:{s:2:\"id\";i:14;s:3:\"key\";s:3:\"faq\";s:4:\"slug\";s:3:\"sss\";s:5:\"title\";s:23:\"Sıkça Sorulan Sorular\";s:10:\"meta_title\";s:36:\"Sıkça Sorulan Sorular — Quotarix\";s:16:\"meta_description\";s:72:\"Quotarix hakkında en çok merak edilen sorular ve detaylı yanıtları.\";s:8:\"og_image\";N;s:4:\"body\";N;s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}s:4:\"demo\";a:11:{s:2:\"id\";i:15;s:3:\"key\";s:4:\"demo\";s:4:\"slug\";s:4:\"demo\";s:5:\"title\";s:25:\"Ücretsiz Demo Talep Edin\";s:10:\"meta_title\";s:38:\"Ücretsiz Demo Talep Edin — Quotarix\";s:16:\"meta_description\";s:105:\"15 dakikalık canlı demo ile Quotarix\'in satış süreçlerinizi nasıl hızlandıracağını keşfedin.\";s:8:\"og_image\";N;s:4:\"body\";N;s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}s:7:\"contact\";a:11:{s:2:\"id\";i:16;s:3:\"key\";s:7:\"contact\";s:4:\"slug\";s:8:\"iletisim\";s:5:\"title\";s:10:\"İletişim\";s:10:\"meta_title\";s:23:\"İletişim — Quotarix\";s:16:\"meta_description\";s:70:\"Bizimle iletişime geçin, ekibimiz tüm sorularınızı yanıtlasın.\";s:8:\"og_image\";N;s:4:\"body\";N;s:9:\"is_active\";i:1;s:10:\"created_at\";s:19:\"2026-08-18 10:29:01\";s:10:\"updated_at\";s:19:\"2026-08-18 10:29:01\";}}', '2102437915');
-INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES ('quotarix-cache-site_settings', 'a:14:{s:10:\"site_title\";s:8:\"Quotarix\";s:12:\"site_tagline\";s:72:\"Forwarder Satış Ekibiniz İçin CRM — Müşteriniz Şirkette Kalsın\";s:8:\"whatsapp\";s:13:\"+905469715249\";s:13:\"whatsapp_text\";s:50:\"Merhaba, Quotarix hakkında bilgi almak istiyorum.\";s:7:\"app_url\";s:24:\"https://app.quotarix.com\";s:13:\"contact_email\";s:17:\"info@quotarix.com\";s:13:\"contact_phone\";s:17:\"+90 546 971 52 49\";s:15:\"contact_address\";s:91:\"İTOB Mah. 10032 Sk. No:2 İçkapı No:Z13 Menderes / İzmir — İzmir Bilimpark Teknokent\";s:13:\"company_title\";s:33:\"Pekvera Yazılım Teknoloji A.Ş.\";s:8:\"tax_info\";s:28:\"Menderes V.D. – 7280891746\";s:6:\"ga4_id\";s:0:\"\";s:15:\"social_linkedin\";s:1:\"#\";s:16:\"social_instagram\";s:1:\"#\";s:14:\"social_twitter\";s:1:\"#\";}', '2102437915');
 
 DROP TABLE IF EXISTS `cache_locks`;
 CREATE TABLE `cache_locks` (
@@ -455,7 +137,9 @@ CREATE TABLE `leads` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `leads` (`id`, `name`, `company`, `email`, `phone`, `message`, `source`, `ip`, `read_at`, `created_at`, `updated_at`) VALUES ('1', 'Muhammet Ertuğrul Özer', 'abc', 'muhammedozer32@gmail.com', '+905421823395', 'bilgi alabilir miyim bilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyimbilgi alabilir miyim', 'contact', '127.0.0.1', '2026-08-18 18:32:56', '2026-08-18 18:32:38', '2026-08-18 18:32:56');
 
 DROP TABLE IF EXISTS `migrations`;
 CREATE TABLE `migrations` (
@@ -891,9 +575,9 @@ INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `u
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('6', 'manager', '1', '6', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('7', 'why', '1', '7', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('8', 'roadmap', '1', '8', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
-INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('9', 'pricing', '0', '9', '2026-08-18 10:29:01', '2026-08-18 18:29:14');
-INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('10', 'testimonials', '0', '10', '2026-08-18 10:29:01', '2026-08-18 18:29:13');
-INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('11', 'video', '0', '11', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
+INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('9', 'pricing', '1', '9', '2026-08-18 10:29:01', '2026-08-18 18:33:25');
+INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('10', 'testimonials', '1', '10', '2026-08-18 10:29:01', '2026-08-18 18:33:24');
+INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('11', 'video', '1', '11', '2026-08-18 10:29:01', '2026-08-18 18:33:21');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('12', 'blog', '1', '12', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('13', 'band', '1', '13', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('14', 'faq', '1', '14', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
@@ -912,7 +596,7 @@ CREATE TABLE `sessions` (
   KEY `sessions_last_activity_index` (`last_activity`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('PeBNtjjHJLnktrc70cSkxrKhoNzTJS6DJOto1gLM', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36', 'eyJfdG9rZW4iOiI3eEtFTW9TekQ5aFVPc3ByQXozMmxSQXdDTTExUlBXdHRoc091SWJaIiwidXJsIjpbXSwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHBzOlwvXC9xdW90YXJpeC13ZWIudGVzdFwvZml5YXRsYW5kaXJtYSIsInJvdXRlIjoicHJpY2luZyJ9LCJfZmxhc2giOnsib2xkIjpbXSwibmV3IjpbXX0sImxvZ2luX2FkbWluXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiOjF9', '1787077915');
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('PeBNtjjHJLnktrc70cSkxrKhoNzTJS6DJOto1gLM', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36', 'eyJfdG9rZW4iOiI3eEtFTW9TekQ5aFVPc3ByQXozMmxSQXdDTTExUlBXdHRoc091SWJaIiwidXJsIjpbXSwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHBzOlwvXC9xdW90YXJpeC13ZWIudGVzdCIsInJvdXRlIjoiaG9tZSJ9LCJfZmxhc2giOnsib2xkIjpbXSwibmV3IjpbXX0sImxvZ2luX2FkbWluXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiOjF9', '1787078009');
 
 DROP TABLE IF EXISTS `settings`;
 CREATE TABLE `settings` (

@@ -26,6 +26,15 @@ class LeadController extends Controller
 
     public function store(Request $request): RedirectResponse
     {
+        $throttleKey = 'lead_submission|' . $request->ip();
+
+        if (\Illuminate\Support\Facades\RateLimiter::tooManyAttempts($throttleKey, 3)) {
+            $seconds = \Illuminate\Support\Facades\RateLimiter::availableIn($throttleKey);
+            return back()->withErrors([
+                'rate_limit' => "Çok fazla form gönderimi yaptınız. Lütfen {$seconds} saniye sonra tekrar deneyin.",
+            ])->withInput();
+        }
+
         $validated = $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'company' => ['nullable', 'string', 'max:255'],
@@ -35,12 +44,15 @@ class LeadController extends Controller
             'source' => ['nullable', 'in:demo,contact,newsletter'],
         ]);
 
+        \Illuminate\Support\Facades\RateLimiter::hit($throttleKey, 60);
+
+        // Sanitize string inputs against XSS script injection
         $lead = Lead::create([
-            'name' => $validated['name'],
-            'company' => $validated['company'] ?? null,
-            'email' => $validated['email'],
-            'phone' => $validated['phone'] ?? null,
-            'message' => $validated['message'] ?? null,
+            'name' => sanitize_input($validated['name']),
+            'company' => sanitize_input($validated['company'] ?? null),
+            'email' => strtolower(trim($validated['email'])),
+            'phone' => sanitize_input($validated['phone'] ?? null),
+            'message' => sanitize_input($validated['message'] ?? null),
             'source' => $validated['source'] ?? ($request->routeIs('demo.store') ? 'demo' : 'contact'),
             'ip' => $request->ip(),
         ]);

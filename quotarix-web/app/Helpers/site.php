@@ -127,3 +127,26 @@ if (!function_exists('store_image')) {
         return 'uploads/' . $folder . '/' . $filename;
     }
 }
+
+if (!function_exists('sanitize_input')) {
+    /**
+     * Clean string input against XSS, HTML tags and script injections.
+     *
+     * @param string|null $input
+     * @return string|null
+     */
+    function sanitize_input(?string $input): ?string
+    {
+        if (is_null($input)) {
+            return null;
+        }
+
+        // Remove script, iframe, and style blocks with their inner contents
+        $clean = preg_replace('/<script\b[^>]*>(.*?)<\/script>/is', '', $input);
+        $clean = preg_replace('/<iframe\b[^>]*>(.*?)<\/iframe>/is', '', $clean);
+        $clean = preg_replace('/<style\b[^>]*>(.*?)<\/style>/is', '', $clean);
+        $clean = trim(strip_tags($clean));
+
+        return $clean !== '' ? $clean : null;
+    }
+}

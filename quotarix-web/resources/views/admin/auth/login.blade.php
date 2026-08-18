@@ -89,7 +89,7 @@
             <label class="form-label fw-bold small text-secondary">E-posta Adresi</label>
             <div class="input-group">
                 <span class="input-group-text bg-light border-end-0" style="border-radius: 12px 0 0 12px;"><i class="bi bi-envelope text-muted"></i></span>
-                <input type="email" name="email" class="form-control bg-light border-start-0" value="{{ old('email', 'fatih@pekvera.com') }}" required autofocus placeholder="ornek@pekvera.com" style="border-radius: 0 12px 12px 0; padding: 12px 16px;">
+                <input type="email" name="email" class="form-control bg-light border-start-0" value="{{ old('email') }}" required autofocus autocomplete="off" style="border-radius: 0 12px 12px 0; padding: 12px 16px;">
             </div>
         </div>
 
@@ -97,7 +97,7 @@
             <label class="form-label fw-bold small text-secondary">Şifre</label>
             <div class="input-group">
                 <span class="input-group-text bg-light border-end-0" style="border-radius: 12px 0 0 12px;"><i class="bi bi-lock text-muted"></i></span>
-                <input type="password" name="password" class="form-control bg-light border-start-0" required placeholder="••••••••" style="border-radius: 0 12px 12px 0; padding: 12px 16px;">
+                <input type="password" name="password" class="form-control bg-light border-start-0" required autocomplete="current-password" style="border-radius: 0 12px 12px 0; padding: 12px 16px;">
             </div>
         </div>
 
