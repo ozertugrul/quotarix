@@ -217,13 +217,9 @@
         .admin-content h4,
         .admin-content h5,
         .admin-content h6,
-        .admin-content p,
-        .admin-content div,
-        .admin-content span,
-        .admin-content td,
-        .admin-content th {
+        .admin-content p {
             overflow-wrap: break-word;
-            word-break: break-word;
+            word-break: normal;
         }
 
         .admin-content code,
@@ -231,6 +227,32 @@
             word-break: break-all !important;
             white-space: pre-wrap !important;
             max-width: 100% !important;
+        }
+
+        /* Responsive Table Rules - Prevents single character vertical squishing */
+        .table-responsive {
+            -webkit-overflow-scrolling: touch;
+            border-radius: 12px;
+            max-width: 100% !important;
+            overflow-x: auto !important;
+            display: block;
+            width: 100%;
+        }
+
+        .table-responsive table {
+            min-width: 650px;
+            width: 100%;
+        }
+
+        .table-responsive th {
+            white-space: nowrap !important;
+            word-break: normal !important;
+        }
+
+        .table-responsive td {
+            white-space: normal;
+            word-break: normal;
+            overflow-wrap: break-word;
         }
 
         .card-dashboard {
