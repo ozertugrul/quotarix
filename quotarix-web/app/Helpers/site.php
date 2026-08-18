@@ -103,3 +103,26 @@ if (!function_exists('format_seo_title')) {
         return $title . $suffix;
     }
 }
+
+if (!function_exists('store_image')) {
+    /**
+     * Store uploaded image in public/uploads/{folder}/
+     * Symlink-free for maximum compatibility with shared hosting.
+     *
+     * @param \Illuminate\Http\UploadedFile $file
+     * @param string $folder
+     * @return string
+     */
+    function store_image($file, string $folder = 'general'): string
+    {
+        $targetDir = public_path('uploads/' . $folder);
+        if (!file_exists($targetDir)) {
+            mkdir($targetDir, 0755, true);
+        }
+
+        $filename = time() . '_' . bin2hex(random_bytes(6)) . '.' . $file->getClientOriginalExtension();
+        $file->move($targetDir, $filename);
+
+        return 'uploads/' . $folder . '/' . $filename;
+    }
+}
