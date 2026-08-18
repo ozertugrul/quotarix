@@ -28,6 +28,7 @@
 .idea
 .vscode
 *.sublime-project
+*.zip
 *.sublime-workspace
 
 # Logs
