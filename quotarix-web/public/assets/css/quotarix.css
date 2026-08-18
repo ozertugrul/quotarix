@@ -684,21 +684,31 @@ body {
     color: var(--teal);
 }
 
-/* STATS */
+/* STATS BANNER */
+.stat-banner {
+    background: linear-gradient(135deg, #0a1628 0%, #112240 100%);
+    border-radius: 24px;
+    padding: 32px 24px;
+    box-shadow: 0 20px 50px rgba(10, 22, 40, 0.25);
+    border: 1px solid rgba(14, 165, 165, 0.25);
+}
+
 .stat-item {
     text-align: center;
-    padding: 40px 20px;
+    padding: 16px 12px;
 }
 
 .stat-value {
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 800;
-    color: var(--teal-light);
+    color: #2dd4bf;
+    line-height: 1.1;
 }
 
 .stat-label {
     font-size: 15px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
     margin-top: 8px;
 }
 
