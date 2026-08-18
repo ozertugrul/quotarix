@@ -50,7 +50,7 @@
                             <i class="bi bi-grip-vertical sort-handle fs-5 text-muted" title="Sıralamak için sürükleyin"></i>
                         </td>
                         <td>
-                            <span class="badge bg-light text-navy border fw-bold px-2 py-1 font-monospace fs-6">
+                            <span class="badge bg-light text-secondary border font-monospace px-2 py-1 fs-6">
                                 #{{ $sec->key }}
                             </span>
                         </td>

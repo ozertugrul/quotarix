@@ -1,5 +1,5 @@
 -- Quotarix Web Production Database Dump
--- Generated at: 2026-08-18 11:02:13
+-- Generated at: 2026-08-18 18:29:48
 SET FOREIGN_KEY_CHECKS=0;
 
 DROP TABLE IF EXISTS `admins`;
@@ -15,7 +15,7 @@ CREATE TABLE `admins` (
   UNIQUE KEY `admins_email_unique` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `admins` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES ('1', 'Fatih PEK', 'fatih@pekvera.com', '$2y$12$J41sdOdu9evtLlSbvq9EA.7LgDEX74Ev6v6J8dCLPtauAh0eaarQm', NULL, '2026-08-18 10:29:01', '2026-08-18 10:29:01');
+INSERT INTO `admins` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES ('1', 'Fatih PEK', 'fatih@pekvera.com', '$2y$12$J41sdOdu9evtLlSbvq9EA.7LgDEX74Ev6v6J8dCLPtauAh0eaarQm', 'j6B6lJXdILzKyinzU8AuryLssmSIcPUyJZOXmKkHPKn8EBtt8cxAsrAfw7DH', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 
 DROP TABLE IF EXISTS `cache`;
 CREATE TABLE `cache` (
@@ -61,12 +61,12 @@ CREATE TABLE `faqs` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `faqs` (`id`, `question`, `answer`, `sort_order`, `is_active`, `created_at`, `updated_at`) VALUES ('1', 'Quotarix sadece forwarder firmalar için mi?', 'Evet, Quotarix özellikle freight forwarder, lojistik ve nakliyat firmalarının satış süreçlerine özel tasarlanmıştır. FCL/LCL teklif şablonları, çoklu döviz desteği ve sektöre özel raporlama gibi özellikler genel CRM\'lerde bulunmaz.', '1', '1', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
-INSERT INTO `faqs` (`id`, `question`, `answer`, `sort_order`, `is_active`, `created_at`, `updated_at`) VALUES ('2', 'Mevcut müşteri verilerimi aktarabilir miyim?', 'Evet. Excel dosyanızdaki müşteri listesini kolayca içe aktarabilirsiniz. Kurulum ekibimiz size yardımcı olur.', '2', '1', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
-INSERT INTO `faqs` (`id`, `question`, `answer`, `sort_order`, `is_active`, `created_at`, `updated_at`) VALUES ('3', 'Mobil uygulama hangi telefonlarda çalışır?', 'iOS (iPhone) ve Android telefonlarda çalışır. App Store ve Google Play\'den ücretsiz indirilebilir.', '3', '1', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
-INSERT INTO `faqs` (`id`, `question`, `answer`, `sort_order`, `is_active`, `created_at`, `updated_at`) VALUES ('4', 'Verilerim güvende mi?', 'Tüm verileriniz şifreli bulut sunucularda saklanır. Günlük otomatik yedekleme yapılır. KVKK uyumlu altyapı kullanıyoruz.', '4', '1', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
-INSERT INTO `faqs` (`id`, `question`, `answer`, `sort_order`, `is_active`, `created_at`, `updated_at`) VALUES ('5', 'Kurulum ne kadar sürer?', '5 dakikada hesabınızı oluşturun, ekibinizi davet edin ve kullanmaya başlayın. Eğitim desteği ücretsizdir.', '5', '1', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
-INSERT INTO `faqs` (`id`, `question`, `answer`, `sort_order`, `is_active`, `created_at`, `updated_at`) VALUES ('6', 'Sözleşme zorunluluğu var mı?', 'Hayır. Aylık abonelik modelimiz var, istediğiniz zaman iptal edebilirsiniz. Yıllık ödeme tercih ederseniz 2 ay ücretsiz kazanırsınız.', '6', '1', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
+INSERT INTO `faqs` (`id`, `question`, `answer`, `sort_order`, `is_active`, `created_at`, `updated_at`) VALUES ('1', 'Quotarix sadece forwarder firmalar için mi?', 'Evet, Quotarix özellikle freight forwarder, lojistik ve nakliyat firmalarının satış süreçlerine özel tasarlanmıştır. FCL/LCL teklif şablonları, çoklu döviz desteği ve sektöre özel raporlama gibi özellikler genel CRM\'lerde bulunmaz.', '1', '1', '2026-08-18 10:29:01', '2026-08-18 18:23:22');
+INSERT INTO `faqs` (`id`, `question`, `answer`, `sort_order`, `is_active`, `created_at`, `updated_at`) VALUES ('2', 'Mevcut müşteri verilerimi aktarabilir miyim?', 'Evet. Excel dosyanızdaki müşteri listesini kolayca içe aktarabilirsiniz. Kurulum ekibimiz size yardımcı olur.', '2', '1', '2026-08-18 10:29:01', '2026-08-18 18:23:22');
+INSERT INTO `faqs` (`id`, `question`, `answer`, `sort_order`, `is_active`, `created_at`, `updated_at`) VALUES ('3', 'Mobil uygulama hangi telefonlarda çalışır?', 'iOS (iPhone) ve Android telefonlarda çalışır. App Store ve Google Play\'den ücretsiz indirilebilir.', '3', '1', '2026-08-18 10:29:01', '2026-08-18 18:23:22');
+INSERT INTO `faqs` (`id`, `question`, `answer`, `sort_order`, `is_active`, `created_at`, `updated_at`) VALUES ('4', 'Verilerim güvende mi?', 'Tüm verileriniz şifreli bulut sunucularda saklanır. Günlük otomatik yedekleme yapılır. KVKK uyumlu altyapı kullanıyoruz.', '4', '1', '2026-08-18 10:29:01', '2026-08-18 18:23:22');
+INSERT INTO `faqs` (`id`, `question`, `answer`, `sort_order`, `is_active`, `created_at`, `updated_at`) VALUES ('5', 'Kurulum ne kadar sürer?', '5 dakikada hesabınızı oluşturun, ekibinizi davet edin ve kullanmaya başlayın. Eğitim desteği ücretsizdir.', '5', '1', '2026-08-18 10:29:01', '2026-08-18 18:23:22');
+INSERT INTO `faqs` (`id`, `question`, `answer`, `sort_order`, `is_active`, `created_at`, `updated_at`) VALUES ('6', 'Sözleşme zorunluluğu var mı?', 'Hayır. Aylık abonelik modelimiz var, istediğiniz zaman iptal edebilirsiniz. Yıllık ödeme tercih ederseniz 2 ay ücretsiz kazanırsınız.', '6', '1', '2026-08-18 10:29:01', '2026-08-18 18:23:22');
 
 DROP TABLE IF EXISTS `features`;
 CREATE TABLE `features` (
@@ -573,8 +573,8 @@ INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `u
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('6', 'manager', '1', '6', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('7', 'why', '1', '7', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('8', 'roadmap', '1', '8', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
-INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('9', 'pricing', '0', '9', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
-INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('10', 'testimonials', '0', '10', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
+INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('9', 'pricing', '0', '9', '2026-08-18 10:29:01', '2026-08-18 18:29:14');
+INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('10', 'testimonials', '0', '10', '2026-08-18 10:29:01', '2026-08-18 18:29:13');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('11', 'video', '0', '11', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('12', 'blog', '1', '12', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('13', 'band', '1', '13', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
@@ -621,6 +621,7 @@ INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('o9Jgv7U8HFcBe3zIjbX0Na9S5jGPYfl8ueDBKauN', NULL, '127.0.0.1', 'curl/8.16.0', 'eyJfdG9rZW4iOiJOWDNtY2pGZVlnRGhzZHR2OThQa2g5M092UDNoYUNvRUIxclVpWVpqIiwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHA6XC9cL3F1b3Rhcml4LnRlc3RcL2dpemxpbGlrLXBvbGl0aWthc2kiLCJyb3V0ZSI6InBhZ2UifSwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119fQ==', '1787049413');
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('OBFwdHJaK4hWRXy4opltTkS9xeLTJE2qNPdT4Qtt', NULL, '127.0.0.1', 'Symfony', 'eyJfdG9rZW4iOiJ1S2UwNzZzazV6bjFUbDRlM3VPUkhJeUFGSE4xcWdWUlBUYUtNUkRRIiwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvYmxvZ1wvZXhjZWxkZS10ZWtsaWYteW9uZXRpbWktbmVkZW4tYXJ0aWstc3VyZHVydWxlbWV6Iiwicm91dGUiOiJibG9nLnNob3cifSwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119fQ==', '1787049363');
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('OzBQ2UEcP2oO6ZxMnsheVvB7Eyl6VfeI2tu331bd', NULL, '127.0.0.1', 'curl/8.16.0', 'eyJfdG9rZW4iOiI0YjN1NGFvTm56TkdqWmJwT3VXSDlJQzVna0RVY29NSjM2YnNNV3ljIiwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHA6XC9cL3F1b3Rhcml4LnRlc3RcL3NzcyIsInJvdXRlIjoiZmFxIn0sIl9mbGFzaCI6eyJvbGQiOltdLCJuZXciOltdfX0=', '1787049413');
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('PeBNtjjHJLnktrc70cSkxrKhoNzTJS6DJOto1gLM', '1', '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36', 'eyJfdG9rZW4iOiI3eEtFTW9TekQ5aFVPc3ByQXozMmxSQXdDTTExUlBXdHRoc091SWJaIiwidXJsIjpbXSwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHBzOlwvXC9xdW90YXJpeC13ZWIudGVzdFwvYWRtaW5cL3ZpZGVvcyIsInJvdXRlIjoiYWRtaW4udmlkZW9zLmluZGV4In0sIl9mbGFzaCI6eyJvbGQiOltdLCJuZXciOltdfSwibG9naW5fYWRtaW5fNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI6MX0=', '1787077778');
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('Pg9q4Wb24vd2UI9LM74gOAJQ6wSjYRhYPD2VtwJK', NULL, '127.0.0.1', 'curl/8.16.0', 'eyJfdG9rZW4iOiJMUFBLNWUzMVprQlpERjRXREZPaWkwZnQ3T2tnOG9IdzZicXhvUXZ1IiwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119fQ==', '1787049062');
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('Qkn5BKEUPbeDNri6y86AnJiuhmxmyNXWLYYWyDLE', NULL, '127.0.0.1', 'curl/8.16.0', 'eyJfdG9rZW4iOiJmRXkxQUtTb0FJYkU1Qkh0UXk0RmM2SjZlU29zZlBDVmFKN3BXQjdCIiwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHA6XC9cL3F1b3Rhcml4LnRlc3RcL2t2a2siLCJyb3V0ZSI6InBhZ2UifSwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119fQ==', '1787049413');
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('rCe9YOCdA6zmYeV8lVhIHNi6lgBV6cA97FUlWZ2s', NULL, '127.0.0.1', 'curl/8.16.0', 'eyJfdG9rZW4iOiJVV1BtVVQ2SEEyNVdEUDE3dk1BTjltZDdJYUJxbld3anllaVpoOUJqIiwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHA6XC9cL3F1b3Rhcml4LnRlc3RcL2Jsb2ciLCJyb3V0ZSI6ImJsb2cifSwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119fQ==', '1787049413');

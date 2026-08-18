@@ -36,7 +36,7 @@
                             @if($plan->price !== null)
                                 <span class="fw-bold text-teal">${{ number_format($plan->price, 0) }}</span> {{ $plan->currency }} / <small class="text-muted">{{ $plan->period }}</small>
                             @else
-                                <span class="badge bg-light text-navy border">Özel Teklif</span>
+                                <span class="badge bg-light text-secondary border font-monospace">Özel Teklif</span>
                             @endif
                         </td>
                         <td>

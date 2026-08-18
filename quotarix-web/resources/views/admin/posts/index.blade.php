@@ -34,7 +34,7 @@
                             <small class="text-muted"><code>/blog/{{ $post->slug }}</code></small>
                         </td>
                         <td>
-                            <span class="badge bg-light text-navy border">{{ $post->category ?: 'Genel' }}</span>
+                            <span class="badge bg-light text-secondary border font-monospace">{{ $post->category ?: 'Genel' }}</span>
                         </td>
                         <td class="small text-secondary">{{ $post->author ?: 'Fatih PEK' }}</td>
                         <td class="small text-muted">

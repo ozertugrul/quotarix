@@ -30,7 +30,7 @@
                             <small class="text-muted"><code>/{{ $page->slug }}</code></small>
                         </td>
                         <td>
-                            <span class="badge bg-light text-navy border font-monospace">/{{ $page->slug }}</span>
+                            <span class="badge bg-light text-secondary border font-monospace">/{{ $page->slug }}</span>
                         </td>
                         <td class="small text-secondary">
                             {{ $page->meta_title ?: $page->title }}

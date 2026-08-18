@@ -27,11 +27,36 @@
             --sidebar-width: 260px;
         }
 
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #f1f5f9;
-            color: #1e293b;
-            min-height: 100vh;
+        .text-navy {
+            color: var(--navy) !important;
+        }
+
+        .text-teal {
+            color: var(--teal) !important;
+        }
+
+        /* Badge Contrast Fixes */
+        .badge.bg-light {
+            background-color: #f8fafc !important;
+            color: #475569 !important;
+            border: 1px solid #cbd5e1 !important;
+        }
+
+        .badge.bg-light.text-navy {
+            color: var(--navy) !important;
+        }
+
+        .badge.bg-light.text-secondary {
+            color: #475569 !important;
+        }
+
+        .badge.bg-light.text-success {
+            color: #16a34a !important;
+            border-color: #bbf7d0 !important;
+        }
+
+        .badge.bg-light.text-muted {
+            color: #64748b !important;
         }
 
         #adminSidebar {

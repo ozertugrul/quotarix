@@ -42,7 +42,7 @@
                             <small class="text-muted"><a href="{{ $v->video_url }}" target="_blank" class="text-teal text-decoration-none">{{ $v->video_url }} <i class="bi bi-box-arrow-up-right small"></i></a></small>
                         </td>
                         <td>
-                            <span class="badge bg-light text-navy border px-2 py-1 font-monospace">
+                            <span class="badge bg-light text-secondary border px-2 py-1 font-monospace">
                                 @if($v->placement === 'home') Ana Sayfa
                                 @elseif($v->placement === 'features') Özellikler
                                 @elseif($v->placement === 'why') Neden Quotarix
