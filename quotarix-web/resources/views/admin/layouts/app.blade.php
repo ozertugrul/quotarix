@@ -27,12 +27,17 @@
             --sidebar-width: 260px;
         }
 
+        html, body {
+            max-width: 100vw !important;
+            overflow-x: hidden !important;
+            position: relative;
+        }
+
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: #f1f5f9;
             color: #1e293b;
             min-height: 100vh;
-            overflow-x: hidden;
         }
 
         .text-navy {
@@ -196,8 +201,36 @@
         .admin-content {
             padding: 32px;
             width: 100%;
-            max-width: 100%;
-            overflow-x: hidden;
+            max-width: 100% !important;
+            overflow-x: hidden !important;
+            box-sizing: border-box !important;
+        }
+
+        .admin-content .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        .admin-content h1,
+        .admin-content h2,
+        .admin-content h3,
+        .admin-content h4,
+        .admin-content h5,
+        .admin-content h6,
+        .admin-content p,
+        .admin-content div,
+        .admin-content span,
+        .admin-content td,
+        .admin-content th {
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .admin-content code,
+        .admin-content pre {
+            word-break: break-all !important;
+            white-space: pre-wrap !important;
+            max-width: 100% !important;
         }
 
         .card-dashboard {

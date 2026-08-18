@@ -11,9 +11,9 @@
 </div>
 
 <div class="row g-4">
-    <div class="col-lg-8">
-        <div class="card border-0 shadow-sm p-4 mb-4" style="border-radius: 20px; background: #fff;">
-            <div class="d-flex align-items-center justify-content-between mb-4 pb-3 border-bottom">
+    <div class="col-12 col-lg-8">
+        <div class="card border-0 shadow-sm p-3 p-md-4 mb-4" style="border-radius: 20px; background: #fff;">
+            <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-2 mb-4 pb-3 border-bottom">
                 <div>
                     <span class="badge {{ $lead->source === 'demo' ? 'bg-primary' : 'bg-info text-dark' }} fs-6 px-3 py-2">
                         {{ strtoupper($lead->source) }} TALEBİ
@@ -25,33 +25,33 @@
             </div>
 
             <div class="row g-4 mb-4">
-                <div class="col-md-6">
+                <div class="col-12 col-md-6">
                     <label class="text-muted small fw-bold d-block">AD SOYAD</label>
-                    <div class="fs-5 fw-bold text-navy">{{ $lead->name }}</div>
+                    <div class="fs-5 fw-bold text-navy word-break-all">{{ $lead->name }}</div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-12 col-md-6">
                     <label class="text-muted small fw-bold d-block">FİRMA ADI</label>
-                    <div class="fs-5 fw-bold text-navy">{{ $lead->company ?: 'Belirtilmedi' }}</div>
+                    <div class="fs-5 fw-bold text-navy word-break-all">{{ $lead->company ?: 'Belirtilmedi' }}</div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-12 col-md-6">
                     <label class="text-muted small fw-bold d-block">E-POSTA</label>
-                    <div><a href="mailto:{{ $lead->email }}" class="text-teal fw-bold text-decoration-none fs-6">{{ $lead->email }}</a></div>
+                    <div><a href="mailto:{{ $lead->email }}" class="text-teal fw-bold text-decoration-none fs-6 word-break-all">{{ $lead->email }}</a></div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-12 col-md-6">
                     <label class="text-muted small fw-bold d-block">TELEFON</label>
-                    <div><a href="tel:{{ $lead->phone }}" class="text-navy fw-bold text-decoration-none fs-6">{{ $lead->phone ?: 'Belirtilmedi' }}</a></div>
+                    <div><a href="tel:{{ $lead->phone }}" class="text-navy fw-bold text-decoration-none fs-6 word-break-all">{{ $lead->phone ?: 'Belirtilmedi' }}</a></div>
                 </div>
             </div>
 
             <div class="mb-3">
                 <label class="text-muted small fw-bold d-block mb-2">MESAJ / NOT</label>
-                <div class="p-3 bg-light rounded-3 text-secondary" style="line-height: 1.7; min-height: 120px; white-space: pre-wrap;">{{ $lead->message ?: 'Herhangi bir ek not veya mesaj girilmedi.' }}</div>
+                <div class="p-3 bg-light rounded-3 text-secondary word-break-all" style="line-height: 1.7; min-height: 120px; white-space: pre-wrap;">{{ $lead->message ?: 'Herhangi bir ek not veya mesaj girilmedi.' }}</div>
             </div>
         </div>
     </div>
 
-    <div class="col-lg-4">
-        <div class="card border-0 shadow-sm p-4" style="border-radius: 20px; background: #fff;">
+    <div class="col-12 col-lg-4">
+        <div class="card border-0 shadow-sm p-3 p-md-4" style="border-radius: 20px; background: #fff;">
             <h5 class="fw-bold text-navy mb-3">İşlemler</h5>
 
             <div class="mb-3">
