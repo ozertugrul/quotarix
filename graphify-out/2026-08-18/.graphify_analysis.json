@@ -1,0 +1,166 @@
+{
+  "communities": {
+    "0": [
+      "feature_ai_business_card_ocr",
+      "feature_manager_dashboard",
+      "feature_smart_crm",
+      "hero_section",
+      "legal_iptal_iade",
+      "legal_mesafeli_satis",
+      "legal_on_bilgilendirme",
+      "legal_terms_of_service",
+      "legal_teslimat_bilgileri",
+      "problem_section",
+      "quotarix_landing_page"
+    ],
+    "1": [
+      "arch_admin_panel_11_modules",
+      "arch_html_301_redirects",
+      "arch_laravel_multipage",
+      "arch_lazy_load_video_facade",
+      "arch_section_toggle_system",
+      "arch_teaser_homepage_pattern"
+    ],
+    "2": [
+      "company_pekvera_teknoloji",
+      "legal_kvkk",
+      "legal_privacy_policy"
+    ],
+    "3": [
+      "feature_firsat_form_mockup",
+      "feature_quick_quote"
+    ]
+  },
+  "cohesion": {
+    "0": 0.18181818181818182,
+    "1": 0.3333333333333333,
+    "2": 0.6666666666666666,
+    "3": 1.0
+  },
+  "gods": [
+    {
+      "id": "quotarix_landing_page",
+      "label": "Quotarix Landing Page (index.html)",
+      "degree": 13
+    },
+    {
+      "id": "arch_laravel_multipage",
+      "label": "QX-WEB Laravel Multipage Mimarisi",
+      "degree": 5
+    },
+    {
+      "id": "feature_quick_quote",
+      "label": "Hızlı Teklif Yönetimi Modülü",
+      "degree": 2
+    },
+    {
+      "id": "legal_kvkk",
+      "label": "KVKK Aydınlatma Metni",
+      "degree": 2
+    },
+    {
+      "id": "legal_privacy_policy",
+      "label": "Gizlilik Politikası (TR/EN)",
+      "degree": 2
+    },
+    {
+      "id": "company_pekvera_teknoloji",
+      "label": "Pekvera Yazılım Teknoloji A.Ş.",
+      "degree": 2
+    },
+    {
+      "id": "hero_section",
+      "label": "Hero & Değer Önerisi Bölümü",
+      "degree": 1
+    },
+    {
+      "id": "problem_section",
+      "label": "Forwarder Sektörel Acı Noktaları",
+      "degree": 1
+    },
+    {
+      "id": "feature_smart_crm",
+      "label": "Akıllı CRM & Müşteri Kartı",
+      "degree": 1
+    },
+    {
+      "id": "feature_manager_dashboard",
+      "label": "Yönetici Dashboard",
+      "degree": 1
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Quotarix Landing Page (index.html)",
+      "target": "KVKK Aydınlatma Metni",
+      "source_files": [
+        "index.html",
+        "kvkk.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "links_to",
+      "why": "connects across different repos/directories; bridges separate communities; peripheral node `KVKK Aydınlatma Metni` unexpectedly reaches hub `Quotarix Landing Page (index.html)`"
+    },
+    {
+      "source": "Quotarix Landing Page (index.html)",
+      "target": "Gizlilik Politikası (TR/EN)",
+      "source_files": [
+        "index.html",
+        "privacy-policy.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "links_to",
+      "why": "connects across different repos/directories; bridges separate communities; peripheral node `Gizlilik Politikası (TR/EN)` unexpectedly reaches hub `Quotarix Landing Page (index.html)`"
+    },
+    {
+      "source": "Quotarix Landing Page (index.html)",
+      "target": "İptal ve İade Politikası",
+      "source_files": [
+        "index.html",
+        "iptal-iade-politikasi.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "links_to",
+      "why": "connects across different repos/directories; peripheral node `İptal ve İade Politikası` unexpectedly reaches hub `Quotarix Landing Page (index.html)`"
+    },
+    {
+      "source": "Quotarix Landing Page (index.html)",
+      "target": "Mesafeli Satış Sözleşmesi",
+      "source_files": [
+        "index.html",
+        "mesafeli-satis-sozlesmesi.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "links_to",
+      "why": "connects across different repos/directories; peripheral node `Mesafeli Satış Sözleşmesi` unexpectedly reaches hub `Quotarix Landing Page (index.html)`"
+    },
+    {
+      "source": "Quotarix Landing Page (index.html)",
+      "target": "Ön Bilgilendirme Formu",
+      "source_files": [
+        "index.html",
+        "on-bilgilendirme.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "links_to",
+      "why": "connects across different repos/directories; peripheral node `Ön Bilgilendirme Formu` unexpectedly reaches hub `Quotarix Landing Page (index.html)`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Quotarix Landing Page (index.html)` connect `Community 0` to `Community 2`, `Community 3`?",
+      "why": "High betweenness centrality (0.483) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Hızlı Teklif Yönetimi Modülü` connect `Community 3` to `Community 0`?",
+      "why": "High betweenness centrality (0.067) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Hero & Değer Önerisi Bölümü`, `Forwarder Sektörel Acı Noktaları`, `Akıllı CRM & Müşteri Kartı` to the rest of the system?",
+      "why": "16 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

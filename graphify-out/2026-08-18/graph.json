@@ -1,0 +1,442 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "core_crm_features",
+        "label": "Quotarix \u00c7ekirdek CRM ve Teklif Yetenekleri",
+        "nodes": [
+          "feature_quick_quote",
+          "feature_smart_crm",
+          "feature_manager_dashboard",
+          "feature_ai_business_card_ocr"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "index.html"
+      },
+      {
+        "id": "legal_compliance_suite",
+        "label": "SaaS & E-Ticaret Yasal Uyumluluk Paketi",
+        "nodes": [
+          "legal_kvkk",
+          "legal_privacy_policy",
+          "legal_terms_of_service",
+          "legal_mesafeli_satis",
+          "legal_iptal_iade",
+          "legal_on_bilgilendirme",
+          "legal_teslimat_bilgileri"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "index.html"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "Yapay Zeka Kartvizit Tarama (OCR)",
+      "file_type": "concept",
+      "source_file": "index.html",
+      "summary": "Fuarlardan toplanan kartvizitlerin foto\u011fraf\u0131n\u0131 \u00e7ekerek saniyeler i\u00e7inde m\u00fc\u015fteri kart\u0131na d\u00f6n\u00fc\u015ft\u00fcrme",
+      "id": "feature_ai_business_card_ocr",
+      "community": 0,
+      "norm_label": "yapay zeka kartvizit tarama (ocr)"
+    },
+    {
+      "label": "Y\u00f6netici Dashboard",
+      "file_type": "concept",
+      "source_file": "index.html",
+      "summary": "Ekip teklif d\u00f6n\u00fc\u015f\u00fcm oranlar\u0131, ayl\u0131k gelir tahmini, takipsiz f\u0131rsat uyar\u0131lar\u0131",
+      "id": "feature_manager_dashboard",
+      "community": 0,
+      "norm_label": "yonetici dashboard"
+    },
+    {
+      "label": "Ak\u0131ll\u0131 CRM & M\u00fc\u015fteri Kart\u0131",
+      "file_type": "concept",
+      "source_file": "index.html",
+      "summary": "T\u00fcm m\u00fc\u015fteri teklif ve ziyaret ge\u00e7mi\u015fi, notlar ve dosyalar tek kartta",
+      "id": "feature_smart_crm",
+      "community": 0,
+      "norm_label": "ak\u0131ll\u0131 crm & musteri kart\u0131"
+    },
+    {
+      "label": "Hero & De\u011fer \u00d6nerisi B\u00f6l\u00fcm\u00fc",
+      "file_type": "document",
+      "source_file": "index.html",
+      "summary": "Sat\u0131\u015f\u00e7\u0131n\u0131z Gitti. M\u00fc\u015fterileriniz de mi Gitti? ba\u015fl\u0131\u011f\u0131, WhatsApp CTA ve app.quotarix.com giri\u015f ba\u011flant\u0131s\u0131",
+      "id": "hero_section",
+      "community": 0,
+      "norm_label": "hero & deger onerisi bolumu"
+    },
+    {
+      "label": "\u0130ptal ve \u0130ade Politikas\u0131",
+      "file_type": "document",
+      "source_file": "iptal-iade-politikasi.html",
+      "summary": "Dijital SaaS hizmetlerinde an\u0131nda ifa ve abonelik fesih \u015fartlar\u0131",
+      "id": "legal_iptal_iade",
+      "community": 0,
+      "norm_label": "iptal ve iade politikas\u0131"
+    },
+    {
+      "label": "Mesafeli Sat\u0131\u015f S\u00f6zle\u015fmesi",
+      "file_type": "document",
+      "source_file": "mesafeli-satis-sozlesmesi.html",
+      "summary": "app.quotarix.com SaaS aboneli\u011fi mesafeli sat\u0131\u015f \u015fartlar\u0131",
+      "id": "legal_mesafeli_satis",
+      "community": 0,
+      "norm_label": "mesafeli sat\u0131s sozlesmesi"
+    },
+    {
+      "label": "\u00d6n Bilgilendirme Formu",
+      "file_type": "document",
+      "source_file": "on-bilgilendirme.html",
+      "summary": "Abonelik \u00f6ncesi sat\u0131c\u0131 ve hizmet temel nitelikleri bildirimi",
+      "id": "legal_on_bilgilendirme",
+      "community": 0,
+      "norm_label": "on bilgilendirme formu"
+    },
+    {
+      "label": "Kullan\u0131m Ko\u015fullar\u0131 (TR/EN)",
+      "file_type": "document",
+      "source_file": "terms-of-service.html",
+      "summary": "B2B SaaS hizmet s\u00f6zle\u015fmesi, lisans ve fikri m\u00fclkiyet \u015fartlar\u0131",
+      "id": "legal_terms_of_service",
+      "community": 0,
+      "norm_label": "kullan\u0131m kosullar\u0131 (tr/en)"
+    },
+    {
+      "label": "Teslimat Bilgileri",
+      "file_type": "document",
+      "source_file": "teslimat-bilgileri.html",
+      "summary": "Dijital yaz\u0131l\u0131m aktivasyonu anl\u0131k teslimat prosed\u00fcr\u00fc",
+      "id": "legal_teslimat_bilgileri",
+      "community": 0,
+      "norm_label": "teslimat bilgileri"
+    },
+    {
+      "label": "Forwarder Sekt\u00f6rel Ac\u0131 Noktalar\u0131",
+      "file_type": "document",
+      "source_file": "index.html",
+      "summary": "Personel ayr\u0131l\u0131nca veri kayb\u0131, takipsiz kalan f\u0131rsatlar, da\u011f\u0131n\u0131k excel notlar\u0131, anl\u0131k bilgi alamayan y\u00f6neticiler",
+      "id": "problem_section",
+      "community": 0,
+      "norm_label": "forwarder sektorel ac\u0131 noktalar\u0131"
+    },
+    {
+      "label": "Quotarix Landing Page (index.html)",
+      "file_type": "document",
+      "source_file": "index.html",
+      "summary": "Modern single-page tan\u0131t\u0131m sayfas\u0131: Hero, Sorunlar, \u00d6zellikler, AI OCR, Y\u00f6netici Alan\u0131, Sekt\u00f6rel Mod\u00fcller, Blog, SSS, Demo Modal\u0131",
+      "id": "quotarix_landing_page",
+      "community": 0,
+      "norm_label": "quotarix landing page (index.html)"
+    },
+    {
+      "label": "11 Mod\u00fcll\u00fc Quotarix Admin Panel",
+      "file_type": "concept",
+      "source_file": "index.html",
+      "summary": "Dashboard, B\u00f6l\u00fcmler, \u00d6zellikler, Blog, SSS, Planlar, Yorumlar, Videolar, Sayfalar, Talepler (CSV export), Ayarlar",
+      "id": "arch_admin_panel_11_modules",
+      "community": 1,
+      "norm_label": "11 modullu quotarix admin panel"
+    },
+    {
+      "label": "SEO 301 Y\u00f6nlendirme Haritas\u0131",
+      "file_type": "concept",
+      "source_file": "robots.txt",
+      "summary": "Eski .html sayfalar\u0131 ve anchor linklerini yeni rotalara kay\u0131ps\u0131z 301 y\u00f6nlendirme",
+      "id": "arch_html_301_redirects",
+      "community": 1,
+      "norm_label": "seo 301 yonlendirme haritas\u0131"
+    },
+    {
+      "label": "Lazy-Load Video Facade Deseni",
+      "file_type": "concept",
+      "source_file": "index.html",
+      "summary": "Lighthouse performans\u0131n\u0131 korumak i\u00e7in YouTube/Vimeo embed yerine kapak + play butonu, t\u0131klamada iframe enjeksiyonu ve VideoObject \u015femas\u0131",
+      "id": "arch_lazy_load_video_facade",
+      "community": 1,
+      "norm_label": "lazy-load video facade deseni"
+    },
+    {
+      "label": "15 B\u00f6l\u00fcml\u00fc Dinamik Section Toggle",
+      "file_type": "concept",
+      "source_file": "index.html",
+      "summary": "Ana sayfadaki 15 b\u00f6l\u00fcm\u00fcn veritaban\u0131ndan tek t\u0131kla a\u00e7\u0131l\u0131p kapat\u0131lmas\u0131 (pricing, testimonials, video varsay\u0131lan pasif)",
+      "id": "arch_section_toggle_system",
+      "community": 1,
+      "norm_label": "15 bolumlu dinamik section toggle"
+    },
+    {
+      "label": "Teaser Ana Sayfa Deseni (PV-WEB-016)",
+      "file_type": "concept",
+      "source_file": "index.html",
+      "summary": "Ana sayfadaki her b\u00f6l\u00fcm\u00fcn \u00f6zet i\u00e7erik + i\u00e7 sayfaya y\u00f6nlendiren CTA butonu olarak kurgulanmas\u0131",
+      "id": "arch_teaser_homepage_pattern",
+      "community": 1,
+      "norm_label": "teaser ana sayfa deseni (pv-web-016)"
+    },
+    {
+      "label": "QX-WEB Laravel Multipage Mimarisi",
+      "file_type": "rationale",
+      "source_file": "index.html",
+      "summary": "One-page HTML yap\u0131s\u0131n\u0131n \u00e7ok sayfal\u0131, SEO uyumlu Laravel 11/12 ve Admin panelli mimariye d\u00f6n\u00fc\u015ft\u00fcr\u00fclmesi",
+      "id": "arch_laravel_multipage",
+      "community": 1,
+      "norm_label": "qx-web laravel multipage mimarisi"
+    },
+    {
+      "label": "Pekvera Yaz\u0131l\u0131m Teknoloji A.\u015e.",
+      "file_type": "concept",
+      "source_file": "kvkk.html",
+      "summary": "\u0130zmir Bilimpark Teknokent b\u00fcnyesinde Quotarix projesinin sahibi ve geli\u015ftiricisi",
+      "id": "company_pekvera_teknoloji",
+      "community": 2,
+      "norm_label": "pekvera yaz\u0131l\u0131m teknoloji a.s."
+    },
+    {
+      "label": "KVKK Ayd\u0131nlatma Metni",
+      "file_type": "document",
+      "source_file": "kvkk.html",
+      "summary": "Pekvera Yaz\u0131l\u0131m Teknoloji A.\u015e. veri sorumlusu bilgileri ve i\u015flenen veriler",
+      "id": "legal_kvkk",
+      "community": 2,
+      "norm_label": "kvkk ayd\u0131nlatma metni"
+    },
+    {
+      "label": "Gizlilik Politikas\u0131 (TR/EN)",
+      "file_type": "document",
+      "source_file": "privacy-policy.html",
+      "summary": "Mobil izinler (kamera, konum, mikrofon, push bildirim FCM), B2B veri sorumlusu/i\u015fleyen ayr\u0131m\u0131",
+      "id": "legal_privacy_policy",
+      "community": 2,
+      "norm_label": "gizlilik politikas\u0131 (tr/en)"
+    },
+    {
+      "label": "H\u0131zl\u0131 Teklif Y\u00f6netimi Mod\u00fcl\u00fc",
+      "file_type": "concept",
+      "source_file": "index.html",
+      "summary": "FCL/LCL, hava, kara \u015fablonlar\u0131, \u00e7oklu d\u00f6viz (USD, EUR, TRY, GBP), otomatik takip hat\u0131rlatmalar\u0131",
+      "id": "feature_quick_quote",
+      "community": 3,
+      "norm_label": "h\u0131zl\u0131 teklif yonetimi modulu"
+    },
+    {
+      "label": "Yeni F\u0131rsat Formu Prototipi (v2)",
+      "file_type": "document",
+      "source_file": "firsat-form-mockup.html",
+      "summary": "M\u00fc\u015fteri -> Ta\u015f\u0131ma Modu -> Operasyon -> Y\u00fck \u00d6l\u00e7\u00fcleri -> Incoterms -> Y\u00fck A\u00e7\u0131klamas\u0131 ak\u0131ll\u0131 6 ad\u0131ml\u0131 form",
+      "id": "feature_firsat_form_mockup",
+      "community": 3,
+      "norm_label": "yeni f\u0131rsat formu prototipi (v2)"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "quotarix_landing_page",
+      "target": "hero_section"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "quotarix_landing_page",
+      "target": "problem_section"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "arch_laravel_multipage",
+      "target": "arch_admin_panel_11_modules"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "arch_laravel_multipage",
+      "target": "arch_lazy_load_video_facade"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "arch_laravel_multipage",
+      "target": "arch_section_toggle_system"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "arch_laravel_multipage",
+      "target": "arch_teaser_homepage_pattern"
+    },
+    {
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "quotarix_landing_page",
+      "target": "legal_iptal_iade"
+    },
+    {
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "quotarix_landing_page",
+      "target": "legal_kvkk"
+    },
+    {
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "quotarix_landing_page",
+      "target": "legal_mesafeli_satis"
+    },
+    {
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "quotarix_landing_page",
+      "target": "legal_on_bilgilendirme"
+    },
+    {
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "quotarix_landing_page",
+      "target": "legal_privacy_policy"
+    },
+    {
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "quotarix_landing_page",
+      "target": "legal_terms_of_service"
+    },
+    {
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "quotarix_landing_page",
+      "target": "legal_teslimat_bilgileri"
+    },
+    {
+      "relation": "presents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "quotarix_landing_page",
+      "target": "feature_ai_business_card_ocr"
+    },
+    {
+      "relation": "presents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "quotarix_landing_page",
+      "target": "feature_manager_dashboard"
+    },
+    {
+      "relation": "presents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "quotarix_landing_page",
+      "target": "feature_quick_quote"
+    },
+    {
+      "relation": "presents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "quotarix_landing_page",
+      "target": "feature_smart_crm"
+    },
+    {
+      "relation": "preserves_seo_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "arch_laravel_multipage",
+      "target": "arch_html_301_redirects"
+    },
+    {
+      "relation": "specifies_data_controller",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "kvkk.html",
+      "source": "legal_kvkk",
+      "target": "company_pekvera_teknoloji"
+    },
+    {
+      "relation": "specifies_data_processor",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "privacy-policy.html",
+      "source": "legal_privacy_policy",
+      "target": "company_pekvera_teknoloji"
+    },
+    {
+      "relation": "implemented_by_prototype",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "firsat-form-mockup.html",
+      "source": "feature_quick_quote",
+      "target": "feature_firsat_form_mockup"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "core_crm_features",
+      "label": "Quotarix \u00c7ekirdek CRM ve Teklif Yetenekleri",
+      "nodes": [
+        "feature_quick_quote",
+        "feature_smart_crm",
+        "feature_manager_dashboard",
+        "feature_ai_business_card_ocr"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "index.html"
+    },
+    {
+      "id": "legal_compliance_suite",
+      "label": "SaaS & E-Ticaret Yasal Uyumluluk Paketi",
+      "nodes": [
+        "legal_kvkk",
+        "legal_privacy_policy",
+        "legal_terms_of_service",
+        "legal_mesafeli_satis",
+        "legal_iptal_iade",
+        "legal_on_bilgilendirme",
+        "legal_teslimat_bilgileri"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html"
+    }
+  ]
+}
