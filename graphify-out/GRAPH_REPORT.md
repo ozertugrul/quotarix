@@ -1,16 +1,16 @@
 # Graph Report - quotarix  (2026-08-18)
 
 ## Corpus Check
-- 144 files · ~133,514 words
+- 146 files · ~144,090 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 540 nodes · 903 edges · 94 communities (88 shown, 6 thin omitted)
+- 541 nodes · 903 edges · 95 communities (89 shown, 6 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 27 edges (avg confidence: 0.81)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2a7687d2`
+- Built from commit: `995bd8b9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -71,7 +71,7 @@
 - **Quotarix Çekirdek CRM ve Teklif Yetenekleri** — feature_quick_quote, feature_smart_crm, feature_manager_dashboard, feature_ai_business_card_ocr [EXTRACTED 0.95]
 - **SaaS & E-Ticaret Yasal Uyumluluk Paketi** — legal_kvkk, legal_privacy_policy, legal_terms_of_service, legal_mesafeli_satis, legal_iptal_iade, legal_on_bilgilendirme, legal_teslimat_bilgileri [EXTRACTED 1.00]
 
-## Communities (94 total, 6 thin omitted)
+## Communities (95 total, 6 thin omitted)
 
 ### Community 0 - "Quotarix Landing Page (index.html)"
 Cohesion: 0.13

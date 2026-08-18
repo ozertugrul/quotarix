@@ -6045,6 +6045,17 @@
       "norm_label": "build-package.sh script"
     },
     {
+      "label": "quotarix-web/index.php",
+      "file_type": "code",
+      "source_file": "quotarix-web/index.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "quotarix_web_index",
+      "community": 94,
+      "community_name": "quotarix-web/index.php",
+      "norm_label": "quotarix-web/index.php"
+    },
+    {
       "label": "Pekvera Yaz\u0131l\u0131m Teknoloji A.\u015e.",
       "file_type": "concept",
       "source_file": "kvkk.html",
@@ -16721,5 +16732,5 @@
       "source_file": "index.html"
     }
   ],
-  "built_at_commit": "2a7687d2f81e72c675db67a0ffb09456cd0b27c9"
+  "built_at_commit": "995bd8b9487b455eb2bf478362226ef869a9236c"
 }

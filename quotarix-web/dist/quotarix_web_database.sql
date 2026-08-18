@@ -1,5 +1,5 @@
 -- Quotarix Web Production Database Dump
--- Generated at: 2026-08-18 18:39:23
+-- Generated at: 2026-08-18 19:21:45
 SET FOREIGN_KEY_CHECKS=0;
 
 DROP TABLE IF EXISTS `admins`;
@@ -15,7 +15,7 @@ CREATE TABLE `admins` (
   UNIQUE KEY `admins_email_unique` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `admins` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES ('1', 'Fatih PEK', 'fatih@pekvera.com', '$2y$12$J41sdOdu9evtLlSbvq9EA.7LgDEX74Ev6v6J8dCLPtauAh0eaarQm', 'j6B6lJXdILzKyinzU8AuryLssmSIcPUyJZOXmKkHPKn8EBtt8cxAsrAfw7DH', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
+INSERT INTO `admins` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES ('1', 'Fatih PEK', 'fatih@pekvera.com', '$2y$12$J41sdOdu9evtLlSbvq9EA.7LgDEX74Ev6v6J8dCLPtauAh0eaarQm', 'JpdALT6A5P8VGseOn2sXd7WChusSJHApTQ8otad6Spd0PorY1vQS2mi0kmES', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 
 DROP TABLE IF EXISTS `cache`;
 CREATE TABLE `cache` (
@@ -575,9 +575,9 @@ INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `u
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('6', 'manager', '1', '6', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('7', 'why', '1', '7', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('8', 'roadmap', '1', '8', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
-INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('9', 'pricing', '1', '9', '2026-08-18 10:29:01', '2026-08-18 18:33:25');
-INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('10', 'testimonials', '1', '10', '2026-08-18 10:29:01', '2026-08-18 18:33:24');
-INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('11', 'video', '1', '11', '2026-08-18 10:29:01', '2026-08-18 18:33:21');
+INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('9', 'pricing', '0', '9', '2026-08-18 10:29:01', '2026-08-18 18:50:16');
+INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('10', 'testimonials', '0', '10', '2026-08-18 10:29:01', '2026-08-18 18:50:18');
+INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('11', 'video', '0', '11', '2026-08-18 10:29:01', '2026-08-18 18:50:18');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('12', 'blog', '1', '12', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('13', 'band', '1', '13', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
 INSERT INTO `sections` (`id`, `key`, `is_active`, `sort_order`, `created_at`, `updated_at`) VALUES ('14', 'faq', '1', '14', '2026-08-18 10:29:01', '2026-08-18 10:29:01');
@@ -596,7 +596,16 @@ CREATE TABLE `sessions` (
   KEY `sessions_last_activity_index` (`last_activity`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('PeBNtjjHJLnktrc70cSkxrKhoNzTJS6DJOto1gLM', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36', 'eyJfdG9rZW4iOiI3eEtFTW9TekQ5aFVPc3ByQXozMmxSQXdDTTExUlBXdHRoc091SWJaIiwidXJsIjpbXSwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHBzOlwvXC9xdW90YXJpeC13ZWIudGVzdCIsInJvdXRlIjoiaG9tZSJ9LCJfZmxhc2giOnsib2xkIjpbXSwibmV3IjpbXX0sImxvZ2luX2FkbWluXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiOjF9', '1787078009');
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('59vK7oJocpYkoqsvO88m8DD5xBlhJwdP4VBqZkET', NULL, '127.0.0.1', 'curl/8.16.0', 'eyJfdG9rZW4iOiJidWN0NlR5SDlrbXFueWJ2V3NCMlptQmNQRWdzbElmOVNnc2RTM0FNIiwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119fQ==', '1787080898');
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('8hCZXGIqiwaTtHct4fCbb6Dd5GgPPilk55u0vQvO', NULL, '127.0.0.1', 'curl/8.16.0', 'eyJfdG9rZW4iOiI3cG9sM0ozYXZoUENDNFVOYlhCbzUyTnZhalptU21iTGRyN2ZONHJRIiwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119fQ==', '1787079088');
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('B0v2hK7KUnswaiFhS6kA0UDOWgCqV9FC82g8SZQF', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)', 'eyJfdG9rZW4iOiI2S2dad2lvRFJwRm9DWTh0bEQ4bVdUUzZETWNxRDgzM044d0VTTDI5IiwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHBzOlwvXC9xdW90YXJpeC13ZWIudGVzdFwvP2hlcmQ9cHJldmlldyIsInJvdXRlIjoiaG9tZSJ9LCJfZmxhc2giOnsib2xkIjpbXSwibmV3IjpbXX19', '1787079491');
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('oIme46G11LUfq63E3cXFWfnYDxIVoKuBRoRcN8ua', '1', '127.0.0.1', 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/151.0.7922.112 Mobile/15E148 Safari/604.1', 'eyJfdG9rZW4iOiJ4TW1JcEFtV3BBZ3ZtbW5Kd1VTUks0b2RvVklybFNKdEtHWTl6SnBDIiwidXJsIjpbXSwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHBzOlwvXC9hbnN3ZXJpbmctdmFsaWRhdGlvbi1sZWF2ZXMtbWVycnkudHJ5Y2xvdWRmbGFyZS5jb21cL2FkbWluXC9sZWFkcyIsInJvdXRlIjoiYWRtaW4ubGVhZHMuaW5kZXgifSwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119LCJsb2dpbl9hZG1pbl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjoxfQ==', '1787079817');
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('OMmH8kufqWQcYmMmBBjtu8W75ONn0BAkmq6iHGCV', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)', 'eyJfdG9rZW4iOiJ5QVRuOVpJbHpNbjR3dHBiazY1T01vZzdhbU55TW1TNWF1elA1cXdjIiwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHA6XC9cL3F1b3Rhcml4LnRlc3RcLz9oZXJkPXByZXZpZXciLCJyb3V0ZSI6ImhvbWUifSwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119fQ==', '1787079493');
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('r1RbdfyK0hSD1k0KtsN192rpMH8HmhXobFrJcSkm', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36', 'eyJfdG9rZW4iOiJDcDN4WXJCSHI2ekFhS01vMjAxZzZzWkpnMm1rWUZUUWhDVmxkend2IiwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHBzOlwvXC9hbnN3ZXJpbmctdmFsaWRhdGlvbi1sZWF2ZXMtbWVycnkudHJ5Y2xvdWRmbGFyZS5jb21cL2FkbWluXC9sb2dpbiIsInJvdXRlIjoiYWRtaW4ubG9naW4ifSwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119LCJ1cmwiOnsiaW50ZW5kZWQiOiJodHRwczpcL1wvYW5zd2VyaW5nLXZhbGlkYXRpb24tbGVhdmVzLW1lcnJ5LnRyeWNsb3VkZmxhcmUuY29tXC9hZG1pbiJ9fQ==', '1787079183');
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('trESN7zb3sH4XTq44DgTNmu3pelrTWJWmcj3LIWk', NULL, '127.0.0.1', 'WhatsApp/2.23.20.0', 'eyJfdG9rZW4iOiJlN2pId3p0UksxNUk1elluVEt3VWVEOU5kNzF3MU10SHFadWxyQzZpIiwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHBzOlwvXC9hbnN3ZXJpbmctdmFsaWRhdGlvbi1sZWF2ZXMtbWVycnkudHJ5Y2xvdWRmbGFyZS5jb20iLCJyb3V0ZSI6ImhvbWUifSwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119fQ==', '1787079168');
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('whi8h3hT2nMXb9YNzx8GxgVbDVGpKsEwKQ7x9mKo', NULL, '127.0.0.1', 'WhatsApp/2.23.20.0', 'eyJfdG9rZW4iOiJFbXZ4Z2xBUEFuQ093S0Y0OEt0R0xYa1lZeVJOb3ZrR09kUUp6d3hJIiwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHBzOlwvXC9hbnN3ZXJpbmctdmFsaWRhdGlvbi1sZWF2ZXMtbWVycnkudHJ5Y2xvdWRmbGFyZS5jb21cL2FkbWluXC9sb2dpbiIsInJvdXRlIjoiYWRtaW4ubG9naW4ifSwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119fQ==', '1787079187');
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('wkKUPzObWxDiC726DO8wUZrUaf1eXjwnVwjmdVqa', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36', 'eyJfdG9rZW4iOiJRb2I3U1RCRHJaN2E1VGoyNTAxZm1IaERUdXV2MzV2d3dQa2thQmFHIiwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119LCJfcHJldmlvdXMiOnsidXJsIjoiaHR0cHM6XC9cL3F1b3Rhcml4LXdlYi50ZXN0Iiwicm91dGUiOiJob21lIn19', '1787079134');
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES ('ysHrtJbXMX941FlfEmz1I3xjS26rItAHk1cCcBRY', NULL, '127.0.0.1', 'curl/8.16.0', 'eyJfdG9rZW4iOiJoaHNIeFJ4VGwxNkFhRlBhZDB2MU9zNzYxU0loMmNuR0pIUURsZmI1IiwiX2ZsYXNoIjp7Im9sZCI6W10sIm5ldyI6W119fQ==', '1787079139');
 
 DROP TABLE IF EXISTS `settings`;
 CREATE TABLE `settings` (

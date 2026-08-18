@@ -92,5 +92,6 @@
   "90": "videos/edit.blade.php",
   "91": "videos/index.blade.php",
   "92": "Feature",
-  "93": "build-package.sh"
+  "93": "build-package.sh",
+  "94": "quotarix-web/index.php"
 }
