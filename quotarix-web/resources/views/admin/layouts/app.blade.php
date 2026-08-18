@@ -27,6 +27,14 @@
             --sidebar-width: 260px;
         }
 
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
         .text-navy {
             color: var(--navy) !important;
         }
@@ -67,19 +75,61 @@
             position: fixed;
             top: 0;
             left: 0;
-            z-index: 1040;
-            transition: all 0.3s ease;
+            z-index: 1050;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 2px 0 16px rgba(10,22,40,0.15);
         }
 
         #adminMain {
             margin-left: var(--sidebar-width);
             padding-bottom: 60px;
-            transition: all 0.3s ease;
+            min-width: 0;
+            transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Mobile Sidebar Offcanvas & Responsive Rules */
+        @media (max-width: 991.98px) {
+            #adminSidebar {
+                transform: translateX(-100%);
+            }
+
+            #adminSidebar.show {
+                transform: translateX(0);
+            }
+
+            #adminMain {
+                margin-left: 0 !important;
+                width: 100% !important;
+            }
+
+            .admin-topbar {
+                padding: 0 16px !important;
+            }
+
+            .admin-content {
+                padding: 16px !important;
+            }
+        }
+
+        .sidebar-backdrop {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(10, 22, 40, 0.5);
+            backdrop-filter: blur(2px);
+            z-index: 1045;
+            transition: opacity 0.3s ease;
+        }
+
+        .sidebar-backdrop.show {
+            display: block;
         }
 
         .sidebar-brand {
-            padding: 24px 20px;
+            padding: 20px;
             background: rgba(0,0,0,0.15);
             font-size: 20px;
             font-weight: 800;
@@ -145,6 +195,9 @@
 
         .admin-content {
             padding: 32px;
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
         }
 
         .card-dashboard {
@@ -178,6 +231,21 @@
             color: #fff;
         }
 
+        /* Responsive Table & Text Overflow Utilities */
+        .table-responsive {
+            -webkit-overflow-scrolling: touch;
+            border-radius: 12px;
+        }
+
+        .word-break-all {
+            word-break: break-word !important;
+            overflow-wrap: anywhere !important;
+        }
+
+        .white-space-nowrap {
+            white-space: nowrap !important;
+        }
+
         /* SortableJS drag styling */
         .sortable-ghost {
             opacity: 0.4;
@@ -192,11 +260,19 @@
 </head>
 <body>
 
+    <!-- Backdrop for Mobile Sidebar -->
+    <div id="sidebarBackdrop" class="sidebar-backdrop"></div>
+
     <!-- Sidebar -->
     <aside id="adminSidebar">
-        <a href="{{ route('admin.dashboard') }}" class="sidebar-brand">
-            <div>QUOTA<span>RIX</span> <small class="text-white-50 ms-1 fw-normal" style="font-size: 11px;">Panel</small></div>
-        </a>
+        <div class="sidebar-brand">
+            <a href="{{ route('admin.dashboard') }}" class="text-white text-decoration-none d-flex align-items-center">
+                <div>QUOTA<span>RIX</span> <small class="text-white-50 ms-1 fw-normal" style="font-size: 11px;">Panel</small></div>
+            </a>
+            <button id="sidebarCloseBtn" class="btn text-white-50 p-0 border-0 d-lg-none fs-4" aria-label="Menüyü Kapat">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
 
         @php
             $unreadCount = \App\Models\Lead::unread()->count();
@@ -267,22 +343,25 @@
     <!-- Main Wrapper -->
     <div id="adminMain">
         <header class="admin-topbar">
-            <div>
+            <div class="d-flex align-items-center gap-2">
+                <button id="sidebarToggle" class="btn btn-sm btn-light border d-lg-none px-2 py-1" type="button" aria-label="Menüyü Aç">
+                    <i class="bi bi-list fs-4 text-navy"></i>
+                </button>
                 <a href="{{ route('home') }}" target="_blank" class="btn btn-sm btn-outline-secondary" style="border-radius: 8px;">
-                    <i class="bi bi-box-arrow-up-right me-1"></i> Siteyi Görüntüle
+                    <i class="bi bi-box-arrow-up-right me-1"></i> <span class="d-none d-sm-inline">Siteyi Görüntüle</span><span class="d-inline d-sm-none">Site</span>
                 </a>
             </div>
-            <div class="d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center gap-2 gap-sm-3">
                 <div class="d-flex align-items-center gap-2">
-                    <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 36px; height: 36px; background: var(--navy) !important;">
+                    <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 34px; height: 34px; background: var(--navy) !important; font-size: 14px;">
                         {{ mb_substr(auth('admin')->user()?->name ?? 'A', 0, 1) }}
                     </div>
-                    <span class="fw-semibold small text-navy">{{ auth('admin')->user()?->name ?? 'Yönetici' }}</span>
+                    <span class="fw-semibold small text-navy d-none d-sm-inline">{{ auth('admin')->user()?->name ?? 'Yönetici' }}</span>
                 </div>
                 <form action="{{ route('admin.logout') }}" method="POST" class="d-inline">
                     @csrf
                     <button type="submit" class="btn btn-sm btn-outline-danger" style="border-radius: 8px;" title="Çıkış Yap">
-                        <i class="bi bi-box-arrow-right me-1"></i> Çıkış
+                        <i class="bi bi-box-arrow-right me-1"></i> <span class="d-none d-sm-inline">Çıkış</span>
                     </button>
                 </form>
             </div>
@@ -316,6 +395,39 @@
     <script>
         // Setup CSRF token for all AJAX requests
         const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+
+        // Sidebar Toggle & Mobile Backdrop Logic
+        document.addEventListener('DOMContentLoaded', function () {
+            const sidebar = document.getElementById('adminSidebar');
+            const toggleBtn = document.getElementById('sidebarToggle');
+            const closeBtn = document.getElementById('sidebarCloseBtn');
+            const backdrop = document.getElementById('sidebarBackdrop');
+
+            function openSidebar() {
+                if (sidebar) sidebar.classList.add('show');
+                if (backdrop) backdrop.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeSidebar() {
+                if (sidebar) sidebar.classList.remove('show');
+                if (backdrop) backdrop.classList.remove('show');
+                document.body.style.overflow = '';
+            }
+
+            if (toggleBtn) toggleBtn.addEventListener('click', openSidebar);
+            if (closeBtn) closeBtn.addEventListener('click', closeSidebar);
+            if (backdrop) backdrop.addEventListener('click', closeSidebar);
+
+            // Auto-close sidebar on link click on mobile
+            document.querySelectorAll('.sidebar-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 992) {
+                        closeSidebar();
+                    }
+                });
+            });
+        });
     </script>
 
     @stack('scripts')

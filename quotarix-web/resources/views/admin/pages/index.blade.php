@@ -9,7 +9,7 @@
 </div>
 
 <!-- Legal Pages -->
-<div class="card border-0 shadow-sm p-4 mb-5" style="border-radius: 20px; background: #fff;">
+<div class="card border-0 shadow-sm p-3 p-md-4 mb-5" style="border-radius: 20px; background: #fff;">
     <h5 class="fw-bold text-navy mb-3"><i class="bi bi-shield-check text-teal me-2"></i> Yasal Metin Sayfaları</h5>
     <div class="table-responsive">
         <table class="table table-hover align-middle mb-0">
@@ -55,7 +55,7 @@
 </div>
 
 <!-- Meta Records for Static Routes -->
-<div class="card border-0 shadow-sm p-4" style="border-radius: 20px; background: #fff;">
+<div class="card border-0 shadow-sm p-3 p-md-4" style="border-radius: 20px; background: #fff;">
     <h5 class="fw-bold text-navy mb-3"><i class="bi bi-search text-teal me-2"></i> Statik Rota SEO Meta Kayıtları</h5>
     <p class="text-secondary small mb-3">Ana sayfa, özellikler, blog, fiyatlandırma vb. rotaların arama motoru başlık ve açıklamaları.</p>
     <div class="table-responsive">

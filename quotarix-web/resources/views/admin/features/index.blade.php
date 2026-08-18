@@ -3,17 +3,17 @@
 @section('title', 'Özellikler & Yol Haritası')
 
 @section('content')
-<div class="d-flex align-items-center justify-content-between mb-4">
+<div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-3 mb-4">
     <div>
         <h2 class="fw-bold text-navy mb-1">Özellikler & Yol Haritası</h2>
         <p class="text-secondary small mb-0">Platform modülleri ve "Yakında" etiketli yol haritası özellikleri.</p>
     </div>
-    <a href="{{ route('admin.features.create') }}" class="btn btn-teal">
+    <a href="{{ route('admin.features.create') }}" class="btn btn-teal white-space-nowrap">
         <i class="bi bi-plus-lg me-1"></i> Yeni Özellik Ekle
     </a>
 </div>
 
-<div class="card border-0 shadow-sm p-4" style="border-radius: 20px; background: #fff;">
+<div class="card border-0 shadow-sm p-3 p-md-4" style="border-radius: 20px; background: #fff;">
     <div class="table-responsive">
         <table class="table table-hover align-middle mb-0">
             <thead>

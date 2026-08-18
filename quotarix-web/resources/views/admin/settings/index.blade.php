@@ -12,8 +12,8 @@
     @csrf
     <div class="row g-4">
         <!-- WhatsApp & App URL -->
-        <div class="col-lg-6">
-            <div class="card border-0 shadow-sm p-4 h-100" style="border-radius: 20px; background: #fff;">
+        <div class="col-12 col-lg-6">
+            <div class="card border-0 shadow-sm p-3 p-md-4 h-100" style="border-radius: 20px; background: #fff;">
                 <h5 class="fw-bold text-navy mb-3"><i class="bi bi-whatsapp text-success me-2"></i> WhatsApp & Giriş Rotaları</h5>
 
                 <div class="mb-3">

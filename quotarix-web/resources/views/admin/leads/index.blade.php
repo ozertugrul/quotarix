@@ -16,15 +16,15 @@
 </div>
 
 <!-- Filters -->
-<div class="card border-0 shadow-sm p-3 mb-4" style="border-radius: 16px; background: #fff;">
+<div class="card border-0 shadow-sm p-3 p-md-4 mb-4" style="border-radius: 16px; background: #fff;">
     <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
-        <div class="btn-group" role="group">
-            <a href="{{ route('admin.leads.index') }}" class="btn btn-sm {{ !request('source') && !request('status') ? 'btn-dark' : 'btn-outline-secondary' }}">Tüm Talepler</a>
-            <a href="{{ route('admin.leads.index', ['status' => 'unread']) }}" class="btn btn-sm {{ request('status') === 'unread' ? 'btn-danger' : 'btn-outline-secondary' }}">
+        <div class="d-flex flex-wrap gap-2" role="group">
+            <a href="{{ route('admin.leads.index') }}" class="btn btn-sm {{ !request('source') && !request('status') ? 'btn-dark' : 'btn-outline-secondary' }}" style="border-radius: 8px;">Tüm Talepler</a>
+            <a href="{{ route('admin.leads.index', ['status' => 'unread']) }}" class="btn btn-sm {{ request('status') === 'unread' ? 'btn-danger' : 'btn-outline-secondary' }}" style="border-radius: 8px;">
                 Okunmamış @if($unreadCount > 0) <span class="badge bg-white text-danger ms-1">{{ $unreadCount }}</span> @endif
             </a>
-            <a href="{{ route('admin.leads.index', ['source' => 'demo']) }}" class="btn btn-sm {{ request('source') === 'demo' ? 'btn-primary' : 'btn-outline-secondary' }}">Sadece Demo</a>
-            <a href="{{ route('admin.leads.index', ['source' => 'contact']) }}" class="btn btn-sm {{ request('source') === 'contact' ? 'btn-info text-dark' : 'btn-outline-secondary' }}">Sadece İletişim</a>
+            <a href="{{ route('admin.leads.index', ['source' => 'demo']) }}" class="btn btn-sm {{ request('source') === 'demo' ? 'btn-primary' : 'btn-outline-secondary' }}" style="border-radius: 8px;">Sadece Demo</a>
+            <a href="{{ route('admin.leads.index', ['source' => 'contact']) }}" class="btn btn-sm {{ request('source') === 'contact' ? 'btn-info text-dark' : 'btn-outline-secondary' }}" style="border-radius: 8px;">Sadece İletişim</a>
         </div>
     </div>
 </div>

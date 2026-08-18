@@ -3,22 +3,22 @@
 @section('title', 'Müşteri Yorumları')
 
 @section('content')
-<div class="d-flex align-items-center justify-content-between mb-4">
+<div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-3 mb-4">
     <div>
         <h2 class="fw-bold text-navy mb-1">Müşteri Yorumları</h2>
         <p class="text-secondary small mb-0">Ana sayfa değerlendirme karuselinde yer alan müşteri geri bildirimleri.</p>
     </div>
-    <div class="d-flex align-items-center gap-2">
+    <div class="d-flex align-items-center gap-2 flex-wrap">
         <div id="reorderStatusTestimonial" class="badge bg-success px-3 py-2 d-none">
             <i class="bi bi-check-circle me-1"></i> Durum güncellendi
         </div>
-        <a href="{{ route('admin.testimonials.create') }}" class="btn btn-teal">
+        <a href="{{ route('admin.testimonials.create') }}" class="btn btn-teal white-space-nowrap">
             <i class="bi bi-plus-lg me-1"></i> Yeni Yorum Ekle
         </a>
     </div>
 </div>
 
-<div class="card border-0 shadow-sm p-4" style="border-radius: 20px; background: #fff;">
+<div class="card border-0 shadow-sm p-3 p-md-4" style="border-radius: 20px; background: #fff;">
     <div class="table-responsive">
         <table class="table table-hover align-middle mb-0">
             <thead>

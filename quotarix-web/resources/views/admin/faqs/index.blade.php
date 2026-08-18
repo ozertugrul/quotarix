@@ -3,22 +3,22 @@
 @section('title', 'Sıkça Sorulan Sorular')
 
 @section('content')
-<div class="d-flex align-items-center justify-content-between mb-4">
+<div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-3 mb-4">
     <div>
         <h2 class="fw-bold text-navy mb-1">Sıkça Sorulan Sorular (SSS)</h2>
         <p class="text-secondary small mb-0">Google Rich Snippets (FAQPage) için optimize edilmiş soru ve cevaplar.</p>
     </div>
-    <div class="d-flex align-items-center gap-2">
+    <div class="d-flex align-items-center gap-2 flex-wrap">
         <div id="reorderStatusFaq" class="badge bg-success px-3 py-2 d-none">
             <i class="bi bi-check-circle me-1"></i> Sıralama kaydedildi
         </div>
-        <a href="{{ route('admin.faqs.create') }}" class="btn btn-teal">
+        <a href="{{ route('admin.faqs.create') }}" class="btn btn-teal white-space-nowrap">
             <i class="bi bi-plus-lg me-1"></i> Yeni Soru Ekle
         </a>
     </div>
 </div>
 
-<div class="card border-0 shadow-sm p-4" style="border-radius: 20px; background: #fff;">
+<div class="card border-0 shadow-sm p-3 p-md-4" style="border-radius: 20px; background: #fff;">
     <div class="table-responsive">
         <table class="table table-hover align-middle mb-0">
             <thead>

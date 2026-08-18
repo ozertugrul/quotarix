@@ -3,23 +3,23 @@
 @section('title', 'Dashboard')
 
 @section('content')
-<div class="d-flex align-items-center justify-content-between mb-4">
+<div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-3 mb-4">
     <div>
         <h2 class="fw-bold text-navy mb-1">Genel Bakış</h2>
         <p class="text-secondary small mb-0">Quotarix içerik, lead ve bölüm yönetimi kontrol merkezi.</p>
     </div>
-    <a href="{{ route('admin.leads.index') }}" class="btn btn-teal">
+    <a href="{{ route('admin.leads.index') }}" class="btn btn-teal white-space-nowrap">
         <i class="bi bi-inbox me-1"></i> Talepleri İncele
     </a>
 </div>
 
 <!-- Stats Row -->
-<div class="row g-4 mb-5">
-    <div class="col-xl-3 col-md-6">
-        <div class="card card-dashboard p-4 h-100 {{ $unreadLeads > 0 ? 'border border-danger border-2' : '' }}" style="background: #fff;">
+<div class="row g-3 g-md-4 mb-4 mb-md-5">
+    <div class="col-12 col-sm-6 col-xl-3">
+        <div class="card card-dashboard p-3 p-md-4 h-100 {{ $unreadLeads > 0 ? 'border border-danger border-2' : '' }}" style="background: #fff;">
             <div class="d-flex align-items-center justify-content-between mb-3">
                 <span class="text-secondary small fw-bold">OKUNMAMIŞ TALEPLER</span>
-                <div class="rounded-circle p-2 {{ $unreadLeads > 0 ? 'bg-danger text-white' : 'bg-light text-muted' }}" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                <div class="rounded-circle p-2 {{ $unreadLeads > 0 ? 'bg-danger text-white' : 'bg-light text-muted' }}" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                     <i class="bi bi-bell-fill"></i>
                 </div>
             </div>
@@ -28,11 +28,11 @@
         </div>
     </div>
 
-    <div class="col-xl-3 col-md-6">
-        <div class="card card-dashboard p-4 h-100" style="background: #fff;">
+    <div class="col-12 col-sm-6 col-xl-3">
+        <div class="card card-dashboard p-3 p-md-4 h-100" style="background: #fff;">
             <div class="d-flex align-items-center justify-content-between mb-3">
                 <span class="text-secondary small fw-bold">AKTİF ÖZELLİKLER</span>
-                <div class="rounded-circle p-2 bg-light text-teal" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                <div class="rounded-circle p-2 bg-light text-teal" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                     <i class="bi bi-stars"></i>
                 </div>
             </div>
@@ -41,11 +41,11 @@
         </div>
     </div>
 
-    <div class="col-xl-3 col-md-6">
-        <div class="card card-dashboard p-4 h-100" style="background: #fff;">
+    <div class="col-12 col-sm-6 col-xl-3">
+        <div class="card card-dashboard p-3 p-md-4 h-100" style="background: #fff;">
             <div class="d-flex align-items-center justify-content-between mb-3">
                 <span class="text-secondary small fw-bold">BLOG YAZILARI</span>
-                <div class="rounded-circle p-2 bg-light text-navy" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                <div class="rounded-circle p-2 bg-light text-navy" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                     <i class="bi bi-newspaper"></i>
                 </div>
             </div>
@@ -54,11 +54,11 @@
         </div>
     </div>
 
-    <div class="col-xl-3 col-md-6">
-        <div class="card card-dashboard p-4 h-100" style="background: #fff;">
+    <div class="col-12 col-sm-6 col-xl-3">
+        <div class="card card-dashboard p-3 p-md-4 h-100" style="background: #fff;">
             <div class="d-flex align-items-center justify-content-between mb-3">
                 <span class="text-secondary small fw-bold">FİYAT PLANLARI</span>
-                <div class="rounded-circle p-2 bg-light text-success" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                <div class="rounded-circle p-2 bg-light text-success" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                     <i class="bi bi-tag"></i>
                 </div>
             </div>
@@ -70,8 +70,8 @@
 
 <div class="row g-4">
     <!-- Quick Section Toggles -->
-    <div class="col-lg-5">
-        <div class="card border-0 shadow-sm p-4 h-100" style="border-radius: 20px; background: #fff;">
+    <div class="col-12 col-lg-5">
+        <div class="card border-0 shadow-sm p-3 p-md-4 h-100" style="border-radius: 20px; background: #fff;">
             <div class="d-flex align-items-center justify-content-between mb-4">
                 <h5 class="fw-bold text-navy mb-0">Hızlı Bölüm Yayını</h5>
                 <a href="{{ route('admin.sections.index') }}" class="text-teal small fw-semibold text-decoration-none">Tüm Bölümler &rarr;</a>
