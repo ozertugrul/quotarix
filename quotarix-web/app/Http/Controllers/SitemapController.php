@@ -26,8 +26,8 @@ class SitemapController extends Controller
             $urls[] = ['loc' => route('demo'), 'priority' => '0.9', 'changefreq' => 'monthly'];
             $urls[] = ['loc' => route('contact'), 'priority' => '0.7', 'changefreq' => 'monthly'];
 
-            // Features detail
-            foreach (Feature::mainFeatures()->get() as $feature) {
+            // Features detail (including badge/roadmap features)
+            foreach (Feature::active()->get() as $feature) {
                 $urls[] = [
                     'loc' => route('features.show', $feature->slug),
                     'priority' => '0.8',

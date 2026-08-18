@@ -11,7 +11,7 @@ class PageController extends Controller
 {
     public function why(): View
     {
-        $meta = Page::where('key', 'why')->first();
+        $meta = page_meta('why');
 
         return view('pages.why', compact('meta'));
     }

@@ -12,14 +12,14 @@ class LeadController extends Controller
 {
     public function demo(): View
     {
-        $meta = Page::where('key', 'demo')->first();
+        $meta = page_meta('demo');
 
         return view('pages.demo', compact('meta'));
     }
 
     public function contact(): View
     {
-        $meta = Page::where('key', 'contact')->first();
+        $meta = page_meta('contact');
 
         return view('pages.contact', compact('meta'));
     }

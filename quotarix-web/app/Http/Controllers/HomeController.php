@@ -22,8 +22,10 @@ class HomeController extends Controller
         $plans = Plan::active()->get();
         $testimonials = Testimonial::active()->get();
         $video = Video::active()->where('placement', 'home')->first();
+        $meta = page_meta('home');
 
         return view('pages.home', compact(
+            'meta',
             'features',
             'roadmapFeatures',
             'latestPosts',

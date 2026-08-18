@@ -13,7 +13,7 @@ class PlanController extends Controller
     public function index(): View
     {
         $plans = Plan::active()->get();
-        $meta = Page::where('key', 'pricing')->first();
+        $meta = page_meta('pricing');
         $faqs = Faq::active()->take(4)->get();
 
         return view('pages.pricing', compact('plans', 'meta', 'faqs'));

@@ -53,3 +53,53 @@ if (!function_exists('whatsapp_link')) {
         return 'https://wa.me/' . $number . '?text=' . urlencode($text);
     }
 }
+
+if (!function_exists('page_meta')) {
+    /**
+     * Get cached page meta record by key.
+     */
+    function page_meta(string $key): ?\App\Models\Page
+    {
+        $pages = Cache::rememberForever('site_page_metas', function () {
+            return \App\Models\Page::whereNotNull('key')
+                ->get()
+                ->keyBy('key')
+                ->map(fn($p) => $p->getAttributes())
+                ->toArray();
+        });
+
+        if (!isset($pages[$key])) {
+            return null;
+        }
+
+        $model = new \App\Models\Page();
+        $model->setRawAttributes($pages[$key], true);
+        $model->exists = true;
+
+        return $model;
+    }
+}
+
+if (!function_exists('format_seo_title')) {
+    /**
+     * Format SEO title with central brand suffix.
+     */
+    function format_seo_title(?string $title = null, bool $isHome = false): string
+    {
+        $brand = config('app.name', 'Quotarix');
+        $homeDefault = $brand . ' | Forwarder Satış Ekibiniz İçin CRM — Müşteriniz Şirkette Kalsın';
+
+        if ($isHome || empty($title) || $title === 'home' || $title === 'Ana Sayfa') {
+            return $homeDefault;
+        }
+
+        $title = trim($title);
+        $suffix = ' | ' . $brand;
+
+        if (str_ends_with($title, $suffix) || str_ends_with($title, '| ' . $brand) || str_ends_with($title, '-' . $brand)) {
+            return $title;
+        }
+
+        return $title . $suffix;
+    }
+}

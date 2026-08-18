@@ -103,6 +103,24 @@ class ContentSeeder extends Seeder
                 } else {
                     $bodyContent = trim($rawHtml);
                 }
+
+                // Enrich privacy and kvkk with exact cookie definitions
+                if (in_array($page['key'], ['privacy', 'kvkk'])) {
+                    $cookieSection = '<div class="cookie-policy-box mt-4 p-4" style="background: #f8fafc; border-radius: 12px; border: 1px solid #e2e8f0; margin-top: 24px;">'
+                        . '<h3 style="color: #0a1628; font-size: 18px; font-weight: 700; margin-bottom: 12px;">Çerez (Cookie) Politikası ve Kullanılan Çerezler</h3>'
+                        . '<p style="margin-bottom: 12px;">Platformumuzda hizmetlerimizin güvenli, hızlı ve kullanıcı dostu sunulabilmesi amacıyla aşağıdaki çerezler kullanılmaktadır:</p>'
+                        . '<ul style="margin-bottom: 0; padding-left: 20px; line-height: 1.7;">'
+                        . '<li><strong>laravel_session:</strong> Zorunlu oturum çerezi. Kullanıcı oturumunun güvenliğini ve sürekliliğini sağlar.</li>'
+                        . '<li><strong>XSRF-TOKEN:</strong> Zorunlu güvenlik çerezi. Siteler arası istek sahteciliği (CSRF) saldırılarına karşı koruma sağlar.</li>'
+                        . '<li><strong>qx_consent:</strong> Tercih çerezi. Ziyaretçinin çerez onay/ret tercihini tarayıcıda saklar.</li>'
+                        . '<li><strong>_ga, _ga_*:</strong> İsteğe bağlı analitik çerezleri (Google Analytics 4). Yalnızca ziyaretçi açık onay verdiğinde, IP anonimleştirme aktif olarak çalıştırılır.</li>'
+                        . '</ul>'
+                        . '</div>';
+
+                    if (!str_contains($bodyContent, 'laravel_session')) {
+                        $bodyContent .= $cookieSection;
+                    }
+                }
             }
 
             Page::updateOrCreate(

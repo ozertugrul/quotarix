@@ -12,7 +12,7 @@ class FaqController extends Controller
     public function index(): View
     {
         $faqs = Faq::active()->get();
-        $meta = Page::where('key', 'faq')->first();
+        $meta = page_meta('faq');
 
         return view('pages.faq', compact('faqs', 'meta'));
     }

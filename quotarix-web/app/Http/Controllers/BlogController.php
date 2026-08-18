@@ -12,7 +12,7 @@ class BlogController extends Controller
     public function index(): View
     {
         $posts = Post::published()->paginate(9);
-        $meta = Page::where('key', 'blog_index')->first();
+        $meta = page_meta('blog_index');
 
         return view('pages.blog', compact('posts', 'meta'));
     }

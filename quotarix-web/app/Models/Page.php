@@ -28,4 +28,15 @@ class Page extends Model
     {
         return $query->where('is_active', true);
     }
+
+    protected static function booted(): void
+    {
+        static::saved(function () {
+            \Illuminate\Support\Facades\Cache::forget('site_page_metas');
+        });
+
+        static::deleted(function () {
+            \Illuminate\Support\Facades\Cache::forget('site_page_metas');
+        });
+    }
 }

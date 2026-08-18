@@ -13,7 +13,7 @@ class FeatureController extends Controller
     {
         $features = Feature::mainFeatures()->get();
         $roadmapFeatures = Feature::roadmap()->get();
-        $meta = Page::where('key', 'features_index')->first();
+        $meta = page_meta('features_index');
 
         return view('pages.features', compact('features', 'roadmapFeatures', 'meta'));
     }
@@ -29,7 +29,7 @@ class FeatureController extends Controller
     public function roadmap(): View
     {
         $roadmapFeatures = Feature::roadmap()->get();
-        $meta = Page::where('key', 'roadmap')->first();
+        $meta = page_meta('roadmap');
 
         return view('pages.roadmap', compact('roadmapFeatures', 'meta'));
     }
