@@ -14,7 +14,8 @@
 </div>
 
 <div class="card border-0 shadow-sm p-3 p-md-4" style="border-radius: 20px; background: #fff;">
-    <div class="table-responsive">
+    <!-- Desktop Table View (>= 768px) -->
+    <div class="d-none d-md-block table-responsive">
         <table class="table table-hover align-middle mb-0">
             <thead>
                 <tr class="text-secondary small border-bottom">
@@ -57,13 +58,13 @@
                             @endif
                         </td>
                         <td class="text-end">
-                            <a href="{{ route('admin.plans.edit', $plan->id) }}" class="btn btn-sm btn-outline-dark me-1" style="border-radius: 8px;">
+                            <a href="{{ route('admin.plans.edit', $plan->id) }}" class="btn btn-sm btn-outline-dark me-1" style="border-radius: 8px;" title="Düzenle">
                                 <i class="bi bi-pencil"></i>
                             </a>
                             <form action="{{ route('admin.plans.destroy', $plan->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Bu fiyat planını silmek istediğinize emin misiniz?');">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-sm btn-outline-danger" style="border-radius: 8px;">
+                                <button type="submit" class="btn btn-sm btn-outline-danger" style="border-radius: 8px;" title="Sil">
                                     <i class="bi bi-trash"></i>
                                 </button>
                             </form>
@@ -76,6 +77,56 @@
                 @endforelse
             </tbody>
         </table>
+    </div>
+
+    <!-- Mobile Cards View (< 768px) - 100% Readable, Zero Horizontal Scroll -->
+    <div class="d-block d-md-none">
+        @forelse($plans as $plan)
+            <div class="card border border-light-subtle rounded-3 p-3 mb-3 shadow-none bg-light bg-opacity-25">
+                <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                    <div>
+                        <div class="fw-bold text-navy fs-6">{{ $plan->name }}</div>
+                        @if($plan->is_featured)
+                            <span class="badge bg-success px-2 py-1 mt-1 small"><i class="bi bi-star-fill me-1"></i> Popüler</span>
+                        @endif
+                    </div>
+                    @if($plan->is_active)
+                        <span class="badge bg-light text-success border">Yayında</span>
+                    @else
+                        <span class="badge bg-light text-muted border">Pasif</span>
+                    @endif
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between border-top border-bottom py-2 my-2 text-secondary small">
+                    <div>
+                        <span class="text-muted">Fiyat:</span>
+                        @if($plan->price !== null)
+                            <strong class="text-teal">${{ number_format($plan->price, 0) }} {{ $plan->currency }}</strong> / {{ $plan->period }}
+                        @else
+                            <span class="badge bg-light text-secondary border font-monospace">Özel Teklif</span>
+                        @endif
+                    </div>
+                    <div>
+                        <span class="text-muted">Özellik:</span> <strong>{{ is_array($plan->features_list) ? count($plan->features_list) : 0 }} Madde</strong>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end gap-2 mt-2">
+                    <a href="{{ route('admin.plans.edit', $plan->id) }}" class="btn btn-sm btn-outline-dark px-3" style="border-radius: 8px;">
+                        <i class="bi bi-pencil me-1"></i> Düzenle
+                    </a>
+                    <form action="{{ route('admin.plans.destroy', $plan->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Bu fiyat planını silmek istediğinize emin misiniz?');">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-sm btn-outline-danger px-3" style="border-radius: 8px;">
+                            <i class="bi bi-trash me-1"></i> Sil
+                        </button>
+                    </form>
+                </div>
+            </div>
+        @empty
+            <div class="text-center py-4 text-muted">Kayıtlı plan bulunamadı.</div>
+        @endforelse
     </div>
 </div>
 @endsection

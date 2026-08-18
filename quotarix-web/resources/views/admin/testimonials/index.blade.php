@@ -19,7 +19,8 @@
 </div>
 
 <div class="card border-0 shadow-sm p-3 p-md-4" style="border-radius: 20px; background: #fff;">
-    <div class="table-responsive">
+    <!-- Desktop Table View (>= 768px) -->
+    <div class="d-none d-md-block table-responsive">
         <table class="table table-hover align-middle mb-0">
             <thead>
                 <tr class="text-secondary small border-bottom">
@@ -64,13 +65,13 @@
                             </div>
                         </td>
                         <td class="text-end">
-                            <a href="{{ route('admin.testimonials.edit', $t->id) }}" class="btn btn-sm btn-outline-dark me-1" style="border-radius: 8px;">
+                            <a href="{{ route('admin.testimonials.edit', $t->id) }}" class="btn btn-sm btn-outline-dark me-1" style="border-radius: 8px;" title="Düzenle">
                                 <i class="bi bi-pencil"></i>
                             </a>
                             <form action="{{ route('admin.testimonials.destroy', $t->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Bu yorumu silmek istediğinize emin misiniz?');">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-sm btn-outline-danger" style="border-radius: 8px;">
+                                <button type="submit" class="btn btn-sm btn-outline-danger" style="border-radius: 8px;" title="Sil">
                                     <i class="bi bi-trash"></i>
                                 </button>
                             </form>
@@ -83,6 +84,57 @@
                 @endforelse
             </tbody>
         </table>
+    </div>
+
+    <!-- Mobile Cards View (< 768px) -->
+    <div class="d-block d-md-none">
+        @forelse($testimonials as $t)
+            <div class="card border border-light-subtle rounded-3 p-3 mb-3 shadow-none bg-light bg-opacity-25">
+                <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+                    <div class="d-flex align-items-center gap-2">
+                        @if($t->avatar)
+                            <img src="{{ asset($t->avatar) }}" alt="{{ $t->name }}" class="rounded-circle" style="width: 38px; height: 38px; object-fit: cover;">
+                        @else
+                            <div class="rounded-circle bg-light text-navy fw-bold d-flex align-items-center justify-content-center border" style="width: 38px; height: 38px; flex-shrink: 0;">
+                                {{ mb_substr($t->name, 0, 1) }}
+                            </div>
+                        @endif
+                        <div>
+                            <div class="fw-bold text-navy fs-6">{{ $t->name }}</div>
+                            <small class="text-muted">{{ $t->company }}</small>
+                        </div>
+                    </div>
+                    <div class="form-check form-switch fs-4">
+                        <input class="form-check-input testimonial-toggle" type="checkbox" role="switch" data-url="{{ route('admin.testimonials.toggle', $t->id) }}" {{ $t->is_active ? 'checked' : '' }}>
+                    </div>
+                </div>
+
+                <div class="text-warning small mb-2">
+                    @for($i = 0; $i < ($t->rating ?: 5); $i++)
+                        <i class="bi bi-star-fill"></i>
+                    @endfor
+                </div>
+
+                <p class="text-secondary small fst-italic mb-3">
+                    "{{ $t->quote }}"
+                </p>
+
+                <div class="d-flex justify-content-end gap-2 border-top pt-2">
+                    <a href="{{ route('admin.testimonials.edit', $t->id) }}" class="btn btn-sm btn-outline-dark px-3" style="border-radius: 8px;">
+                        <i class="bi bi-pencil me-1"></i> Düzenle
+                    </a>
+                    <form action="{{ route('admin.testimonials.destroy', $t->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Bu yorumu silmek istediğinize emin misiniz?');">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-sm btn-outline-danger px-3" style="border-radius: 8px;">
+                            <i class="bi bi-trash me-1"></i> Sil
+                        </button>
+                    </form>
+                </div>
+            </div>
+        @empty
+            <div class="text-center py-4 text-muted">Kayıtlı müşteri yorumu bulunamadı.</div>
+        @endforelse
     </div>
 </div>
 

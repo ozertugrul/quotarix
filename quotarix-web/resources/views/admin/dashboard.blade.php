@@ -100,14 +100,15 @@
     </div>
 
     <!-- Recent Leads -->
-    <div class="col-lg-7">
-        <div class="card border-0 shadow-sm p-4 h-100" style="border-radius: 20px; background: #fff;">
+    <div class="col-12 col-lg-7">
+        <div class="card border-0 shadow-sm p-3 p-md-4 h-100" style="border-radius: 20px; background: #fff;">
             <div class="d-flex align-items-center justify-content-between mb-4">
                 <h5 class="fw-bold text-navy mb-0">Son Gelen Talepler</h5>
                 <a href="{{ route('admin.leads.index') }}" class="text-teal small fw-semibold text-decoration-none">Tümünü Gör ({{ $totalLeads }}) &rarr;</a>
             </div>
 
-            <div class="table-responsive">
+            <!-- Desktop Table View (>= 768px) -->
+            <div class="d-none d-md-block table-responsive">
                 <table class="table table-hover align-middle mb-0">
                     <thead>
                         <tr class="text-secondary small border-bottom">
@@ -153,6 +154,31 @@
                         @endforelse
                     </tbody>
                 </table>
+            </div>
+
+            <!-- Mobile Cards View (< 768px) -->
+            <div class="d-block d-md-none">
+                @forelse($recentLeads as $lead)
+                    <div class="card border rounded-3 p-3 mb-3 shadow-none {{ is_null($lead->read_at) ? 'border-warning bg-warning bg-opacity-10' : 'border-light-subtle bg-light bg-opacity-25' }}">
+                        <div class="d-flex align-items-start justify-content-between gap-2 mb-1">
+                            <div>
+                                <div class="fw-bold text-navy fs-6">{{ $lead->name }}</div>
+                                <small class="text-muted">{{ $lead->company ?: $lead->email }}</small>
+                            </div>
+                            <span class="badge {{ $lead->source === 'demo' ? 'bg-primary' : 'bg-info text-dark' }} px-2 py-1 small">
+                                {{ strtoupper($lead->source) }}
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2 pt-2 border-top">
+                            <span class="text-muted small" style="font-size: 11px;">{{ $lead->created_at ? $lead->created_at->format('d.m.Y H:i') : '' }}</span>
+                            <a href="{{ route('admin.leads.show', $lead->id) }}" class="btn btn-sm btn-outline-dark px-3" style="border-radius: 8px;">
+                                İncele
+                            </a>
+                        </div>
+                    </div>
+                @empty
+                    <div class="text-center py-4 text-muted">Henüz gelen bir talep bulunmamaktadır.</div>
+                @endforelse
             </div>
         </div>
     </div>

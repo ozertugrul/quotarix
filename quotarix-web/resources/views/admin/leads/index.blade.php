@@ -29,8 +29,9 @@
     </div>
 </div>
 
-<div class="card border-0 shadow-sm p-4" style="border-radius: 20px; background: #fff;">
-    <div class="table-responsive">
+<div class="card border-0 shadow-sm p-3 p-md-4" style="border-radius: 20px; background: #fff;">
+    <!-- Desktop Table View (>= 768px) -->
+    <div class="d-none d-md-block table-responsive">
         <table class="table table-hover align-middle mb-0">
             <thead>
                 <tr class="text-secondary small border-bottom">
@@ -88,6 +89,57 @@
                 @endforelse
             </tbody>
         </table>
+    </div>
+
+    <!-- Mobile Cards View (< 768px) -->
+    <div class="d-block d-md-none">
+        @forelse($leads as $lead)
+            <div class="card border rounded-3 p-3 mb-3 shadow-none {{ is_null($lead->read_at) ? 'border-warning bg-warning bg-opacity-10' : 'border-light-subtle bg-light bg-opacity-25' }}">
+                <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                    <div>
+                        <div class="fw-bold text-navy fs-6">{{ $lead->name }}</div>
+                        <small class="text-muted">{{ $lead->company ?: 'Firma Belirtilmedi' }}</small>
+                    </div>
+                    <div>
+                        <span class="badge {{ $lead->source === 'demo' ? 'bg-primary' : 'bg-info text-dark' }} px-2 py-1 small">
+                            {{ strtoupper($lead->source) }}
+                        </span>
+                        @if(!$lead->read_at)
+                            <span class="badge bg-danger d-block mt-1">Yeni</span>
+                        @endif
+                    </div>
+                </div>
+
+                <div class="border-top border-bottom py-2 my-2 small">
+                    <div class="text-truncate mb-1">
+                        <i class="bi bi-envelope text-muted me-1"></i> <a href="mailto:{{ $lead->email }}" class="text-teal text-decoration-none">{{ $lead->email }}</a>
+                    </div>
+                    @if($lead->phone)
+                        <div>
+                            <i class="bi bi-telephone text-muted me-1"></i> <a href="tel:{{ $lead->phone }}" class="text-navy text-decoration-none">{{ $lead->phone }}</a>
+                        </div>
+                    @endif
+                    <div class="text-muted mt-1" style="font-size: 11px;">
+                        <i class="bi bi-clock me-1"></i> {{ $lead->created_at ? $lead->created_at->format('d.m.Y H:i') : '' }}
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end gap-2 mt-2">
+                    <a href="{{ route('admin.leads.show', $lead->id) }}" class="btn btn-sm btn-outline-dark px-3" style="border-radius: 8px;">
+                        <i class="bi bi-eye me-1"></i> İncele
+                    </a>
+                    <form action="{{ route('admin.leads.destroy', $lead->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Bu talebi silmek istediğinize emin misiniz?');">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-sm btn-outline-danger px-3" style="border-radius: 8px;">
+                            <i class="bi bi-trash me-1"></i> Sil
+                        </button>
+                    </form>
+                </div>
+            </div>
+        @empty
+            <div class="text-center py-4 text-muted">Filtreye uygun talep bulunamadı.</div>
+        @endforelse
     </div>
 
     <div class="mt-4 d-flex justify-content-center">

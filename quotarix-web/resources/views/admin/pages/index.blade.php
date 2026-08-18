@@ -9,9 +9,11 @@
 </div>
 
 <!-- Legal Pages -->
-<div class="card border-0 shadow-sm p-3 p-md-4 mb-5" style="border-radius: 20px; background: #fff;">
+<div class="card border-0 shadow-sm p-3 p-md-4 mb-4 mb-md-5" style="border-radius: 20px; background: #fff;">
     <h5 class="fw-bold text-navy mb-3"><i class="bi bi-shield-check text-teal me-2"></i> Yasal Metin Sayfaları</h5>
-    <div class="table-responsive">
+    
+    <!-- Desktop Table View (>= 768px) -->
+    <div class="d-none d-md-block table-responsive">
         <table class="table table-hover align-middle mb-0">
             <thead>
                 <tr class="text-secondary small border-bottom">
@@ -52,13 +54,40 @@
             </tbody>
         </table>
     </div>
+
+    <!-- Mobile Cards View (< 768px) -->
+    <div class="d-block d-md-none">
+        @foreach($legalPages as $page)
+            <div class="card border border-light-subtle rounded-3 p-3 mb-3 shadow-none bg-light bg-opacity-25">
+                <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                    <div>
+                        <div class="fw-bold text-navy fs-6">{{ $page->title }}</div>
+                        <span class="badge bg-light text-secondary border font-monospace small mt-1">/{{ $page->slug }}</span>
+                    </div>
+                    @if($page->is_active)
+                        <span class="badge bg-light text-success border">Yayında</span>
+                    @else
+                        <span class="badge bg-light text-muted border">Pasif</span>
+                    @endif
+                </div>
+
+                <div class="d-flex justify-content-end mt-2 pt-2 border-top">
+                    <a href="{{ route('admin.pages.edit', $page->id) }}" class="btn btn-sm btn-outline-dark px-3" style="border-radius: 8px;">
+                        <i class="bi bi-pencil me-1"></i> Düzenle
+                    </a>
+                </div>
+            </div>
+        @endforeach
+    </div>
 </div>
 
 <!-- Meta Records for Static Routes -->
 <div class="card border-0 shadow-sm p-3 p-md-4" style="border-radius: 20px; background: #fff;">
     <h5 class="fw-bold text-navy mb-3"><i class="bi bi-search text-teal me-2"></i> Statik Rota SEO Meta Kayıtları</h5>
     <p class="text-secondary small mb-3">Ana sayfa, özellikler, blog, fiyatlandırma vb. rotaların arama motoru başlık ve açıklamaları.</p>
-    <div class="table-responsive">
+    
+    <!-- Desktop Table View (>= 768px) -->
+    <div class="d-none d-md-block table-responsive">
         <table class="table table-hover align-middle mb-0">
             <thead>
                 <tr class="text-secondary small border-bottom">
@@ -93,6 +122,30 @@
                 @endforeach
             </tbody>
         </table>
+    </div>
+
+    <!-- Mobile Cards View (< 768px) -->
+    <div class="d-block d-md-none">
+        @foreach($metaPages as $page)
+            <div class="card border border-light-subtle rounded-3 p-3 mb-3 shadow-none bg-light bg-opacity-25">
+                <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                    <div>
+                        <div class="fw-bold text-navy fs-6">{{ $page->title }}</div>
+                        <span class="badge bg-light text-secondary border font-monospace small mt-1">{{ $page->key }}</span>
+                    </div>
+                </div>
+
+                <div class="small text-secondary mb-2">
+                    <strong>Başlık:</strong> {{ $page->meta_title ?: '—' }}
+                </div>
+
+                <div class="d-flex justify-content-end mt-2 pt-2 border-top">
+                    <a href="{{ route('admin.pages.edit', $page->id) }}" class="btn btn-sm btn-outline-dark px-3" style="border-radius: 8px;">
+                        <i class="bi bi-pencil me-1"></i> Düzenle
+                    </a>
+                </div>
+            </div>
+        @endforeach
     </div>
 </div>
 @endsection
