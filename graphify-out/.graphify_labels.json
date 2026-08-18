@@ -4,8 +4,8 @@
   "2": "composer.json",
   "3": "scripts",
   "4": "package.json",
-  "5": "User",
-  "6": "UserFactory.php",
+  "5": "Illuminate\\Database\\Seeder",
+  "6": "Admin",
   "7": "0001_01_01_000000_create_users_table.php",
   "8": "README.md",
   "9": "config",
@@ -29,5 +29,7 @@
   "27": "services.php",
   "28": "app.js",
   "29": "welcome.blade.php",
-  "30": "vite.config.js"
+  "30": "vite.config.js",
+  "31": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+  "32": "ContentSeeder"
 }
