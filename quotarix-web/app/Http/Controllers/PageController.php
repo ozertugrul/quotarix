@@ -20,18 +20,18 @@ class PageController extends Controller
     {
         $page = Page::active()->where('slug', $slug)->firstOrFail();
 
-        // If it's a meta record without content body, redirect to named route
+        // If it's a meta record without content body, redirect to named route permanently (301)
         if (is_null($page->body) && $page->key !== null) {
             return match ($page->key) {
-                'home' => redirect()->route('home'),
-                'features_index' => redirect()->route('features'),
-                'why' => redirect()->route('why'),
-                'roadmap' => redirect()->route('roadmap'),
-                'pricing' => redirect()->route('pricing'),
-                'blog_index' => redirect()->route('blog'),
-                'faq' => redirect()->route('faq'),
-                'demo' => redirect()->route('demo'),
-                'contact' => redirect()->route('contact'),
+                'home' => redirect()->route('home', [], 301),
+                'features_index' => redirect()->route('features', [], 301),
+                'why' => redirect()->route('why', [], 301),
+                'roadmap' => redirect()->route('roadmap', [], 301),
+                'pricing' => redirect()->route('pricing', [], 301),
+                'blog_index' => redirect()->route('blog', [], 301),
+                'faq' => redirect()->route('faq', [], 301),
+                'demo' => redirect()->route('demo', [], 301),
+                'contact' => redirect()->route('contact', [], 301),
                 default => abort(404),
             };
         }

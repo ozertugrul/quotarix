@@ -33,10 +33,12 @@ class Page extends Model
     {
         static::saved(function () {
             \Illuminate\Support\Facades\Cache::forget('site_page_metas');
+            \Illuminate\Support\Facades\Cache::forget('sitemap_xml');
         });
 
         static::deleted(function () {
             \Illuminate\Support\Facades\Cache::forget('site_page_metas');
+            \Illuminate\Support\Facades\Cache::forget('sitemap_xml');
         });
     }
 }

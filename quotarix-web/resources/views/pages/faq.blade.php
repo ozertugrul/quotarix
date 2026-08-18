@@ -70,11 +70,11 @@
   "mainEntity": [
     @foreach($faqs as $i => $faq)
     {
-      "@type": "Question",
-      "name": "{{ addslashes($faq->question) }}",
+      "@@type": "Question",
+      "name": {!! json_encode($faq->question, JSON_UNESCAPED_UNICODE) !!},
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "{{ addslashes($faq->answer) }}"
+        "@@type": "Answer",
+        "text": {!! json_encode($faq->answer, JSON_UNESCAPED_UNICODE) !!}
       }
     }{{ $i < count($faqs) - 1 ? ',' : '' }}
     @endforeach

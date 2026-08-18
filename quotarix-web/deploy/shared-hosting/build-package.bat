@@ -13,7 +13,7 @@ call php artisan optimize:clear
 
 if not exist dist mkdir dist
 
-powershell -Command "Write-Host 'Paket olusturuluyor...'; & deploy\shared-hosting\build-package.sh"
+bash deploy/shared-hosting/build-package.sh
 
 echo Paketleme tamamlandi.
 pause

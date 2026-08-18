@@ -14,9 +14,12 @@ class RedirectLegacyHtml
     protected array $redirectMap = [
         'kvkk.html' => '/kvkk',
         'privacy-policy.html' => '/gizlilik-politikasi',
+        'privacy-policy' => '/gizlilik-politikasi',
         'terms-of-service.html' => '/kullanim-kosullari',
+        'terms-of-service' => '/kullanim-kosullari',
         'mesafeli-satis-sozlesmesi.html' => '/mesafeli-satis-sozlesmesi',
         'iptal-iade-politikasi.html' => '/iptal-ve-iade-politikasi',
+        'iptal-iade-politikasi' => '/iptal-ve-iade-politikasi',
         'teslimat-bilgileri.html' => '/teslimat-bilgileri',
         'on-bilgilendirme.html' => '/on-bilgilendirme',
         'index.html' => '/',

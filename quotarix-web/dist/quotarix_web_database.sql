@@ -1,5 +1,5 @@
 -- Quotarix Web Production Database Dump
--- Generated at: 2026-08-18 10:52:19
+-- Generated at: 2026-08-18 11:02:13
 SET FOREIGN_KEY_CHECKS=0;
 
 DROP TABLE IF EXISTS `admins`;

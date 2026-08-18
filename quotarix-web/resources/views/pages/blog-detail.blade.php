@@ -86,8 +86,8 @@
 {
   "@@context": "https://schema.org",
   "@@type": "BlogPosting",
-  "headline": "{{ addslashes($post->title) }}",
-  "description": "{{ addslashes($post->summary) }}",
+  "headline": {!! json_encode($post->title, JSON_UNESCAPED_UNICODE) !!},
+  "description": {!! json_encode($post->summary ?: $post->title, JSON_UNESCAPED_UNICODE) !!},
   "author": {
     "@@type": "Person",
     "name": "{{ $post->author ?: 'Fatih PEK' }}"

@@ -42,4 +42,15 @@ class Feature extends Model
     {
         return $query->active()->whereNotNull('badge');
     }
+
+    protected static function booted(): void
+    {
+        static::saved(function () {
+            \Illuminate\Support\Facades\Cache::forget('sitemap_xml');
+        });
+
+        static::deleted(function () {
+            \Illuminate\Support\Facades\Cache::forget('sitemap_xml');
+        });
+    }
 }

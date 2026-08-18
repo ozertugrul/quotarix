@@ -40,4 +40,15 @@ class Post extends Model
             ->where('published_at', '<=', now())
             ->orderByDesc('published_at');
     }
+
+    protected static function booted(): void
+    {
+        static::saved(function () {
+            \Illuminate\Support\Facades\Cache::forget('sitemap_xml');
+        });
+
+        static::deleted(function () {
+            \Illuminate\Support\Facades\Cache::forget('sitemap_xml');
+        });
+    }
 }

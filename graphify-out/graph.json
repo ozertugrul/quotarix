@@ -38,30 +38,17 @@
   },
   "nodes": [
     {
-      "label": "AuthController",
+      "label": "TestimonialController",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/AuthController.php",
-      "source_location": "L13",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_authcontroller_authcontroller",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "authcontroller"
-    },
-    {
-      "label": "FaqController",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
       "source_location": "L12",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller",
+      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "faqcontroller"
+      "community_name": "Video",
+      "norm_label": "testimonialcontroller"
     },
     {
       "label": "VideoController",
@@ -73,34 +60,21 @@
       "_origin": "ast",
       "id": "quotarix_web_app_http_controllers_admin_videocontroller_videocontroller",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": "videocontroller"
     },
     {
-      "label": "RedirectLegacyHtml",
+      "label": "Testimonial",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Middleware/RedirectLegacyHtml.php",
-      "source_location": "L9",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_middleware_redirectlegacyhtml_redirectlegacyhtml",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "redirectlegacyhtml"
-    },
-    {
-      "label": "Faq",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Faq.php",
+      "source_file": "quotarix-web/app/Models/Testimonial.php",
       "source_location": "L8",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_models_faq_faq",
+      "id": "quotarix_web_app_models_testimonial_testimonial",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "faq"
+      "community_name": "Video",
+      "norm_label": "testimonial"
     },
     {
       "label": "Video",
@@ -112,7 +86,7 @@
       "_origin": "ast",
       "id": "quotarix_web_app_models_video_video",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": "video"
     },
     {
@@ -142,6 +116,19 @@
       "norm_label": "exampletest"
     },
     {
+      "label": "AuthController",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/AuthController.php",
+      "source_location": "L13",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_authcontroller_authcontroller",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": "authcontroller"
+    },
+    {
       "label": "DashboardController",
       "file_type": "code",
       "source_file": "quotarix-web/app/Http/Controllers/Admin/DashboardController.php",
@@ -155,17 +142,17 @@
       "norm_label": "dashboardcontroller"
     },
     {
-      "label": "FeatureController",
+      "label": "FaqController",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
       "source_location": "L12",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller",
+      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller",
       "community": 20,
       "community_name": "Illuminate\\View\\View",
-      "norm_label": "featurecontroller"
+      "norm_label": "faqcontroller"
     },
     {
       "label": "PageController",
@@ -192,6 +179,32 @@
       "community": 20,
       "community_name": "Illuminate\\View\\View",
       "norm_label": "plancontroller"
+    },
+    {
+      "label": "PostController",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
+      "source_location": "L12",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": "postcontroller"
+    },
+    {
+      "label": "BlogController",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/BlogController.php",
+      "source_location": "L10",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_blogcontroller_blogcontroller",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": "blogcontroller"
     },
     {
       "label": "Controller",
@@ -285,30 +298,17 @@
       "norm_label": "plancontroller"
     },
     {
-      "label": "SitemapController",
+      "label": "Faq",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/SitemapController.php",
-      "source_location": "L11",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_sitemapcontroller_sitemapcontroller",
-      "community": 20,
-      "community_name": "Illuminate\\View\\View",
-      "norm_label": "sitemapcontroller"
-    },
-    {
-      "label": "Feature",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Feature.php",
+      "source_file": "quotarix-web/app/Models/Faq.php",
       "source_location": "L8",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_models_feature_feature",
+      "id": "quotarix_web_app_models_faq_faq",
       "community": 20,
       "community_name": "Illuminate\\View\\View",
-      "norm_label": "feature"
+      "norm_label": "faq"
     },
     {
       "label": "Page",
@@ -337,6 +337,19 @@
       "norm_label": "plan"
     },
     {
+      "label": "Post",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Models/Post.php",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_models_post_post",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": "post"
+    },
+    {
       "label": "SectionController",
       "file_type": "code",
       "source_file": "quotarix-web/app/Http/Controllers/Admin/SectionController.php",
@@ -361,6 +374,19 @@
       "community": 31,
       "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
       "norm_label": "settingcontroller"
+    },
+    {
+      "label": "Admin",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Models/Admin.php",
+      "source_location": "L9",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_models_admin_admin",
+      "community": 31,
+      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+      "norm_label": "admin"
     },
     {
       "label": "Section",
@@ -402,32 +428,6 @@
       "norm_label": "user"
     },
     {
-      "label": "UserFactory",
-      "file_type": "code",
-      "source_file": "quotarix-web/database/factories/UserFactory.php",
-      "source_location": "L13",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "quotarix_web_database_factories_userfactory_userfactory",
-      "community": 31,
-      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
-      "norm_label": "userfactory"
-    },
-    {
-      "label": "Admin",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Admin.php",
-      "source_location": "L9",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_models_admin_admin",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": "admin"
-    },
-    {
       "label": "AdminSeeder",
       "file_type": "code",
       "source_file": "quotarix-web/database/seeders/AdminSeeder.php",
@@ -436,9 +436,22 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_adminseeder_adminseeder",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community": 31,
+      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
       "norm_label": "adminseeder"
+    },
+    {
+      "label": "AdminPanelTest",
+      "file_type": "code",
+      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
+      "source_location": "L23",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest",
+      "community": 31,
+      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+      "norm_label": "adminpaneltest"
     },
     {
       "label": "ContentSeeder",
@@ -450,7 +463,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_contentseeder_contentseeder",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "contentseeder"
     },
     {
@@ -463,7 +476,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_databaseseeder_databaseseeder",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "databaseseeder"
     },
     {
@@ -476,7 +489,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_sectionseeder_sectionseeder",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "sectionseeder"
     },
     {
@@ -489,21 +502,8 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_settingseeder_settingseeder",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "settingseeder"
-    },
-    {
-      "label": "AdminPanelTest",
-      "file_type": "code",
-      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
-      "source_location": "L23",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": "adminpaneltest"
     },
     {
       "label": "BladeAndFormTest",
@@ -515,7 +515,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_bladeandformtest_bladeandformtest",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "bladeandformtest"
     },
     {
@@ -528,7 +528,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_exampletest_exampletest",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "exampletest"
     },
     {
@@ -541,7 +541,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_routetest_routetest",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "routetest"
     },
     {
@@ -554,7 +554,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_seoandkvkktest_seoandkvkktest",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "seoandkvkktest"
     },
     {
@@ -567,47 +567,21 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_testcase_testcase",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "testcase"
     },
     {
-      "label": "PostController",
+      "label": "UserFactory",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
-      "source_location": "L12",
+      "source_file": "quotarix-web/database/factories/UserFactory.php",
+      "source_location": "L13",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller",
+      "id": "quotarix_web_database_factories_userfactory_userfactory",
       "community": 5,
-      "community_name": "Post",
-      "norm_label": "postcontroller"
-    },
-    {
-      "label": "BlogController",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/BlogController.php",
-      "source_location": "L10",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_blogcontroller_blogcontroller",
-      "community": 5,
-      "community_name": "Post",
-      "norm_label": "blogcontroller"
-    },
-    {
-      "label": "Post",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Post.php",
-      "source_location": "L8",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_models_post_post",
-      "community": 5,
-      "community_name": "Post",
-      "norm_label": "post"
+      "community_name": "Illuminate\\Support\\Str",
+      "norm_label": "userfactory"
     },
     {
       "label": "LeadController",
@@ -636,149 +610,151 @@
       "norm_label": "lead"
     },
     {
-      "label": "TestimonialController",
+      "label": "FeatureController",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
       "source_location": "L12",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller",
+      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller",
       "community": 92,
-      "community_name": "Testimonial",
-      "norm_label": "testimonialcontroller"
+      "community_name": "Feature",
+      "norm_label": "featurecontroller"
     },
     {
-      "label": "Testimonial",
+      "label": "SitemapController",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Testimonial.php",
+      "source_file": "quotarix-web/app/Http/Controllers/SitemapController.php",
+      "source_location": "L11",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_sitemapcontroller_sitemapcontroller",
+      "community": 92,
+      "community_name": "Feature",
+      "norm_label": "sitemapcontroller"
+    },
+    {
+      "label": "Feature",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Models/Feature.php",
       "source_location": "L8",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_models_testimonial_testimonial",
+      "id": "quotarix_web_app_models_feature_feature",
       "community": 92,
-      "community_name": "Testimonial",
-      "norm_label": "testimonial"
+      "community_name": "Feature",
+      "norm_label": "feature"
     },
     {
-      "label": ".login()",
+      "label": "RedirectLegacyHtml",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/AuthController.php",
-      "source_location": "L24",
+      "source_file": "quotarix-web/app/Http/Middleware/RedirectLegacyHtml.php",
+      "source_location": "L9",
       "_callable": true,
+      "_callable_class": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_authcontroller_authcontroller_login",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".login()"
+      "id": "quotarix_web_app_http_middleware_redirectlegacyhtml_redirectlegacyhtml",
+      "community": 94,
+      "community_name": "RedirectLegacyHtml.php",
+      "norm_label": "redirectlegacyhtml"
     },
     {
-      "label": ".logout()",
+      "label": "store_image()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/AuthController.php",
-      "source_location": "L56",
+      "source_file": "quotarix-web/app/Helpers/site.php",
+      "source_location": "L116",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_authcontroller_authcontroller_logout",
+      "id": "quotarix_web_app_helpers_site_store_image",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".logout()"
-    },
-    {
-      "label": ".showLoginForm()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/AuthController.php",
-      "source_location": "L15",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_authcontroller_authcontroller_showloginform",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".showloginform()"
+      "community_name": "Video",
+      "norm_label": "store_image()"
     },
     {
       "label": ".create()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
       "source_location": "L21",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_create",
+      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_create",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".create()"
     },
     {
       "label": ".destroy()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
-      "source_location": "L69",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
+      "source_location": "L95",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_destroy",
+      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_destroy",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".destroy()"
     },
     {
       "label": ".edit()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
-      "source_location": "L45",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
+      "source_location": "L58",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_edit",
+      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_edit",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".edit()"
     },
     {
       "label": ".index()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
       "source_location": "L14",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_index",
+      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_index",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".index()"
-    },
-    {
-      "label": ".reorder()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
-      "source_location": "L76",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_reorder",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".reorder()"
     },
     {
       "label": ".store()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
       "source_location": "L26",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_store",
+      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_store",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".store()"
+    },
+    {
+      "label": ".toggle()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
+      "source_location": "L102",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_toggle",
+      "community": 10,
+      "community_name": "Video",
+      "norm_label": ".toggle()"
     },
     {
       "label": ".update()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
-      "source_location": "L50",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
+      "source_location": "L63",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_update",
+      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_update",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".update()"
     },
     {
@@ -790,7 +766,7 @@
       "_origin": "ast",
       "id": "quotarix_web_app_http_controllers_admin_videocontroller_videocontroller_create",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".create()"
     },
     {
@@ -802,7 +778,7 @@
       "_origin": "ast",
       "id": "quotarix_web_app_http_controllers_admin_videocontroller_videocontroller_destroy",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".destroy()"
     },
     {
@@ -814,7 +790,7 @@
       "_origin": "ast",
       "id": "quotarix_web_app_http_controllers_admin_videocontroller_videocontroller_edit",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".edit()"
     },
     {
@@ -826,7 +802,7 @@
       "_origin": "ast",
       "id": "quotarix_web_app_http_controllers_admin_videocontroller_videocontroller_index",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".index()"
     },
     {
@@ -838,7 +814,7 @@
       "_origin": "ast",
       "id": "quotarix_web_app_http_controllers_admin_videocontroller_videocontroller_store",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".store()"
     },
     {
@@ -850,31 +826,19 @@
       "_origin": "ast",
       "id": "quotarix_web_app_http_controllers_admin_videocontroller_videocontroller_update",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".update()"
-    },
-    {
-      "label": ".handle()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Middleware/RedirectLegacyHtml.php",
-      "source_location": "L32",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_middleware_redirectlegacyhtml_redirectlegacyhtml_handle",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".handle()"
     },
     {
       "label": ".scopeActive()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Faq.php",
-      "source_location": "L24",
+      "source_file": "quotarix-web/app/Models/Testimonial.php",
+      "source_location": "L29",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_models_faq_faq_scopeactive",
+      "id": "quotarix_web_app_models_testimonial_testimonial_scopeactive",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".scopeactive()"
     },
     {
@@ -886,7 +850,7 @@
       "_origin": "ast",
       "id": "quotarix_web_app_models_video_video_getembedidattribute",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".getembedidattribute()"
     },
     {
@@ -898,7 +862,7 @@
       "_origin": "ast",
       "id": "quotarix_web_app_models_video_video_getembedurlattribute",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".getembedurlattribute()"
     },
     {
@@ -910,7 +874,7 @@
       "_origin": "ast",
       "id": "quotarix_web_app_models_video_video_getisvimeoattribute",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".getisvimeoattribute()"
     },
     {
@@ -922,7 +886,7 @@
       "_origin": "ast",
       "id": "quotarix_web_app_models_video_video_getisyoutubeattribute",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".getisyoutubeattribute()"
     },
     {
@@ -934,7 +898,7 @@
       "_origin": "ast",
       "id": "quotarix_web_app_models_video_video_getthumbattribute",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".getthumbattribute()"
     },
     {
@@ -946,7 +910,7 @@
       "_origin": "ast",
       "id": "quotarix_web_app_models_video_video_scopeactive",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": ".scopeactive()"
     },
     {
@@ -998,13 +962,61 @@
       "norm_label": "page_meta()"
     },
     {
+      "label": ".login()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/AuthController.php",
+      "source_location": "L24",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_authcontroller_authcontroller_login",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".login()"
+    },
+    {
+      "label": ".logout()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/AuthController.php",
+      "source_location": "L56",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_authcontroller_authcontroller_logout",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".logout()"
+    },
+    {
+      "label": ".showLoginForm()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/AuthController.php",
+      "source_location": "L15",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_authcontroller_authcontroller_showloginform",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".showloginform()"
+    },
+    {
+      "label": ".index()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/DashboardController.php",
+      "source_location": "L15",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_dashboardcontroller_dashboardcontroller_index",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".index()"
+    },
+    {
       "label": ".create()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
       "source_location": "L21",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller_create",
+      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_create",
       "community": 20,
       "community_name": "Illuminate\\View\\View",
       "norm_label": ".create()"
@@ -1012,11 +1024,11 @@
     {
       "label": ".destroy()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
-      "source_location": "L109",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
+      "source_location": "L69",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller_destroy",
+      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_destroy",
       "community": 20,
       "community_name": "Illuminate\\View\\View",
       "norm_label": ".destroy()"
@@ -1024,11 +1036,11 @@
     {
       "label": ".edit()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
-      "source_location": "L66",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
+      "source_location": "L45",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller_edit",
+      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_edit",
       "community": 20,
       "community_name": "Illuminate\\View\\View",
       "norm_label": ".edit()"
@@ -1036,23 +1048,35 @@
     {
       "label": ".index()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
       "source_location": "L14",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller_index",
+      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_index",
       "community": 20,
       "community_name": "Illuminate\\View\\View",
       "norm_label": ".index()"
     },
     {
+      "label": ".reorder()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
+      "source_location": "L76",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_reorder",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".reorder()"
+    },
+    {
       "label": ".store()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
       "source_location": "L26",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller_store",
+      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_store",
       "community": 20,
       "community_name": "Illuminate\\View\\View",
       "norm_label": ".store()"
@@ -1060,11 +1084,11 @@
     {
       "label": ".update()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
-      "source_location": "L71",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
+      "source_location": "L50",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller_update",
+      "id": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_update",
       "community": 20,
       "community_name": "Illuminate\\View\\View",
       "norm_label": ".update()"
@@ -1188,6 +1212,102 @@
       "community": 20,
       "community_name": "Illuminate\\View\\View",
       "norm_label": ".update()"
+    },
+    {
+      "label": ".create()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
+      "source_location": "L21",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller_create",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".create()"
+    },
+    {
+      "label": ".destroy()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
+      "source_location": "L109",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller_destroy",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".destroy()"
+    },
+    {
+      "label": ".edit()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
+      "source_location": "L66",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller_edit",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".edit()"
+    },
+    {
+      "label": ".index()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
+      "source_location": "L14",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller_index",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".index()"
+    },
+    {
+      "label": ".store()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
+      "source_location": "L26",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller_store",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".store()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
+      "source_location": "L71",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller_update",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".index()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/BlogController.php",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_blogcontroller_blogcontroller_index",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".index()"
+    },
+    {
+      "label": ".show()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/BlogController.php",
+      "source_location": "L20",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_blogcontroller_blogcontroller_show",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".show()"
     },
     {
       "label": ".index()",
@@ -1322,52 +1442,16 @@
       "norm_label": ".index()"
     },
     {
-      "label": ".index()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/SitemapController.php",
-      "source_location": "L13",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_sitemapcontroller_sitemapcontroller_index",
-      "community": 20,
-      "community_name": "Illuminate\\View\\View",
-      "norm_label": ".index()"
-    },
-    {
       "label": ".scopeActive()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Feature.php",
-      "source_location": "L31",
+      "source_file": "quotarix-web/app/Models/Faq.php",
+      "source_location": "L24",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_models_feature_feature_scopeactive",
+      "id": "quotarix_web_app_models_faq_faq_scopeactive",
       "community": 20,
       "community_name": "Illuminate\\View\\View",
       "norm_label": ".scopeactive()"
-    },
-    {
-      "label": ".scopeMainFeatures()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Feature.php",
-      "source_location": "L36",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_models_feature_feature_scopemainfeatures",
-      "community": 20,
-      "community_name": "Illuminate\\View\\View",
-      "norm_label": ".scopemainfeatures()"
-    },
-    {
-      "label": ".scopeRoadmap()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Feature.php",
-      "source_location": "L41",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_models_feature_feature_scoperoadmap",
-      "community": 20,
-      "community_name": "Illuminate\\View\\View",
-      "norm_label": ".scoperoadmap()"
     },
     {
       "label": ".scopeActive()",
@@ -1394,16 +1478,28 @@
       "norm_label": ".scopeactive()"
     },
     {
-      "label": ".test_admin_can_crud_plans()",
+      "label": ".scopeActive()",
       "file_type": "code",
-      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
-      "source_location": "L168",
+      "source_file": "quotarix-web/app/Models/Post.php",
+      "source_location": "L31",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_can_crud_plans",
+      "id": "quotarix_web_app_models_post_post_scopeactive",
       "community": 20,
       "community_name": "Illuminate\\View\\View",
-      "norm_label": ".test_admin_can_crud_plans()"
+      "norm_label": ".scopeactive()"
+    },
+    {
+      "label": ".scopePublished()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Models/Post.php",
+      "source_location": "L36",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_models_post_post_scopepublished",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": ".scopepublished()"
     },
     {
       "label": "active_sections()",
@@ -1526,28 +1622,16 @@
       "norm_label": ".update()"
     },
     {
-      "label": ".booted()",
+      "label": ".casts()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Page.php",
-      "source_location": "L32",
+      "source_file": "quotarix-web/app/Models/Admin.php",
+      "source_location": "L24",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_models_page_page_booted",
+      "id": "quotarix_web_app_models_admin_admin_casts",
       "community": 31,
       "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
-      "norm_label": ".booted()"
-    },
-    {
-      "label": ".booted()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Section.php",
-      "source_location": "L29",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_models_section_section_booted",
-      "community": 31,
-      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
-      "norm_label": ".booted()"
+      "norm_label": ".casts()"
     },
     {
       "label": ".scopeActive()",
@@ -1562,30 +1646,6 @@
       "norm_label": ".scopeactive()"
     },
     {
-      "label": ".booted()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Setting.php",
-      "source_location": "L27",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_models_setting_setting_booted",
-      "community": 31,
-      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
-      "norm_label": ".booted()"
-    },
-    {
-      "label": ".get()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Setting.php",
-      "source_location": "L18",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_models_setting_setting_get",
-      "community": 31,
-      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
-      "norm_label": ".get()"
-    },
-    {
       "label": ".casts()",
       "file_type": "code",
       "source_file": "quotarix-web/app/Models/User.php",
@@ -1598,42 +1658,6 @@
       "norm_label": ".casts()"
     },
     {
-      "label": ".definition()",
-      "file_type": "code",
-      "source_file": "quotarix-web/database/factories/UserFactory.php",
-      "source_location": "L25",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_database_factories_userfactory_userfactory_definition",
-      "community": 31,
-      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
-      "norm_label": ".definition()"
-    },
-    {
-      "label": ".unverified()",
-      "file_type": "code",
-      "source_file": "quotarix-web/database/factories/UserFactory.php",
-      "source_location": "L39",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_database_factories_userfactory_userfactory_unverified",
-      "community": 31,
-      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
-      "norm_label": ".unverified()"
-    },
-    {
-      "label": ".casts()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Admin.php",
-      "source_location": "L24",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_models_admin_admin_casts",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": ".casts()"
-    },
-    {
       "label": ".run()",
       "file_type": "code",
       "source_file": "quotarix-web/database/seeders/AdminSeeder.php",
@@ -1641,9 +1665,117 @@
       "_callable": true,
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_adminseeder_adminseeder_run",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community": 31,
+      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
       "norm_label": ".run()"
+    },
+    {
+      "label": ".setUp()",
+      "file_type": "code",
+      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_setup",
+      "community": 31,
+      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+      "norm_label": ".setup()"
+    },
+    {
+      "label": ".test_admin_can_crud_features()",
+      "file_type": "code",
+      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
+      "source_location": "L120",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_can_crud_features",
+      "community": 31,
+      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+      "norm_label": ".test_admin_can_crud_features()"
+    },
+    {
+      "label": ".test_admin_can_crud_plans()",
+      "file_type": "code",
+      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
+      "source_location": "L168",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_can_crud_plans",
+      "community": 31,
+      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+      "norm_label": ".test_admin_can_crud_plans()"
+    },
+    {
+      "label": ".test_admin_can_login_with_valid_credentials()",
+      "file_type": "code",
+      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
+      "source_location": "L49",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_can_login_with_valid_credentials",
+      "community": 31,
+      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+      "norm_label": ".test_admin_can_login_with_valid_credentials()"
+    },
+    {
+      "label": ".test_admin_can_toggle_section_via_ajax()",
+      "file_type": "code",
+      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
+      "source_location": "L80",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_can_toggle_section_via_ajax",
+      "community": 31,
+      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+      "norm_label": ".test_admin_can_toggle_section_via_ajax()"
+    },
+    {
+      "label": ".test_admin_can_toggle_single_testimonial()",
+      "file_type": "code",
+      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
+      "source_location": "L100",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_can_toggle_single_testimonial",
+      "community": 31,
+      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+      "norm_label": ".test_admin_can_toggle_single_testimonial()"
+    },
+    {
+      "label": ".test_admin_login_rate_limiting_after_five_attempts()",
+      "file_type": "code",
+      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
+      "source_location": "L60",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_login_rate_limiting_after_five_attempts",
+      "community": 31,
+      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+      "norm_label": ".test_admin_login_rate_limiting_after_five_attempts()"
+    },
+    {
+      "label": ".test_admin_settings_update()",
+      "file_type": "code",
+      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
+      "source_location": "L215",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_settings_update",
+      "community": 31,
+      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+      "norm_label": ".test_admin_settings_update()"
+    },
+    {
+      "label": ".test_guest_is_redirected_to_admin_login()",
+      "file_type": "code",
+      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
+      "source_location": "L40",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_guest_is_redirected_to_admin_login",
+      "community": 31,
+      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+      "norm_label": ".test_guest_is_redirected_to_admin_login()"
     },
     {
       "label": ".run()",
@@ -1654,7 +1786,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_contentseeder_contentseeder_run",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".run()"
     },
     {
@@ -1666,7 +1798,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_contentseeder_contentseeder_seedfaqs",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".seedfaqs()"
     },
     {
@@ -1678,7 +1810,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_contentseeder_contentseeder_seedfeatures",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".seedfeatures()"
     },
     {
@@ -1690,7 +1822,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_contentseeder_contentseeder_seedlegalpages",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".seedlegalpages()"
     },
     {
@@ -1702,7 +1834,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_contentseeder_contentseeder_seedmetapages",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".seedmetapages()"
     },
     {
@@ -1714,7 +1846,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_contentseeder_contentseeder_seedplans",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".seedplans()"
     },
     {
@@ -1726,7 +1858,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_contentseeder_contentseeder_seedposts",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".seedposts()"
     },
     {
@@ -1738,7 +1870,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_contentseeder_contentseeder_seedsamplevideosandtestimonials",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".seedsamplevideosandtestimonials()"
     },
     {
@@ -1750,7 +1882,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_databaseseeder_databaseseeder_run",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".run()"
     },
     {
@@ -1762,7 +1894,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_sectionseeder_sectionseeder_run",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".run()"
     },
     {
@@ -1774,116 +1906,8 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_settingseeder_settingseeder_run",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".run()"
-    },
-    {
-      "label": ".setUp()",
-      "file_type": "code",
-      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
-      "source_location": "L29",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_setup",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": ".setup()"
-    },
-    {
-      "label": ".test_admin_can_crud_features()",
-      "file_type": "code",
-      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
-      "source_location": "L120",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_can_crud_features",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": ".test_admin_can_crud_features()"
-    },
-    {
-      "label": ".test_admin_can_login_with_valid_credentials()",
-      "file_type": "code",
-      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
-      "source_location": "L49",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_can_login_with_valid_credentials",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": ".test_admin_can_login_with_valid_credentials()"
-    },
-    {
-      "label": ".test_admin_can_toggle_section_via_ajax()",
-      "file_type": "code",
-      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
-      "source_location": "L80",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_can_toggle_section_via_ajax",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": ".test_admin_can_toggle_section_via_ajax()"
-    },
-    {
-      "label": ".test_admin_can_toggle_single_testimonial()",
-      "file_type": "code",
-      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
-      "source_location": "L100",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_can_toggle_single_testimonial",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": ".test_admin_can_toggle_single_testimonial()"
-    },
-    {
-      "label": ".test_admin_login_rate_limiting_after_five_attempts()",
-      "file_type": "code",
-      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
-      "source_location": "L60",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_login_rate_limiting_after_five_attempts",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": ".test_admin_login_rate_limiting_after_five_attempts()"
-    },
-    {
-      "label": ".test_admin_settings_update()",
-      "file_type": "code",
-      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
-      "source_location": "L215",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_admin_settings_update",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": ".test_admin_settings_update()"
-    },
-    {
-      "label": ".test_guest_is_redirected_to_admin_login()",
-      "file_type": "code",
-      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
-      "source_location": "L40",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_guest_is_redirected_to_admin_login",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": ".test_guest_is_redirected_to_admin_login()"
-    },
-    {
-      "label": ".test_lead_csv_export_returns_utf8_bom()",
-      "file_type": "code",
-      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
-      "source_location": "L191",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_lead_csv_export_returns_utf8_bom",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": ".test_lead_csv_export_returns_utf8_bom()"
     },
     {
       "label": ".setUp()",
@@ -1894,7 +1918,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_bladeandformtest_bladeandformtest_setup",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".setup()"
     },
     {
@@ -1906,7 +1930,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_bladeandformtest_bladeandformtest_test_all_pages_render_successfully",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_all_pages_render_successfully()"
     },
     {
@@ -1918,7 +1942,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_bladeandformtest_bladeandformtest_test_demo_form_stores_lead_and_redirects_back",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_demo_form_stores_lead_and_redirects_back()"
     },
     {
@@ -1930,7 +1954,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_bladeandformtest_bladeandformtest_test_invalid_email_is_rejected",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_invalid_email_is_rejected()"
     },
     {
@@ -1942,7 +1966,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_bladeandformtest_bladeandformtest_test_pricing_page_is_accessible_when_section_is_inactive",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_pricing_page_is_accessible_when_section_is_inactive()"
     },
     {
@@ -1954,7 +1978,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_exampletest_exampletest_test_sitemap_is_accessible",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_sitemap_is_accessible()"
     },
     {
@@ -1966,7 +1990,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_routetest_routetest_setup",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".setup()"
     },
     {
@@ -1978,7 +2002,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_routetest_routetest_test_legacy_html_redirects_to_new_url",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_legacy_html_redirects_to_new_url()"
     },
     {
@@ -1990,7 +2014,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_routetest_routetest_test_non_existing_slug_returns_404",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_non_existing_slug_returns_404()"
     },
     {
@@ -2002,7 +2026,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_routetest_routetest_test_sitemap_returns_xml",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_sitemap_returns_xml()"
     },
     {
@@ -2014,7 +2038,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_seoandkvkktest_seoandkvkktest_setup",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".setup()"
     },
     {
@@ -2026,7 +2050,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_seoandkvkktest_seoandkvkktest_test_all_pages_have_unique_titles_and_descriptions",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_all_pages_have_unique_titles_and_descriptions()"
     },
     {
@@ -2038,7 +2062,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_seoandkvkktest_seoandkvkktest_test_cookie_consent_banner_is_present",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_cookie_consent_banner_is_present()"
     },
     {
@@ -2050,7 +2074,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_seoandkvkktest_seoandkvkktest_test_json_ld_schemas",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_json_ld_schemas()"
     },
     {
@@ -2062,7 +2086,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_seoandkvkktest_seoandkvkktest_test_paginated_blog_has_noindex_follow",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_paginated_blog_has_noindex_follow()"
     },
     {
@@ -2074,7 +2098,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_seoandkvkktest_seoandkvkktest_test_robots_txt_contains_sitemap_and_disallow_admin",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_robots_txt_contains_sitemap_and_disallow_admin()"
     },
     {
@@ -2086,140 +2110,104 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_seoandkvkktest_seoandkvkktest_test_sitemap_contains_all_routes_and_features",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": ".test_sitemap_contains_all_routes_and_features()"
     },
     {
-      "label": "store_image()",
+      "label": ".booted()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Helpers/site.php",
-      "source_location": "L116",
+      "source_file": "quotarix-web/app/Models/Feature.php",
+      "source_location": "L46",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_helpers_site_store_image",
+      "id": "quotarix_web_app_models_feature_feature_booted",
       "community": 5,
-      "community_name": "Post",
-      "norm_label": "store_image()"
+      "community_name": "Illuminate\\Support\\Str",
+      "norm_label": ".booted()"
     },
     {
-      "label": ".create()",
+      "label": ".booted()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
-      "source_location": "L21",
+      "source_file": "quotarix-web/app/Models/Page.php",
+      "source_location": "L32",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller_create",
+      "id": "quotarix_web_app_models_page_page_booted",
       "community": 5,
-      "community_name": "Post",
-      "norm_label": ".create()"
+      "community_name": "Illuminate\\Support\\Str",
+      "norm_label": ".booted()"
     },
     {
-      "label": ".destroy()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
-      "source_location": "L109",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller_destroy",
-      "community": 5,
-      "community_name": "Post",
-      "norm_label": ".destroy()"
-    },
-    {
-      "label": ".edit()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
-      "source_location": "L66",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller_edit",
-      "community": 5,
-      "community_name": "Post",
-      "norm_label": ".edit()"
-    },
-    {
-      "label": ".index()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
-      "source_location": "L14",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller_index",
-      "community": 5,
-      "community_name": "Post",
-      "norm_label": ".index()"
-    },
-    {
-      "label": ".store()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
-      "source_location": "L26",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller_store",
-      "community": 5,
-      "community_name": "Post",
-      "norm_label": ".store()"
-    },
-    {
-      "label": ".update()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
-      "source_location": "L71",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_postcontroller_postcontroller_update",
-      "community": 5,
-      "community_name": "Post",
-      "norm_label": ".update()"
-    },
-    {
-      "label": ".index()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/BlogController.php",
-      "source_location": "L12",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_blogcontroller_blogcontroller_index",
-      "community": 5,
-      "community_name": "Post",
-      "norm_label": ".index()"
-    },
-    {
-      "label": ".show()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/BlogController.php",
-      "source_location": "L20",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_blogcontroller_blogcontroller_show",
-      "community": 5,
-      "community_name": "Post",
-      "norm_label": ".show()"
-    },
-    {
-      "label": ".scopeActive()",
+      "label": ".booted()",
       "file_type": "code",
       "source_file": "quotarix-web/app/Models/Post.php",
-      "source_location": "L31",
+      "source_location": "L44",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_models_post_post_scopeactive",
+      "id": "quotarix_web_app_models_post_post_booted",
       "community": 5,
-      "community_name": "Post",
-      "norm_label": ".scopeactive()"
+      "community_name": "Illuminate\\Support\\Str",
+      "norm_label": ".booted()"
     },
     {
-      "label": ".scopePublished()",
+      "label": ".booted()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Post.php",
-      "source_location": "L36",
+      "source_file": "quotarix-web/app/Models/Section.php",
+      "source_location": "L29",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_models_post_post_scopepublished",
+      "id": "quotarix_web_app_models_section_section_booted",
       "community": 5,
-      "community_name": "Post",
-      "norm_label": ".scopepublished()"
+      "community_name": "Illuminate\\Support\\Str",
+      "norm_label": ".booted()"
+    },
+    {
+      "label": ".booted()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Models/Setting.php",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_models_setting_setting_booted",
+      "community": 5,
+      "community_name": "Illuminate\\Support\\Str",
+      "norm_label": ".booted()"
+    },
+    {
+      "label": ".get()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Models/Setting.php",
+      "source_location": "L18",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_models_setting_setting_get",
+      "community": 5,
+      "community_name": "Illuminate\\Support\\Str",
+      "norm_label": ".get()"
+    },
+    {
+      "label": ".definition()",
+      "file_type": "code",
+      "source_file": "quotarix-web/database/factories/UserFactory.php",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_database_factories_userfactory_userfactory_definition",
+      "community": 5,
+      "community_name": "Illuminate\\Support\\Str",
+      "norm_label": ".definition()"
+    },
+    {
+      "label": ".unverified()",
+      "file_type": "code",
+      "source_file": "quotarix-web/database/factories/UserFactory.php",
+      "source_location": "L39",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_database_factories_userfactory_userfactory_unverified",
+      "community": 5,
+      "community_name": "Illuminate\\Support\\Str",
+      "norm_label": ".unverified()"
     },
     {
       "label": "handleHash()",
@@ -2330,18 +2318,6 @@
       "norm_label": "up()"
     },
     {
-      "label": ".index()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/DashboardController.php",
-      "source_location": "L15",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_dashboardcontroller_dashboardcontroller_index",
-      "community": 9,
-      "community_name": "Lead",
-      "norm_label": ".index()"
-    },
-    {
       "label": ".destroy()",
       "file_type": "code",
       "source_file": "quotarix-web/app/Http/Controllers/Admin/LeadController.php",
@@ -2450,210 +2426,170 @@
       "norm_label": ".scopeunread()"
     },
     {
+      "label": ".test_lead_csv_export_returns_utf8_bom()",
+      "file_type": "code",
+      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
+      "source_location": "L191",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_tests_feature_adminpaneltest_adminpaneltest_test_lead_csv_export_returns_utf8_bom",
+      "community": 9,
+      "community_name": "Lead",
+      "norm_label": ".test_lead_csv_export_returns_utf8_bom()"
+    },
+    {
       "label": ".create()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
       "source_location": "L21",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_create",
+      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller_create",
       "community": 92,
-      "community_name": "Testimonial",
+      "community_name": "Feature",
       "norm_label": ".create()"
     },
     {
       "label": ".destroy()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
-      "source_location": "L95",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
+      "source_location": "L109",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_destroy",
+      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller_destroy",
       "community": 92,
-      "community_name": "Testimonial",
+      "community_name": "Feature",
       "norm_label": ".destroy()"
     },
     {
       "label": ".edit()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
-      "source_location": "L58",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
+      "source_location": "L66",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_edit",
+      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller_edit",
       "community": 92,
-      "community_name": "Testimonial",
+      "community_name": "Feature",
       "norm_label": ".edit()"
     },
     {
       "label": ".index()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
       "source_location": "L14",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_index",
+      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller_index",
       "community": 92,
-      "community_name": "Testimonial",
+      "community_name": "Feature",
       "norm_label": ".index()"
     },
     {
       "label": ".store()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
       "source_location": "L26",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_store",
+      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller_store",
       "community": 92,
-      "community_name": "Testimonial",
+      "community_name": "Feature",
       "norm_label": ".store()"
-    },
-    {
-      "label": ".toggle()",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
-      "source_location": "L102",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_toggle",
-      "community": 92,
-      "community_name": "Testimonial",
-      "norm_label": ".toggle()"
     },
     {
       "label": ".update()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
-      "source_location": "L63",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
+      "source_location": "L71",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller_testimonialcontroller_update",
+      "id": "quotarix_web_app_http_controllers_admin_featurecontroller_featurecontroller_update",
       "community": 92,
-      "community_name": "Testimonial",
+      "community_name": "Feature",
       "norm_label": ".update()"
+    },
+    {
+      "label": ".index()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/SitemapController.php",
+      "source_location": "L13",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_sitemapcontroller_sitemapcontroller_index",
+      "community": 92,
+      "community_name": "Feature",
+      "norm_label": ".index()"
     },
     {
       "label": ".scopeActive()",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Models/Testimonial.php",
-      "source_location": "L29",
+      "source_file": "quotarix-web/app/Models/Feature.php",
+      "source_location": "L31",
       "_callable": true,
       "_origin": "ast",
-      "id": "quotarix_web_app_models_testimonial_testimonial_scopeactive",
+      "id": "quotarix_web_app_models_feature_feature_scopeactive",
       "community": 92,
-      "community_name": "Testimonial",
+      "community_name": "Feature",
       "norm_label": ".scopeactive()"
     },
     {
-      "label": "Closure",
+      "label": ".scopeMainFeatures()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Models/Feature.php",
+      "source_location": "L36",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_models_feature_feature_scopemainfeatures",
+      "community": 92,
+      "community_name": "Feature",
+      "norm_label": ".scopemainfeatures()"
+    },
+    {
+      "label": ".scopeRoadmap()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Models/Feature.php",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_models_feature_feature_scoperoadmap",
+      "community": 92,
+      "community_name": "Feature",
+      "norm_label": ".scoperoadmap()"
+    },
+    {
+      "label": ".handle()",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Middleware/RedirectLegacyHtml.php",
+      "source_location": "L35",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_middleware_redirectlegacyhtml_redirectlegacyhtml_handle",
+      "community": 94,
+      "community_name": "RedirectLegacyHtml.php",
+      "norm_label": ".handle()"
+    },
+    {
+      "label": "Carbon\\Carbon",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "closure",
+      "id": "carbon_carbon",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "closure"
+      "community_name": "Video",
+      "norm_label": "carbon\\carbon"
     },
     {
-      "label": "Illuminate\\Foundation\\Application",
+      "label": "TestimonialController.php",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "illuminate_foundation_application",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "illuminate\\foundation\\application"
-    },
-    {
-      "label": "Illuminate\\Foundation\\Configuration\\Exceptions",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "illuminate_foundation_configuration_exceptions",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "illuminate\\foundation\\configuration\\exceptions"
-    },
-    {
-      "label": "Illuminate\\Foundation\\Configuration\\Middleware",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "illuminate_foundation_configuration_middleware",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "illuminate\\foundation\\configuration\\middleware"
-    },
-    {
-      "label": "Illuminate\\Http\\RedirectResponse",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "illuminate_http_redirectresponse",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "illuminate\\http\\redirectresponse"
-    },
-    {
-      "label": "Illuminate\\Http\\Request",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "illuminate_http_request",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "illuminate\\http\\request"
-    },
-    {
-      "label": "Illuminate\\Support\\Facades\\Auth",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "illuminate_support_facades_auth",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "illuminate\\support\\facades\\auth"
-    },
-    {
-      "label": "Illuminate\\Support\\Facades\\RateLimiter",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "illuminate_support_facades_ratelimiter",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "illuminate\\support\\facades\\ratelimiter"
-    },
-    {
-      "label": "AuthController.php",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/AuthController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_authcontroller",
+      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "authcontroller.php"
-    },
-    {
-      "label": "Admin/FaqController.php",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_faqcontroller",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "admin/faqcontroller.php"
+      "community_name": "Video",
+      "norm_label": "testimonialcontroller.php"
     },
     {
       "label": "VideoController.php",
@@ -2663,63 +2599,19 @@
       "_origin": "ast",
       "id": "quotarix_web_app_http_controllers_admin_videocontroller",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
+      "community_name": "Video",
       "norm_label": "videocontroller.php"
     },
     {
-      "label": "RedirectLegacyHtml.php",
+      "label": "ContentSeeder.php",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Middleware/RedirectLegacyHtml.php",
+      "source_file": "quotarix-web/database/seeders/ContentSeeder.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "quotarix_web_app_http_middleware_redirectlegacyhtml",
+      "id": "quotarix_web_database_seeders_contentseeder",
       "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "redirectlegacyhtml.php"
-    },
-    {
-      "label": "bootstrap/app.php",
-      "file_type": "code",
-      "source_file": "quotarix-web/bootstrap/app.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "quotarix_web_bootstrap_app",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "bootstrap/app.php"
-    },
-    {
-      "label": "shared-hosting/index.php",
-      "file_type": "code",
-      "source_file": "quotarix-web/deploy/shared-hosting/index.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "quotarix_web_deploy_shared_hosting_index",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "shared-hosting/index.php"
-    },
-    {
-      "label": "public/index.php",
-      "file_type": "code",
-      "source_file": "quotarix-web/public/index.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "quotarix_web_public_index",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "public/index.php"
-    },
-    {
-      "label": "Symfony\\Component\\HttpFoundation\\Response",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "symfony_component_httpfoundation_response",
-      "community": 10,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "symfony\\component\\httpfoundation\\response"
+      "community_name": "Video",
+      "norm_label": "contentseeder.php"
     },
     {
       "label": "partials.cookie-consent",
@@ -3700,15 +3592,48 @@
       "norm_label": "laravel"
     },
     {
-      "label": "Illuminate\\Http\\Response",
+      "label": "Illuminate\\Http\\RedirectResponse",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "illuminate_http_response",
+      "id": "illuminate_http_redirectresponse",
       "community": 20,
       "community_name": "Illuminate\\View\\View",
-      "norm_label": "illuminate\\http\\response"
+      "norm_label": "illuminate\\http\\redirectresponse"
+    },
+    {
+      "label": "Illuminate\\Http\\Request",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_http_request",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": "illuminate\\http\\request"
+    },
+    {
+      "label": "Illuminate\\Support\\Facades\\Auth",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_support_facades_auth",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": "illuminate\\support\\facades\\auth"
+    },
+    {
+      "label": "Illuminate\\Support\\Facades\\RateLimiter",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_support_facades_ratelimiter",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": "illuminate\\support\\facades\\ratelimiter"
     },
     {
       "label": "Illuminate\\Support\\Facades\\Route",
@@ -3733,6 +3658,17 @@
       "norm_label": "illuminate\\view\\view"
     },
     {
+      "label": "AuthController.php",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/AuthController.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_authcontroller",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": "authcontroller.php"
+    },
+    {
       "label": "DashboardController.php",
       "file_type": "code",
       "source_file": "quotarix-web/app/Http/Controllers/Admin/DashboardController.php",
@@ -3744,15 +3680,26 @@
       "norm_label": "dashboardcontroller.php"
     },
     {
-      "label": "Admin/FeatureController.php",
+      "label": "Admin/FaqController.php",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_featurecontroller",
+      "id": "quotarix_web_app_http_controllers_admin_faqcontroller",
       "community": 20,
       "community_name": "Illuminate\\View\\View",
-      "norm_label": "admin/featurecontroller.php"
+      "norm_label": "admin/faqcontroller.php"
+    },
+    {
+      "label": "Admin/LeadController.php",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/LeadController.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_leadcontroller",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": "admin/leadcontroller.php"
     },
     {
       "label": "Admin/PageController.php",
@@ -3775,6 +3722,28 @@
       "community": 20,
       "community_name": "Illuminate\\View\\View",
       "norm_label": "admin/plancontroller.php"
+    },
+    {
+      "label": "PostController.php",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_admin_postcontroller",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": "postcontroller.php"
+    },
+    {
+      "label": "BlogController.php",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/BlogController.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_blogcontroller",
+      "community": 20,
+      "community_name": "Illuminate\\View\\View",
+      "norm_label": "blogcontroller.php"
     },
     {
       "label": "Controller.php",
@@ -3854,15 +3823,15 @@
       "norm_label": "controllers/plancontroller.php"
     },
     {
-      "label": "SitemapController.php",
+      "label": "shared-hosting/index.php",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/SitemapController.php",
+      "source_file": "quotarix-web/deploy/shared-hosting/index.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_sitemapcontroller",
+      "id": "quotarix_web_deploy_shared_hosting_index",
       "community": 20,
       "community_name": "Illuminate\\View\\View",
-      "norm_label": "sitemapcontroller.php"
+      "norm_label": "shared-hosting/index.php"
     },
     {
       "label": "web.php",
@@ -4294,17 +4263,6 @@
       "norm_label": "illuminate\\database\\eloquent\\attributes\\hidden"
     },
     {
-      "label": "Illuminate\\Database\\Eloquent\\Factories\\Factory",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "illuminate_database_eloquent_factories_factory",
-      "community": 31,
-      "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
-      "norm_label": "illuminate\\database\\eloquent\\factories\\factory"
-    },
-    {
       "label": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
       "file_type": "code",
       "source_file": "",
@@ -4558,37 +4516,26 @@
       "norm_label": "auth.php"
     },
     {
-      "label": "UserFactory.php",
+      "label": "AdminSeeder.php",
       "file_type": "code",
-      "source_file": "quotarix-web/database/factories/UserFactory.php",
+      "source_file": "quotarix-web/database/seeders/AdminSeeder.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "quotarix_web_database_factories_userfactory",
+      "id": "quotarix_web_database_seeders_adminseeder",
       "community": 31,
       "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
-      "norm_label": "userfactory.php"
+      "norm_label": "adminseeder.php"
     },
     {
-      "label": "static",
+      "label": "AdminPanelTest.php",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "static",
+      "id": "quotarix_web_tests_feature_adminpaneltest",
       "community": 31,
       "community_name": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
-      "norm_label": "static"
-    },
-    {
-      "label": "Carbon\\Carbon",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "carbon_carbon",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": "carbon\\carbon"
+      "norm_label": "adminpaneltest.php"
     },
     {
       "label": "Illuminate\\Database\\Seeder",
@@ -4598,7 +4545,7 @@
       "_origin": "ast",
       "id": "illuminate_database_seeder",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "illuminate\\database\\seeder"
     },
     {
@@ -4609,7 +4556,7 @@
       "_origin": "ast",
       "id": "illuminate_foundation_testing_refreshdatabase",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "illuminate\\foundation\\testing\\refreshdatabase"
     },
     {
@@ -4620,30 +4567,8 @@
       "_origin": "ast",
       "id": "illuminate_foundation_testing_testcase",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "illuminate\\foundation\\testing\\testcase"
-    },
-    {
-      "label": "AdminSeeder.php",
-      "file_type": "code",
-      "source_file": "quotarix-web/database/seeders/AdminSeeder.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "quotarix_web_database_seeders_adminseeder",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": "adminseeder.php"
-    },
-    {
-      "label": "ContentSeeder.php",
-      "file_type": "code",
-      "source_file": "quotarix-web/database/seeders/ContentSeeder.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "quotarix_web_database_seeders_contentseeder",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": "contentseeder.php"
     },
     {
       "label": "DatabaseSeeder.php",
@@ -4653,7 +4578,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_databaseseeder",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "databaseseeder.php"
     },
     {
@@ -4664,7 +4589,7 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_sectionseeder",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "sectionseeder.php"
     },
     {
@@ -4675,19 +4600,8 @@
       "_origin": "ast",
       "id": "quotarix_web_database_seeders_settingseeder",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "settingseeder.php"
-    },
-    {
-      "label": "AdminPanelTest.php",
-      "file_type": "code",
-      "source_file": "quotarix-web/tests/Feature/AdminPanelTest.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "quotarix_web_tests_feature_adminpaneltest",
-      "community": 32,
-      "community_name": "AdminPanelTest.php",
-      "norm_label": "adminpaneltest.php"
     },
     {
       "label": "BladeAndFormTest.php",
@@ -4697,7 +4611,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_bladeandformtest",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "bladeandformtest.php"
     },
     {
@@ -4708,7 +4622,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_exampletest",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "feature/exampletest.php"
     },
     {
@@ -4719,7 +4633,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_routetest",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "routetest.php"
     },
     {
@@ -4730,7 +4644,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_feature_seoandkvkktest",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "seoandkvkktest.php"
     },
     {
@@ -4741,7 +4655,7 @@
       "_origin": "ast",
       "id": "quotarix_web_tests_testcase",
       "community": 32,
-      "community_name": "AdminPanelTest.php",
+      "community_name": "ContentSeeder",
       "norm_label": "testcase.php"
     },
     {
@@ -5163,6 +5077,17 @@
       "norm_label": "seo.blade.php"
     },
     {
+      "label": "Illuminate\\Database\\Eloquent\\Factories\\Factory",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_database_eloquent_factories_factory",
+      "community": 5,
+      "community_name": "Illuminate\\Support\\Str",
+      "norm_label": "illuminate\\database\\eloquent\\factories\\factory"
+    },
+    {
       "label": "Illuminate\\Support\\Str",
       "file_type": "code",
       "source_file": "",
@@ -5170,7 +5095,7 @@
       "_origin": "ast",
       "id": "illuminate_support_str",
       "community": 5,
-      "community_name": "Post",
+      "community_name": "Illuminate\\Support\\Str",
       "norm_label": "illuminate\\support\\str"
     },
     {
@@ -5181,30 +5106,8 @@
       "_origin": "ast",
       "id": "pdo_mysql",
       "community": 5,
-      "community_name": "Post",
+      "community_name": "Illuminate\\Support\\Str",
       "norm_label": "pdo\\mysql"
-    },
-    {
-      "label": "PostController.php",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/PostController.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_postcontroller",
-      "community": 5,
-      "community_name": "Post",
-      "norm_label": "postcontroller.php"
-    },
-    {
-      "label": "BlogController.php",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/BlogController.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_blogcontroller",
-      "community": 5,
-      "community_name": "Post",
-      "norm_label": "blogcontroller.php"
     },
     {
       "label": "cache.php",
@@ -5214,7 +5117,7 @@
       "_origin": "ast",
       "id": "quotarix_web_config_cache",
       "community": 5,
-      "community_name": "Post",
+      "community_name": "Illuminate\\Support\\Str",
       "norm_label": "cache.php"
     },
     {
@@ -5225,7 +5128,7 @@
       "_origin": "ast",
       "id": "quotarix_web_config_database",
       "community": 5,
-      "community_name": "Post",
+      "community_name": "Illuminate\\Support\\Str",
       "norm_label": "database.php"
     },
     {
@@ -5236,8 +5139,30 @@
       "_origin": "ast",
       "id": "quotarix_web_config_session",
       "community": 5,
-      "community_name": "Post",
+      "community_name": "Illuminate\\Support\\Str",
       "norm_label": "session.php"
+    },
+    {
+      "label": "UserFactory.php",
+      "file_type": "code",
+      "source_file": "quotarix-web/database/factories/UserFactory.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "quotarix_web_database_factories_userfactory",
+      "community": 5,
+      "community_name": "Illuminate\\Support\\Str",
+      "norm_label": "userfactory.php"
+    },
+    {
+      "label": "static",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "static",
+      "community": 5,
+      "community_name": "Illuminate\\Support\\Str",
+      "norm_label": "static"
     },
     {
       "label": "band.blade.php",
@@ -5864,17 +5789,6 @@
       "norm_label": "videos/create.blade.php"
     },
     {
-      "label": "Admin/LeadController.php",
-      "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/LeadController.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_leadcontroller",
-      "community": 9,
-      "community_name": "Lead",
-      "norm_label": "admin/leadcontroller.php"
-    },
-    {
       "label": "Symfony\\Component\\HttpFoundation\\StreamedResponse",
       "file_type": "code",
       "source_file": "",
@@ -5908,15 +5822,37 @@
       "norm_label": "videos/index.blade.php"
     },
     {
-      "label": "TestimonialController.php",
+      "label": "Illuminate\\Http\\Response",
       "file_type": "code",
-      "source_file": "quotarix-web/app/Http/Controllers/Admin/TestimonialController.php",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_http_response",
+      "community": 92,
+      "community_name": "Feature",
+      "norm_label": "illuminate\\http\\response"
+    },
+    {
+      "label": "Admin/FeatureController.php",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/Admin/FeatureController.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "quotarix_web_app_http_controllers_admin_testimonialcontroller",
+      "id": "quotarix_web_app_http_controllers_admin_featurecontroller",
       "community": 92,
-      "community_name": "Testimonial",
-      "norm_label": "testimonialcontroller.php"
+      "community_name": "Feature",
+      "norm_label": "admin/featurecontroller.php"
+    },
+    {
+      "label": "SitemapController.php",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Controllers/SitemapController.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_controllers_sitemapcontroller",
+      "community": 92,
+      "community_name": "Feature",
+      "norm_label": "sitemapcontroller.php"
     },
     {
       "label": "build-package.sh",
@@ -5947,6 +5883,94 @@
       "community": 93,
       "community_name": "build-package.sh",
       "norm_label": "build-package.sh script"
+    },
+    {
+      "label": "Closure",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "closure",
+      "community": 94,
+      "community_name": "RedirectLegacyHtml.php",
+      "norm_label": "closure"
+    },
+    {
+      "label": "RedirectLegacyHtml.php",
+      "file_type": "code",
+      "source_file": "quotarix-web/app/Http/Middleware/RedirectLegacyHtml.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "quotarix_web_app_http_middleware_redirectlegacyhtml",
+      "community": 94,
+      "community_name": "RedirectLegacyHtml.php",
+      "norm_label": "redirectlegacyhtml.php"
+    },
+    {
+      "label": "Symfony\\Component\\HttpFoundation\\Response",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "symfony_component_httpfoundation_response",
+      "community": 94,
+      "community_name": "RedirectLegacyHtml.php",
+      "norm_label": "symfony\\component\\httpfoundation\\response"
+    },
+    {
+      "label": "Illuminate\\Foundation\\Application",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_foundation_application",
+      "community": 95,
+      "community_name": "bootstrap/app.php",
+      "norm_label": "illuminate\\foundation\\application"
+    },
+    {
+      "label": "Illuminate\\Foundation\\Configuration\\Exceptions",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_foundation_configuration_exceptions",
+      "community": 95,
+      "community_name": "bootstrap/app.php",
+      "norm_label": "illuminate\\foundation\\configuration\\exceptions"
+    },
+    {
+      "label": "Illuminate\\Foundation\\Configuration\\Middleware",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_foundation_configuration_middleware",
+      "community": 95,
+      "community_name": "bootstrap/app.php",
+      "norm_label": "illuminate\\foundation\\configuration\\middleware"
+    },
+    {
+      "label": "bootstrap/app.php",
+      "file_type": "code",
+      "source_file": "quotarix-web/bootstrap/app.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "quotarix_web_bootstrap_app",
+      "community": 95,
+      "community_name": "bootstrap/app.php",
+      "norm_label": "bootstrap/app.php"
+    },
+    {
+      "label": "public/index.php",
+      "file_type": "code",
+      "source_file": "quotarix-web/public/index.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "quotarix_web_public_index",
+      "community": 95,
+      "community_name": "bootstrap/app.php",
+      "norm_label": "public/index.php"
     },
     {
       "label": "Pekvera Yaz\u0131l\u0131m Teknoloji A.\u015e.",
@@ -6317,7 +6341,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
-      "source_location": "L81",
+      "source_location": "L84",
       "weight": 1.0,
       "_origin": "ast",
       "source": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_reorder",
@@ -6329,7 +6353,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "quotarix-web/app/Http/Controllers/Admin/FaqController.php",
-      "source_location": "L81",
+      "source_location": "L84",
       "weight": 1.0,
       "_origin": "ast",
       "source": "quotarix_web_app_http_controllers_admin_faqcontroller_faqcontroller_reorder",
@@ -6497,7 +6521,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "quotarix-web/app/Http/Controllers/Admin/SectionController.php",
-      "source_location": "L40",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
       "source": "quotarix_web_app_http_controllers_admin_sectioncontroller_sectioncontroller_reorder",
@@ -10984,7 +11008,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "quotarix-web/app/Http/Middleware/RedirectLegacyHtml.php",
-      "source_location": "L32",
+      "source_location": "L35",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
@@ -10996,7 +11020,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "quotarix-web/app/Http/Middleware/RedirectLegacyHtml.php",
-      "source_location": "L32",
+      "source_location": "L35",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
@@ -11872,7 +11896,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "quotarix-web/app/Http/Middleware/RedirectLegacyHtml.php",
-      "source_location": "L32",
+      "source_location": "L35",
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
@@ -14910,7 +14934,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "quotarix-web/app/Http/Middleware/RedirectLegacyHtml.php",
-      "source_location": "L32",
+      "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
       "source": "quotarix_web_app_http_middleware_redirectlegacyhtml_redirectlegacyhtml",
@@ -14970,6 +14994,17 @@
       "_origin": "ast",
       "source": "quotarix_web_app_models_feature_feature",
       "target": "quotarix_web_app_models_feature_feature_scoperoadmap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "quotarix-web/app/Models/Feature.php",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "quotarix_web_app_models_feature_feature",
+      "target": "quotarix_web_app_models_feature_feature_booted",
       "confidence_score": 1.0
     },
     {
@@ -15069,6 +15104,17 @@
       "_origin": "ast",
       "source": "quotarix_web_app_models_post_post",
       "target": "quotarix_web_app_models_post_post_scopepublished",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "quotarix-web/app/Models/Post.php",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "quotarix_web_app_models_post_post",
+      "target": "quotarix_web_app_models_post_post_booted",
       "confidence_score": 1.0
     },
     {
@@ -16128,11 +16174,35 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "quotarix-web/app/Models/Feature.php",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "quotarix_web_app_models_feature_feature_booted",
+      "target": "static"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "quotarix-web/app/Models/Page.php",
       "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
       "source": "quotarix_web_app_models_page_page_booted",
+      "target": "static"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "quotarix-web/app/Models/Post.php",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "quotarix_web_app_models_post_post_booted",
       "target": "static"
     },
     {
@@ -16406,5 +16476,5 @@
       "source_file": "index.html"
     }
   ],
-  "built_at_commit": "23ba350cac3a9db45370cedd987576a7402ae191"
+  "built_at_commit": "ed834b88d5d56a5ec172fc2c80fe42640414bfc2"
 }

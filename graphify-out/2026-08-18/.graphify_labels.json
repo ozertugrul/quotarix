@@ -4,7 +4,7 @@
   "2": "composer.json",
   "3": "scripts",
   "4": "package.json",
-  "5": "AdminPanelTest.php",
+  "5": "Post",
   "6": "qx-redirects.js",
   "7": "0001_01_01_000000_create_users_table.php",
   "8": "README.md",
@@ -14,7 +14,7 @@
   "12": "AppServiceProvider",
   "13": "QUOTARIX-WEB — Geliştirme Kuralları ve Bağlam/Token Optimizasyon Rehberi (`rules.md`)",
   "14": "logging.php",
-  "15": "Video",
+  "15": "🚀 2. cPanel Kurulum Adımları",
   "16": "ExampleTest",
   "17": "console.php",
   "18": "rules/graphify.md",
@@ -31,7 +31,7 @@
   "29": "welcome.blade.php",
   "30": "vite.config.js",
   "31": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
-  "32": "ContentSeeder",
+  "32": "AdminPanelTest.php",
   "33": "pages/blog.blade.php",
   "34": "blog-detail.blade.php",
   "35": "contact.blade.php",
@@ -90,5 +90,7 @@
   "88": "testimonials/index.blade.php",
   "89": "videos/create.blade.php",
   "90": "videos/edit.blade.php",
-  "91": "videos/index.blade.php"
+  "91": "videos/index.blade.php",
+  "92": "Testimonial",
+  "93": "build-package.sh"
 }

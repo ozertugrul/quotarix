@@ -75,9 +75,12 @@ class FaqController extends Controller
 
     public function reorder(Request $request): JsonResponse
     {
-        $order = $request->input('order', []);
+        $validated = $request->validate([
+            'order' => ['required', 'array'],
+            'order.*' => ['integer', 'exists:faqs,id'],
+        ]);
 
-        foreach ($order as $index => $id) {
+        foreach ($validated['order'] as $index => $id) {
             Faq::where('id', $id)->update(['sort_order' => $index + 1]);
         }
 

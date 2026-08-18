@@ -120,7 +120,8 @@ if (!function_exists('store_image')) {
             mkdir($targetDir, 0755, true);
         }
 
-        $filename = time() . '_' . bin2hex(random_bytes(6)) . '.' . $file->getClientOriginalExtension();
+        $ext = strtolower($file->guessExtension() ?: 'jpg');
+        $filename = time() . '_' . bin2hex(random_bytes(6)) . '.' . $ext;
         $file->move($targetDir, $filename);
 
         return 'uploads/' . $folder . '/' . $filename;
