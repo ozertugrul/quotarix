@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Laravel (quotarix-web)
+/quotarix-web/vendor
+/quotarix-web/node_modules
+/quotarix-web/.env
+/quotarix-web/.env.backup
+/quotarix-web/.env.production
+/quotarix-web/public/build
+/quotarix-web/public/hot
+/quotarix-web/public/storage
+/quotarix-web/storage/*.key
+/quotarix-web/storage/logs/*
+!/quotarix-web/storage/logs/.gitignore
+/quotarix-web/storage/framework/cache/*
+!/quotarix-web/storage/framework/cache/.gitignore
+/quotarix-web/storage/framework/sessions/*
+!/quotarix-web/storage/framework/sessions/.gitignore
+/quotarix-web/storage/framework/views/*
+!/quotarix-web/storage/framework/views/.gitignore
+/quotarix-web/.phpunit.cache
+/quotarix-web/.phpunit.result.cache
+
+# IDEs
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log

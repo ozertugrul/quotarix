@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon//favicon-16x16.png">
+<link rel="manifest" href="favicon//site.webmanifest">
+    <title>Quotarix | Forwarder Satış Ekibiniz İçin CRM — Müşteriniz Şirkette Kalsın</title>
+    <meta name="description" content="Freight forwarder firmalar için satış yönetimi. Satışçı ayrılsa bile müşteri ilişkisi, ziyaretler ve teklifler şirketinizde kalır. Ekip performansını anlık görün.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0A1628;
+            --navy-light: #0D2B3E;
+            --teal: #0EA5A5;
+            --teal-light: #14B8A6;
+            --cyan: #06B6D4;
+            --amber: #F59E0B;
+            --green: #10B981;
+            --red: #EF4444;
+            --bg-light: #F0FDFA;
+            --bg-gray: #F8FAFC;
+            --text-primary: #0F172A;
+            --text-secondary: #64748B;
+            --border: #E2E8F0;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: var(--text-primary); }
+        
+        /* NAVBAR */
+        .navbar { padding: 14px 0; transition: all 0.3s; }
+        .navbar.scrolled { background: rgba(255,255,255,0.97); backdrop-filter: blur(10px); box-shadow: 0 2px 20px rgba(0,0,0,0.06); padding: 8px 0; }
+        .navbar-brand { font-weight: 800; font-size: 24px; color: var(--navy) !important; }
+        .navbar-brand span { color: var(--teal); }
+        .nav-link { font-weight: 500; color: var(--text-primary) !important; font-size: 15px; padding: 8px 16px !important; }
+        .nav-link:hover { color: var(--teal) !important; }
+        .btn-cta { background: linear-gradient(135deg, var(--teal), var(--cyan)); color: #fff !important; border: none; border-radius: 10px; padding: 10px 24px; font-weight: 600; font-size: 14px; transition: all 0.3s; }
+        .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(14,165,165,0.3); }
+
+        /* HERO */
+        .hero { padding: 140px 0 100px; background: linear-gradient(165deg, #fff 0%, var(--bg-light) 50%, #E0F7FA 100%); position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: -200px; right: -150px; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(14,165,165,0.07) 0%, transparent 70%); }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(14,165,165,0.08); border: 1px solid rgba(14,165,165,0.15); border-radius: 100px; padding: 6px 18px; font-size: 13px; font-weight: 600; color: var(--teal); margin-bottom: 20px; }
+        .hero h1 { font-size: clamp(32px, 5vw, 52px); font-weight: 800; line-height: 1.15; color: var(--navy); margin-bottom: 20px; }
+        .hero h1 span { color: var(--teal); }
+        .hero p.lead { font-size: 18px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 32px; max-width: 500px; }
+        .btn-hero { background: linear-gradient(135deg, var(--teal), var(--cyan)); color: #fff; border: none; border-radius: 12px; padding: 16px 36px; font-weight: 700; font-size: 16px; transition: all 0.3s; text-decoration: none; }
+        .btn-hero:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(14,165,165,0.35); color: #fff; }
+        .btn-hero-outline { background: transparent; color: var(--navy); border: 2px solid var(--border); border-radius: 12px; padding: 14px 32px; font-weight: 600; font-size: 16px; transition: all 0.3s; text-decoration: none; }
+        .btn-hero-outline:hover { border-color: var(--teal); color: var(--teal); }
+        .hero-trust { display: flex; gap: 24px; margin-top: 36px; flex-wrap: wrap; }
+        .hero-trust span { font-size: 14px; color: var(--text-secondary); font-weight: 500; }
+        .hero-trust i { color: var(--green); margin-right: 6px; }
+        .hero-img { border-radius: 16px; box-shadow: 0 30px 80px rgba(10,22,40,0.12); max-width: 100%; }
+
+        /* SECTION COMMON */
+        .section { padding: 100px 0; }
+        .section-badge { display: inline-block; background: rgba(14,165,165,0.08); border: 1px solid rgba(14,165,165,0.15); border-radius: 100px; padding: 5px 16px; font-size: 12px; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; }
+        .section-title { font-size: 36px; font-weight: 800; color: var(--navy); margin-bottom: 16px; }
+        .section-subtitle { font-size: 18px; color: var(--text-secondary); line-height: 1.7; max-width: 600px; }
+        .bg-light-teal { background: var(--bg-light); }
+        .bg-gray { background: var(--bg-gray); }
+        .bg-navy { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); }
+
+        /* PROBLEM */
+        .problem-card { background: #fff; border-radius: 16px; padding: 32px; border: 1px solid var(--border); transition: all 0.3s; height: 100%; }
+        .problem-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); border-color: transparent; }
+        .problem-icon { width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 20px; }
+        .problem-icon.red { background: rgba(239,68,68,0.1); color: var(--red); }
+        .problem-icon.amber { background: rgba(245,158,11,0.1); color: var(--amber); }
+        .problem-card h5 { font-weight: 700; font-size: 18px; margin-bottom: 10px; }
+        .problem-card p { font-size: 15px; color: var(--text-secondary); line-height: 1.6; margin: 0; }
+
+        /* FEATURES */
+        .feature-card { background: #fff; border-radius: 20px; padding: 40px 32px; border: 1px solid var(--border); transition: all 0.3s; height: 100%; }
+        .feature-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(14,165,165,0.12); border-color: var(--teal); }
+        .feature-icon { width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, var(--teal), var(--cyan)); display: flex; align-items: center; justify-content: center; font-size: 28px; color: #fff; margin-bottom: 24px; }
+        .feature-card h4 { font-weight: 700; font-size: 20px; margin-bottom: 16px; }
+        .feature-list { list-style: none; padding: 0; margin: 0; }
+        .feature-list li { padding: 8px 0; font-size: 15px; color: var(--text-secondary); display: flex; align-items: flex-start; gap: 10px; }
+        .feature-list li i { color: var(--teal); margin-top: 3px; font-size: 14px; }
+
+        /* HOW IT WORKS */
+        .step-card { text-align: center; padding: 32px 24px; }
+        .step-number { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, var(--teal), var(--cyan)); color: #fff; font-size: 24px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; }
+        .step-card h5 { font-weight: 700; font-size: 20px; margin-bottom: 12px; }
+        .step-card p { font-size: 15px; color: var(--text-secondary); line-height: 1.6; }
+        .step-connector { position: relative; }
+        .step-connector::after { content: ''; position: absolute; top: 32px; left: 60%; width: 80%; height: 2px; background: linear-gradient(90deg, var(--teal), transparent); z-index: 0; }
+
+        /* MANAGER */
+        .manager-check { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 20px; }
+        .manager-check i { color: var(--teal-light); font-size: 20px; margin-top: 2px; }
+        .manager-check p { font-size: 16px; color: rgba(255,255,255,0.85); line-height: 1.5; margin: 0; }
+
+        /* PRICING */
+        .pricing-card { background: #fff; border-radius: 24px; padding: 48px 40px; border: 2px solid var(--teal); position: relative; overflow: hidden; max-width: 440px; margin: 0 auto; }
+        .pricing-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--teal), var(--cyan)); }
+        .pricing-badge { background: linear-gradient(135deg, var(--teal), var(--cyan)); color: #fff; font-size: 13px; font-weight: 700; padding: 6px 20px; border-radius: 100px; display: inline-block; margin-bottom: 24px; }
+        .pricing-amount { font-size: 56px; font-weight: 800; color: var(--navy); }
+        .pricing-amount small { font-size: 18px; font-weight: 500; color: var(--text-secondary); }
+        .pricing-list { list-style: none; padding: 0; margin: 24px 0; }
+        .pricing-list li { padding: 10px 0; font-size: 15px; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; }
+        .pricing-list li:last-child { border-bottom: none; }
+        .pricing-list li i { color: var(--teal); font-size: 16px; }
+
+        /* TESTIMONIALS */
+        .testimonial-section { position: relative; }
+        .testimonial-card { background: #fff; border-radius: 20px; padding: 36px; border: 1px solid var(--border); height: 100%; display: flex; flex-direction: column; }
+        .testimonial-stars { color: var(--amber); font-size: 16px; margin-bottom: 16px; }
+        .testimonial-text { font-size: 16px; color: var(--text-secondary); line-height: 1.7; font-style: italic; flex-grow: 1; margin-bottom: 24px; }
+        .testimonial-author { display: flex; align-items: center; gap: 14px; }
+        .testimonial-avatar { width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, var(--teal), var(--cyan)); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 18px; }
+        .testimonial-name { font-weight: 700; font-size: 15px; }
+        .testimonial-role { font-size: 13px; color: var(--text-secondary); }
+        .carousel-indicators [data-bs-target] { background-color: var(--teal); width: 10px; height: 10px; border-radius: 50%; }
+        .carousel-control-prev-icon, .carousel-control-next-icon { background-color: var(--teal); border-radius: 50%; padding: 16px; background-size: 50%; }
+
+        /* BLOG */
+        .blog-card { background: #fff; border-radius: 20px; overflow: hidden; border: 1px solid var(--border); transition: all 0.3s; height: 100%; }
+        .blog-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
+        .blog-img { width: 100%; height: 200px; object-fit: cover; background: linear-gradient(135deg, var(--navy), var(--navy-light)); display: flex; align-items: center; justify-content: center; }
+        .blog-img i { font-size: 48px; color: var(--teal); }
+        .blog-body { padding: 28px; }
+        .blog-tag { display: inline-block; background: rgba(14,165,165,0.08); color: var(--teal); font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 6px; margin-bottom: 12px; }
+        .blog-card h5 { font-weight: 700; font-size: 18px; margin-bottom: 10px; line-height: 1.4; }
+        .blog-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+        .blog-meta { font-size: 13px; color: var(--text-secondary); margin-top: 16px; }
+
+        /* COMING SOON */
+        .coming-card { background: #fff; border-radius: 16px; padding: 32px; border: 1px solid var(--border); position: relative; overflow: hidden; height: 100%; opacity: 0.9; }
+        .coming-card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.1); pointer-events: none; }
+        .coming-badge { background: var(--amber); color: #fff; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 100px; position: absolute; top: 16px; right: 16px; }
+        .coming-icon { width: 52px; height: 52px; border-radius: 14px; background: rgba(14,165,165,0.1); display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--teal); margin-bottom: 20px; }
+
+        /* SECTOR */
+        .sector-item { display: flex; align-items: flex-start; gap: 16px; padding: 20px 0; }
+        .sector-icon { min-width: 48px; height: 48px; border-radius: 12px; background: rgba(14,165,165,0.1); display: flex; align-items: center; justify-content: center; font-size: 22px; color: var(--teal); }
+
+        /* STATS */
+        .stat-item { text-align: center; padding: 40px 20px; }
+        .stat-value { font-size: 48px; font-weight: 800; color: var(--teal-light); }
+        .stat-label { font-size: 15px; color: rgba(255,255,255,0.7); margin-top: 8px; }
+
+        /* FAQ */
+        .accordion-item { border: 1px solid var(--border); border-radius: 14px !important; margin-bottom: 12px; overflow: hidden; }
+        .accordion-button { font-weight: 600; font-size: 16px; color: var(--text-primary); padding: 20px 24px; }
+        .accordion-button:not(.collapsed) { background: var(--bg-light); color: var(--teal); box-shadow: none; }
+        .accordion-button:focus { box-shadow: none; }
+        .accordion-button::after { background-size: 16px; }
+        .accordion-body { padding: 0 24px 20px; font-size: 15px; color: var(--text-secondary); line-height: 1.7; }
+
+        /* FINAL CTA */
+        .cta-section { background: linear-gradient(135deg, var(--teal) 0%, var(--cyan) 50%, var(--teal-light) 100%); padding: 100px 0; position: relative; overflow: hidden; }
+        .cta-section::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; border-radius: 50%; background: rgba(255,255,255,0.05); }
+        .btn-cta-white { background: #fff; color: var(--teal); border: none; border-radius: 12px; padding: 16px 40px; font-weight: 700; font-size: 16px; transition: all 0.3s; text-decoration: none; }
+        .btn-cta-white:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.15); color: var(--navy); }
+
+        /* FOOTER */
+        .footer { background: var(--navy); padding: 60px 0 30px; }
+        .footer h6 { font-weight: 700; color: #fff; margin-bottom: 20px; font-size: 16px; }
+        .footer a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+        .footer a:hover { color: var(--teal-light); }
+        .footer p { color: rgba(255,255,255,0.5); font-size: 14px; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; margin-top: 40px; }
+
+        /* ANIMATIONS */
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .fade-up { opacity: 0; transform: translateY(30px); transition: all 0.7s ease; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+        /* MODAL */
+        .modal-content { border-radius: 20px; border: none; }
+        .modal-header { border-bottom: 1px solid var(--border); padding: 24px 32px; }
+        .modal-body { padding: 32px; }
+        .form-control:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(14,165,165,0.1); }
+
+        @media (max-width: 768px) {
+            .hero { padding: 120px 0 60px; }
+            .section { padding: 64px 0; }
+            .hero-trust { gap: 16px; }
+            .step-connector::after { display: none; }
+            .stat-value { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#">QUOTA<span>RIX</span></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><i class="bi bi-list fs-4"></i></button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#features">Özellikler</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">SSS</a></li>
+            </ul>
+            <a class="btn btn-cta" href="https://wa.me/905469715249?text=Merhaba,%20Quotarix%20hakkında%20bilgi%20almak%20istiyorum" target="_blank">Ücretsiz Deneyin</a>
+            &nbsp;&nbsp;<a class="btn btn-cta"  href="https://app.quotarix.com">Giriş</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 fade-up">
+                <div class="hero-badge"><i class="bi bi-lightning-charge-fill"></i> Freight Forwarder'lar İçin Özel Tasarlandı</div>
+                <h1>Satışçınız Gitti.<br><span>Müşterileriniz de mi</span> Gitti?</h1>
+                <p class="lead">Satış temsilciniz 6 ay çalışır, tüm müşteri ilişkisini kendi ajandasında tutar. Ayrıldığında hepsi onunla gider. Quotarix ziyaretleri, notları ve teklifleri şirketinizde tutar.</p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a class="btn-hero" href="https://wa.me/905469715249?text=Merhaba,%20Quotarix%20hakkında%20bilgi%20almak%20istiyorum" target="_blank"><i class="bi bi-rocket-takeoff"></i> Ücretsiz Demo Talep Et</a>
+                    <a class="btn-hero-outline" href="#features"><i class="bi bi-arrow-down-circle"></i> Özellikleri İncele</a>
+                </div>
+                <div class="hero-trust">
+                    <span><i class="bi bi-check-circle-fill"></i>Forwarder'a özel — genel CRM değil</span>
+                    <span><i class="bi bi-check-circle-fill"></i>Türkçe, yerli, KVKK uyumlu</span>
+                    <span><i class="bi bi-check-circle-fill"></i>Kurulum ve eğitim desteği</span>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center fade-up">
+                <img src="hero.png" alt="Quotarix Mobil Uygulama" class="hero-img" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section bg-light-teal" id="problem">
+    <div class="container">
+        <div class="text-center mb-5 fade-up">
+            <span class="section-badge">Tanıdık Geliyor mu?</span>
+            <h2 class="section-title">Bu Sorunları Yaşıyor musunuz?</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3 fade-up">
+                <div class="problem-card">
+                    <div class="problem-icon red"><i class="bi bi-person-x"></i></div>
+                    <h5>Satışçı Gidince Her Şey Gidiyor</h5>
+                    <p>6 ay emek verilen müşteri ilişkisi, ziyaretler, notlar — hepsi satışçının telefonunda. Ayrılınca sıfırlanıyor, bazen rakibe gidiyor.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 fade-up">
+                <div class="problem-card">
+                    <div class="problem-icon amber"><i class="bi bi-eye-slash"></i></div>
+                    <h5>Yönetici Sahadan Anlık Bilgi Alamıyor</h5>
+                    <p>Ekibiniz kime teklif verdi? Hangi fırsatlar takipsiz? Kaç fırsat teklife döndü? Bu soruların cevabı yok.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 fade-up">
+                <div class="problem-card">
+                    <div class="problem-icon red"><i class="bi bi-file-earmark-spreadsheet"></i></div>
+                    <h5>Müşteri Bilgisi Dağınık</h5>
+                    <p>Kartvizitler çekmecede, notlar telefonda, teklifler ayrı Excel dosyalarında. Analiz edilemiyor, aranamıyor.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 fade-up">
+                <div class="problem-card">
+                    <div class="problem-icon amber"><i class="bi bi-cash-coin"></i></div>
+                    <h5>Fırsatlar Takipsiz Kalıyor</h5>
+                    <p>3 gün önce teklif verdiniz ama takip etmeyi unuttunuz. Müşteri rakibe gitti. Kimse fark etmedi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+    <div class="container">
+        <div class="text-center mb-5 fade-up">
+            <span class="section-badge">Özellikler</span>
+            <h2 class="section-title">Her Şey Tek Platformda</h2>
+            <p class="section-subtitle mx-auto">Satıştan operasyona giden yolda hiçbir bilgi kaybolmasın. Tekliflerinizi, müşterilerinizi ve ekip performansınızı tek yerden yönetin.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 fade-up">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-file-earmark-text"></i></div>
+                    <h4>Hızlı Teklif Yönetimi</h4>
+                    <ul class="feature-list">
+                        <li><i class="bi bi-check2"></i>FCL, LCL, hava yolu, kara yolu şablonları</li>
+                        <li><i class="bi bi-check2"></i>Çoklu döviz desteği (USD, EUR, TRY)</li>
+                        <li><i class="bi bi-check2"></i>PDF oluşturma, e-posta ile gönderme</li>
+                        <li><i class="bi bi-check2"></i>Teklif durumu: Gönderildi → Onaylandı</li>
+                        <li><i class="bi bi-check2"></i>Otomatik takip hatırlatmaları</li>
+                        <li><i class="bi bi-check2"></i>Teklif klonlama ile hızlı düzenleme</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 fade-up">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-people"></i></div>
+                    <h4>Akıllı CRM</h4>
+                    <ul class="feature-list">
+                        <li><i class="bi bi-check2"></i>Müşteri bilgileri tek kartta</li>
+                        <li><i class="bi bi-check2"></i>Görüşme notları ve dosya ekleme</li>
+                        <li><i class="bi bi-check2"></i>Müşteri etiketleme: Aktif, VIP, Potansiyel</li>
+                        <li><i class="bi bi-check2"></i>Tüm teklif geçmişi bir bakışta</li>
+                        <li><i class="bi bi-check2"></i>Çalışan ayrılsa bile veriler kalır</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 fade-up">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                    <h4>Yönetici Dashboard</h4>
+                    <ul class="feature-list">
+                        <li><i class="bi bi-check2"></i>Tüm ekibin teklifleri tek ekranda</li>
+                        <li><i class="bi bi-check2"></i>Temsilci bazlı performans karşılaştırma</li>
+                        <li><i class="bi bi-check2"></i>Aylık teklif ve dönüşüm raporları</li>
+                        <li><i class="bi bi-check2"></i>Gelir tahmini ve trend analizi</li>
+                        <li><i class="bi bi-check2"></i>Müşteri aktivite geçmişi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI KARTVİZİT — ÖNE ÇIKAN -->
+    <div class="container" style="margin-top: 64px;">
+        <div class="row align-items-center g-4 fade-up" style="background: linear-gradient(135deg, var(--navy), var(--navy-light)); border-radius: 24px; padding: 48px 40px; overflow: hidden;">
+            <div class="col-lg-7">
+                <span style="display:inline-flex; align-items:center; gap:8px; background: rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.3); color: var(--amber); border-radius:100px; padding:6px 16px; font-size:13px; font-weight:700; margin-bottom:18px;"><i class="bi bi-stars"></i> Yapay Zeka</span>
+                <h3 style="color:#fff; font-weight:800; font-size:30px; line-height:1.2; margin-bottom:16px;">Fuardan 300 Kartvizit.<br><span style="color: var(--teal-light);">Tek Tek Girmeye Son.</span></h3>
+                <p style="color: rgba(255,255,255,0.7); font-size:16px; line-height:1.7; margin-bottom:28px;">Satış ekibiniz fuardan yüzlerce kartvizitle dönüyor. Her birini elle Excel'e girmek saatler alıyor, yarısı hiç girilmiyor. Quotarix'te kartvizitin fotoğrafını çekin — yapay zeka isim, firma, telefon, e-postayı okuyup saniyeler içinde müşteri kartına dönüştürsün.</p>
+                <div class="row g-3">
+                    <div class="col-sm-4"><div style="display:flex; align-items:center; gap:10px; color:#fff; font-size:14px; font-weight:500;"><i class="bi bi-camera-fill" style="color:var(--teal-light); font-size:20px;"></i>Fotoğrafla, bitsin</div></div>
+                    <div class="col-sm-4"><div style="display:flex; align-items:center; gap:10px; color:#fff; font-size:14px; font-weight:500;"><i class="bi bi-lightning-fill" style="color:var(--teal-light); font-size:20px;"></i>Saniyede müşteri kartı</div></div>
+                    <div class="col-sm-4"><div style="display:flex; align-items:center; gap:10px; color:#fff; font-size:14px; font-weight:500;"><i class="bi bi-shield-check" style="color:var(--teal-light); font-size:20px;"></i>Hiçbiri kaybolmasın</div></div>
+                </div>
+            </div>
+            <div class="col-lg-5 text-center">
+                <div style="background: rgba(14,165,165,0.12); border:1px solid rgba(14,165,165,0.25); border-radius:20px; padding:40px 24px;">
+                    <i class="bi bi-person-vcard" style="font-size:72px; color:var(--teal-light);"></i>
+                    <div style="display:flex; align-items:center; justify-content:center; gap:12px; margin:20px 0; color:rgba(255,255,255,0.5);">
+                        <i class="bi bi-camera" style="font-size:22px;"></i>
+                        <i class="bi bi-arrow-right" style="font-size:18px;"></i>
+                        <i class="bi bi-cpu" style="font-size:22px;"></i>
+                        <i class="bi bi-arrow-right" style="font-size:18px;"></i>
+                        <i class="bi bi-person-lines-fill" style="font-size:22px; color:var(--teal-light);"></i>
+                    </div>
+                    <div style="color:rgba(255,255,255,0.6); font-size:13px; font-weight:500;">Kartvizit → Yapay Zeka → Müşteri Kartı</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section bg-gray">
+    <div class="container">
+        <div class="text-center mb-5 fade-up">
+            <span class="section-badge">Nasıl Çalışır</span>
+            <h2 class="section-title">3 Adımda Başlayın</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 step-connector fade-up">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h5>Kayıt Olun</h5>
+                    <p>5 dakikada hesabınızı oluşturun, ekibinizi davet edin. Mevcut müşterilerinizi Excel'den aktarın.</p>
+                </div>
+            </div>
+            <div class="col-md-4 step-connector fade-up">
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h5>Teklif Oluşturun</h5>
+                    <p>Birkaç tıkla profesyonel teklif hazırlayın. Şablondan seçin, fiyatı girin, gönderin.</p>
+                </div>
+            </div>
+            <div class="col-md-4 fade-up">
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h5>Takip Edin, Kazanın</h5>
+                    <p>Tüm tekliflerinizi ve ekip performansınızı tek dashboard'dan izleyin. Hiçbir fırsat kaybolmasın.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MANAGER SECTION -->
+<section class="section bg-navy" id="manager">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 fade-up">
+                <span class="section-badge" style="border-color: rgba(14,165,165,0.3);">Yöneticiler İçin</span>
+                <h2 class="section-title" style="color: #fff;">Ekibiniz Değişir.<br>Müşterileriniz Kalır.</h2>
+                <p style="color: rgba(255,255,255,0.65); font-size: 17px; line-height: 1.7; margin-bottom: 32px;">Satış temsilcisi gelir gider — ama müşteri ilişkisi, ziyaret geçmişi ve teklifler artık kişinin telefonunda değil, şirketinizde. Üstelik ekibin performansını telefonunuzdan anlık görürsünüz.</p>
+                <div class="manager-check"><i class="bi bi-check-circle-fill"></i><p>Çalışan ayrılsa bile tüm müşteri geçmişi ve teklifler şirkette kalır</p></div>
+                <div class="manager-check"><i class="bi bi-check-circle-fill"></i><p>Kim bu ay kaç teklif verdi, kaçı kapandı — anlık görün</p></div>
+                <div class="manager-check"><i class="bi bi-check-circle-fill"></i><p>Hangi müşteriye 1 haftadır teklif takibi yapılmadı — uyarı alın</p></div>
+                <div class="manager-check"><i class="bi bi-check-circle-fill"></i><p>Aylık gelir tahmini ve teklif dönüşüm oranı — raporlara hemen ulaşın</p></div>
+                <a class="btn-hero mt-4" data-bs-toggle="modal" data-bs-target="#demoModal" style="display: inline-block;">Demo ile Farkı Görün</a>
+            </div>
+            <div class="col-lg-6 text-center fade-up">
+                <div style="background: rgba(255,255,255,0.05); border-radius: 20px; padding: 40px; border: 1px solid rgba(255,255,255,0.08);">
+                    <div class="row g-3">
+                        <div class="col-6"><div style="background: rgba(14,165,165,0.15); border-radius: 14px; padding: 24px;"><div style="font-size: 32px; font-weight: 800; color: var(--teal-light);">47</div><div style="font-size: 14px; color: rgba(255,255,255,0.6);">Aktif Teklif</div></div></div>
+                        <div class="col-6"><div style="background: rgba(14,165,165,0.15); border-radius: 14px; padding: 24px;"><div style="font-size: 32px; font-weight: 800; color: var(--teal-light);">%68</div><div style="font-size: 14px; color: rgba(255,255,255,0.6);">Dönüşüm</div></div></div>
+                        <div class="col-6"><div style="background: rgba(14,165,165,0.15); border-radius: 14px; padding: 24px;"><div style="font-size: 32px; font-weight: 800; color: var(--teal-light);">$124K</div><div style="font-size: 14px; color: rgba(255,255,255,0.6);">Aylık Değer</div></div></div>
+                        <div class="col-6"><div style="background: rgba(14,165,165,0.15); border-radius: 14px; padding: 24px;"><div style="font-size: 32px; font-weight: 800; color: var(--teal-light);">12</div><div style="font-size: 14px; color: rgba(255,255,255,0.6);">Satış Temsilcisi</div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTOR -->
+<section class="section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5 fade-up">
+                <span class="section-badge">Sektöre Özel</span>
+                <h2 class="section-title">Genel CRM Değil.<br>Forwarder'ın Diliyle Konuşan Yazılım.</h2>
+                <p class="section-subtitle">Salesforce veya HubSpot'u forwarder işinize uyarlamak aylar sürer. Quotarix ilk günden sektörünüzü anlar.</p>
+            </div>
+            <div class="col-lg-7 fade-up">
+                <div class="row g-3">
+                    <div class="col-md-6"><div class="sector-item"><div class="sector-icon"><i class="bi bi-box-seam"></i></div><div><strong>FCL / LCL Şablonları</strong><p class="mb-0 mt-1" style="font-size:14px; color:var(--text-secondary);">Hazır teklif şablonları ile saniyeler içinde profesyonel teklif</p></div></div></div>
+                    <div class="col-md-6"><div class="sector-item"><div class="sector-icon"><i class="bi bi-currency-exchange"></i></div><div><strong>Çoklu Döviz</strong><p class="mb-0 mt-1" style="font-size:14px; color:var(--text-secondary);">USD, EUR, TRY, GBP — müşterinizin para biriminde teklif verin</p></div></div></div>
+                    <div class="col-md-6"><div class="sector-item"><div class="sector-icon"><i class="bi bi-geo-alt"></i></div><div><strong>Origin — Destination</strong><p class="mb-0 mt-1" style="font-size:14px; color:var(--text-secondary);">Müşteri bazlı nakliye geçmişi ve rota bazlı raporlama</p></div></div></div>
+                    <div class="col-md-6"><div class="sector-item"><div class="sector-icon"><i class="bi bi-receipt"></i></div><div><strong>Sektörel Kalemler</strong><p class="mb-0 mt-1" style="font-size:14px; color:var(--text-secondary);">Navlun, THC, demurrage gibi kalemlere uygun teklif yapısı</p></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COMING SOON -->
+<section class="section bg-gray">
+    <div class="container">
+        <div class="text-center mb-5 fade-up">
+            <span class="section-badge" style="background: rgba(245,158,11,0.1); color: var(--amber); border-color: rgba(245,158,11,0.2);">Yakında</span>
+            <h2 class="section-title">Daha Fazlası Yolda</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4 fade-up">
+                <div class="coming-card">
+                    <span class="coming-badge">Yakında</span>
+                    <div class="coming-icon"><i class="bi bi-whatsapp"></i></div>
+                    <h5 style="font-weight:700;">WhatsApp'tan Teklif</h5>
+                    <p style="font-size:14px; color:var(--text-secondary);">Müşteriden gelen mesajı yapıştırın, AI teklif formunu otomatik doldursun. 30 saniyede teklif.</p>
+                </div>
+            </div>
+            <div class="col-md-4 fade-up">
+                <div class="coming-card">
+                    <span class="coming-badge">Yakında</span>
+                    <div class="coming-icon"><i class="bi bi-robot"></i></div>
+                    <h5 style="font-weight:700;">Akıllı Teklif Skoru</h5>
+                    <p style="font-size:14px; color:var(--text-secondary);">AI geçmiş verilerinize bakarak "bu teklif kapanır mı" tahmini yapsın.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- BLOG -->
+<section class="section" id="blog">
+    <div class="container">
+        <div class="text-center mb-5 fade-up">
+            <span class="section-badge">Blog</span>
+            <h2 class="section-title">Sektörden Haberler ve İpuçları</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 fade-up">
+                <div class="blog-card">
+                    <div class="blog-img"><i class="bi bi-file-earmark-spreadsheet"></i></div>
+                    <div class="blog-body">
+                        <span class="blog-tag">Verimlilik</span>
+                        <h5>Excel'de Teklif Yönetimi Neden Artık Sürdürülemez?</h5>
+                        <p>Freight forwarder firmalarda Excel ile teklif yönetmenin gizli maliyetleri ve kaybedilen fırsatlar hakkında kapsamlı bir analiz.</p>
+                        <div class="blog-meta"><i class="bi bi-calendar3 me-1"></i> 15 Nisan 2026 &nbsp; <i class="bi bi-clock ms-2 me-1"></i> 5 dk okuma</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fade-up">
+                <div class="blog-card">
+                    <div class="blog-img"><i class="bi bi-graph-up-arrow"></i></div>
+                    <div class="blog-body">
+                        <span class="blog-tag">Satış Stratejisi</span>
+                        <h5>Forwarder Satış Ekiplerinde Teklif Dönüşüm Oranı Nasıl Artırılır?</h5>
+                        <p>Sektördeki en başarılı forwarder firmalarının teklif süreçlerinden öğrendiğimiz 7 pratik strateji.</p>
+                        <div class="blog-meta"><i class="bi bi-calendar3 me-1"></i> 10 Nisan 2026 &nbsp; <i class="bi bi-clock ms-2 me-1"></i> 7 dk okuma</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fade-up">
+                <div class="blog-card">
+                    <div class="blog-img"><i class="bi bi-robot"></i></div>
+                    <div class="blog-body">
+                        <span class="blog-tag">Teknoloji</span>
+                        <h5>Yapay Zeka Lojistik Sektöründe Satış Süreçlerini Nasıl Dönüştürüyor?</h5>
+                        <p>AI destekli CRM ve teklif yönetimi araçlarının freight forwarder firmalarına sağladığı rekabet avantajları.</p>
+                        <div class="blog-meta"><i class="bi bi-calendar3 me-1"></i> 5 Nisan 2026 &nbsp; <i class="bi bi-clock ms-2 me-1"></i> 6 dk okuma</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="bg-navy py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-3"><div class="stat-item fade-up"><div class="stat-value" data-count="5">0</div><div class="stat-label">Dakika Kurulum</div></div></div>
+            <div class="col-6 col-md-3"><div class="stat-item fade-up"><div class="stat-value" data-count="90">0</div><div class="stat-label">% Sektör Excel Kullanıyor</div></div></div>
+            <div class="col-6 col-md-3"><div class="stat-item fade-up"><div class="stat-value" data-count="30">0</div><div class="stat-label">Saniye Teklif Oluşturma</div></div></div>
+            <div class="col-6 col-md-3"><div class="stat-item fade-up"><div class="stat-value">$0</div><div class="stat-label">İlk 14 Gün Maliyeti</div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+    <div class="container">
+        <div class="text-center mb-5 fade-up">
+            <span class="section-badge">SSS</span>
+            <h2 class="section-title">Merak Ettikleriniz</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 fade-up">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Quotarix sadece forwarder firmalar için mi?</button></h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Evet, Quotarix özellikle freight forwarder, lojistik ve nakliyat firmalarının satış süreçlerine özel tasarlanmıştır. FCL/LCL teklif şablonları, çoklu döviz desteği ve sektöre özel raporlama gibi özellikler genel CRM'lerde bulunmaz.</div></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Mevcut müşteri verilerimi aktarabilir miyim?</button></h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Evet. Excel dosyanızdaki müşteri listesini kolayca içe aktarabilirsiniz. Kurulum ekibimiz size yardımcı olur.</div></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Mobil uygulama hangi telefonlarda çalışır?</button></h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">iOS (iPhone) ve Android telefonlarda çalışır. App Store ve Google Play'den ücretsiz indirilebilir.</div></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Verilerim güvende mi?</button></h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Tüm verileriniz şifreli bulut sunucularda saklanır. Günlük otomatik yedekleme yapılır. KVKK uyumlu altyapı kullanıyoruz.</div></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">Kurulum ne kadar sürer?</button></h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">5 dakikada hesabınızı oluşturun, ekibinizi davet edin ve kullanmaya başlayın. Eğitim desteği ücretsizdir.</div></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">Sözleşme zorunluluğu var mı?</button></h2>
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Hayır. Aylık abonelik modelimiz var, istediğiniz zaman iptal edebilirsiniz. Yıllık ödeme tercih ederseniz 2 ay ücretsiz kazanırsınız.</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-section">
+    <div class="container text-center position-relative" style="z-index:2;">
+        <h2 style="font-size: 40px; font-weight: 800; color: #fff; margin-bottom: 16px;" class="fade-up">Bir Sonraki Satışçınız Ayrıldığında<br>Müşterileriniz Kalsın</h2>
+        <p style="font-size: 18px; color: rgba(255,255,255,0.85); margin-bottom: 36px;" class="fade-up">15 dakikalık bir demo ile farkı görün. Kurulum ve eğitim desteğiyle.</p>
+        <div class="fade-up">
+            <a class="btn-cta-white" href="https://wa.me/905469715249?text=Merhaba,%20Quotarix%20hakkında%20bilgi%20almak%20istiyorum" target="_blank" style="cursor:pointer;"><i class="bi bi-rocket-takeoff me-2"></i>Ücretsiz Demo Talep Et</a>
+            <p style="color: rgba(255,255,255,0.7); font-size: 15px; margin-top: 20px;">veya bizi arayın: <strong style="color:#fff;">+90 546 971 52 49</strong></p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <h4 style="color: #fff; font-weight: 800; font-size: 24px; margin-bottom: 16px;">QUOTA<span style="color: var(--teal);">RIX</span></h4>
+                <p>Freight forwarder ve lojistik firmaları için CRM ve teklif yönetim platformu.</p>
+                <div class="d-flex gap-3 mt-3">
+                    <a href="#" style="font-size: 20px;"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" style="font-size: 20px;"><i class="bi bi-instagram"></i></a>
+                    <a href="#" style="font-size: 20px;"><i class="bi bi-twitter-x"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <h6>Bağlantılar</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#features">Özellikler</a></li>
+                  
+                    <li class="mb-2"><a href="#blog">Blog</a></li>
+                    <li class="mb-2"><a href="#faq">SSS</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <h6>Yasal</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="mesafeli-satis-sozlesmesi.html" target="_blank">Mesafeli Satış Sözleşmesi</a></li>
+                    <li class="mb-2"><a href="iptal-iade-politikasi.html" target="_blank">İptal ve İade Politikası</a></li>
+                    <li class="mb-2"><a href="teslimat-bilgileri.html" target="_blank">Teslimat Bilgileri</a></li>
+                    <li class="mb-2"><a href="on-bilgilendirme.html" target="_blank">Ön Bilgilendirme</a></li>
+                    <li class="mb-2"><a href="kvkk.html" target="_blank">KVKK</a></li>
+                    <li class="mb-2"><a href="privacy-policy.html" target="_blank">Gizlilik Politikası</a></li>
+                    <li class="mb-2"><a href="terms-of-service.html" target="_blank">Kullanım Koşulları</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h6>İletişim</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="mailto:info@quotarix.com"><i class="bi bi-envelope me-2"></i>info@quotarix.com</a></li>
+                    <li class="mb-2"><a href="tel:+905469715249"><i class="bi bi-phone me-2"></i>+90 546 971 52 49</a></li>
+                    <li class="mb-2"><a href="#"><i class="bi bi-geo-alt me-2"> <li class="mb-2">İTOB Mah. 10032 Sk. No:2 İçkapı No:Z13 Menderes/İzmir — İzmir Bilimpark Teknokent</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p class="mb-0">&copy; 2026 Pekvera Yazılım Teknoloji A.Ş. Tüm hakları saklıdır.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- DEMO MODAL -->
+<div class="modal fade" id="demoModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" style="font-weight: 700;">Ücretsiz Demo Talep Edin</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p style="color: var(--text-secondary); font-size: 15px; margin-bottom: 24px;">Formu doldurun, ekibimiz 24 saat içinde size dönecek.</p>
+                <form id="demoForm" action="https://formspree.io/f/YOUR_ID" method="POST">
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight:600; font-size:14px;">Ad Soyad *</label>
+                        <input type="text" class="form-control" name="name" required style="border-radius:10px; padding:12px 16px;">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight:600; font-size:14px;">Şirket Adı *</label>
+                        <input type="text" class="form-control" name="company" required style="border-radius:10px; padding:12px 16px;">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight:600; font-size:14px;">E-posta *</label>
+                        <input type="email" class="form-control" name="email" required style="border-radius:10px; padding:12px 16px;" placeholder="ornek@sirket.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight:600; font-size:14px;">Telefon *</label>
+                        <input type="tel" class="form-control" name="phone" required style="border-radius:10px; padding:12px 16px;">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight:600; font-size:14px;">Satış Ekibi Büyüklüğü</label>
+                        <select class="form-select" name="team_size" style="border-radius:10px; padding:12px 16px;">
+                            <option value="1-3">1-3 kişi</option>
+                            <option value="4-10">4-10 kişi</option>
+                            <option value="11-25">11-25 kişi</option>
+                            <option value="25+">25+ kişi</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-cta w-100 py-3 mt-2" style="font-size:16px; font-weight:700; border-radius:12px;">Demo Talep Et</button>
+                    <p class="text-center mt-3" style="font-size: 12px; color: var(--text-secondary);">Bilgileriniz gizlidir. Spam göndermeyiz.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+    document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Fade-up on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Counter animation
+const counters = document.querySelectorAll('.stat-value[data-count]');
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = parseInt(el.dataset.count);
+            let current = 0;
+            const step = target / 40;
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) { current = target; clearInterval(timer); }
+                el.textContent = Math.floor(current);
+            }, 30);
+            counterObserver.unobserve(el);
+        }
+    });
+}, { threshold: 0.5 });
+counters.forEach(c => counterObserver.observe(c));
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) { t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        // Close mobile menu
+        const navCollapse = document.getElementById('navMenu');
+        if (navCollapse.classList.contains('show')) {
+            new bootstrap.Collapse(navCollapse).hide();
+        }
+    });
+});
+</script>
+</body>
+</html>

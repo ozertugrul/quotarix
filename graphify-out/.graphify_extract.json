@@ -1,0 +1,363 @@
+{
+  "nodes": [
+    {
+      "id": "quotarix_landing_page",
+      "label": "Quotarix Landing Page (index.html)",
+      "file_type": "document",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html",
+      "summary": "Modern single-page tanıtım sayfası: Hero, Sorunlar, Özellikler, AI OCR, Yönetici Alanı, Sektörel Modüller, Blog, SSS, Demo Modalı"
+    },
+    {
+      "id": "hero_section",
+      "label": "Hero & Değer Önerisi Bölümü",
+      "file_type": "document",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html",
+      "summary": "Satışçınız Gitti. Müşterileriniz de mi Gitti? başlığı, WhatsApp CTA ve app.quotarix.com giriş bağlantısı"
+    },
+    {
+      "id": "problem_section",
+      "label": "Forwarder Sektörel Acı Noktaları",
+      "file_type": "document",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html",
+      "summary": "Personel ayrılınca veri kaybı, takipsiz kalan fırsatlar, dağınık excel notları, anlık bilgi alamayan yöneticiler"
+    },
+    {
+      "id": "feature_quick_quote",
+      "label": "Hızlı Teklif Yönetimi Modülü",
+      "file_type": "concept",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html",
+      "summary": "FCL/LCL, hava, kara şablonları, çoklu döviz (USD, EUR, TRY, GBP), otomatik takip hatırlatmaları"
+    },
+    {
+      "id": "feature_smart_crm",
+      "label": "Akıllı CRM & Müşteri Kartı",
+      "file_type": "concept",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html",
+      "summary": "Tüm müşteri teklif ve ziyaret geçmişi, notlar ve dosyalar tek kartta"
+    },
+    {
+      "id": "feature_manager_dashboard",
+      "label": "Yönetici Dashboard",
+      "file_type": "concept",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html",
+      "summary": "Ekip teklif dönüşüm oranları, aylık gelir tahmini, takipsiz fırsat uyarıları"
+    },
+    {
+      "id": "feature_ai_business_card_ocr",
+      "label": "Yapay Zeka Kartvizit Tarama (OCR)",
+      "file_type": "concept",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html",
+      "summary": "Fuarlardan toplanan kartvizitlerin fotoğrafını çekerek saniyeler içinde müşteri kartına dönüştürme"
+    },
+    {
+      "id": "feature_firsat_form_mockup",
+      "label": "Yeni Fırsat Formu Prototipi (v2)",
+      "file_type": "document",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/firsat-form-mockup.html",
+      "summary": "Müşteri -> Taşıma Modu -> Operasyon -> Yük Ölçüleri -> Incoterms -> Yük Açıklaması akıllı 6 adımlı form"
+    },
+    {
+      "id": "legal_kvkk",
+      "label": "KVKK Aydınlatma Metni",
+      "file_type": "document",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/kvkk.html",
+      "summary": "Pekvera Yazılım Teknoloji A.Ş. veri sorumlusu bilgileri ve işlenen veriler"
+    },
+    {
+      "id": "legal_privacy_policy",
+      "label": "Gizlilik Politikası (TR/EN)",
+      "file_type": "document",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/privacy-policy.html",
+      "summary": "Mobil izinler (kamera, konum, mikrofon, push bildirim FCM), B2B veri sorumlusu/işleyen ayrımı"
+    },
+    {
+      "id": "legal_terms_of_service",
+      "label": "Kullanım Koşulları (TR/EN)",
+      "file_type": "document",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/terms-of-service.html",
+      "summary": "B2B SaaS hizmet sözleşmesi, lisans ve fikri mülkiyet şartları"
+    },
+    {
+      "id": "legal_mesafeli_satis",
+      "label": "Mesafeli Satış Sözleşmesi",
+      "file_type": "document",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/mesafeli-satis-sozlesmesi.html",
+      "summary": "app.quotarix.com SaaS aboneliği mesafeli satış şartları"
+    },
+    {
+      "id": "legal_iptal_iade",
+      "label": "İptal ve İade Politikası",
+      "file_type": "document",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/iptal-iade-politikasi.html",
+      "summary": "Dijital SaaS hizmetlerinde anında ifa ve abonelik fesih şartları"
+    },
+    {
+      "id": "legal_on_bilgilendirme",
+      "label": "Ön Bilgilendirme Formu",
+      "file_type": "document",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/on-bilgilendirme.html",
+      "summary": "Abonelik öncesi satıcı ve hizmet temel nitelikleri bildirimi"
+    },
+    {
+      "id": "legal_teslimat_bilgileri",
+      "label": "Teslimat Bilgileri",
+      "file_type": "document",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/teslimat-bilgileri.html",
+      "summary": "Dijital yazılım aktivasyonu anlık teslimat prosedürü"
+    },
+    {
+      "id": "arch_laravel_multipage",
+      "label": "QX-WEB Laravel Multipage Mimarisi",
+      "file_type": "rationale",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html",
+      "summary": "One-page HTML yapısının çok sayfalı, SEO uyumlu Laravel 11/12 ve Admin panelli mimariye dönüştürülmesi"
+    },
+    {
+      "id": "arch_section_toggle_system",
+      "label": "15 Bölümlü Dinamik Section Toggle",
+      "file_type": "concept",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html",
+      "summary": "Ana sayfadaki 15 bölümün veritabanından tek tıkla açılıp kapatılması (pricing, testimonials, video varsayılan pasif)"
+    },
+    {
+      "id": "arch_teaser_homepage_pattern",
+      "label": "Teaser Ana Sayfa Deseni (PV-WEB-016)",
+      "file_type": "concept",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html",
+      "summary": "Ana sayfadaki her bölümün özet içerik + iç sayfaya yönlendiren CTA butonu olarak kurgulanması"
+    },
+    {
+      "id": "arch_lazy_load_video_facade",
+      "label": "Lazy-Load Video Facade Deseni",
+      "file_type": "concept",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html",
+      "summary": "Lighthouse performansını korumak için YouTube/Vimeo embed yerine kapak + play butonu, tıklamada iframe enjeksiyonu ve VideoObject şeması"
+    },
+    {
+      "id": "arch_html_301_redirects",
+      "label": "SEO 301 Yönlendirme Haritası",
+      "file_type": "concept",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/robots.txt",
+      "summary": "Eski .html sayfaları ve anchor linklerini yeni rotalara kayıpsız 301 yönlendirme"
+    },
+    {
+      "id": "arch_admin_panel_11_modules",
+      "label": "11 Modüllü Quotarix Admin Panel",
+      "file_type": "concept",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html",
+      "summary": "Dashboard, Bölümler, Özellikler, Blog, SSS, Planlar, Yorumlar, Videolar, Sayfalar, Talepler (CSV export), Ayarlar"
+    },
+    {
+      "id": "company_pekvera_teknoloji",
+      "label": "Pekvera Yazılım Teknoloji A.Ş.",
+      "file_type": "concept",
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/kvkk.html",
+      "summary": "İzmir Bilimpark Teknokent bünyesinde Quotarix projesinin sahibi ve geliştiricisi"
+    }
+  ],
+  "edges": [
+    {
+      "source": "quotarix_landing_page",
+      "target": "hero_section",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "quotarix_landing_page",
+      "target": "problem_section",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "quotarix_landing_page",
+      "target": "feature_quick_quote",
+      "relation": "presents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "quotarix_landing_page",
+      "target": "feature_smart_crm",
+      "relation": "presents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "quotarix_landing_page",
+      "target": "feature_manager_dashboard",
+      "relation": "presents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "quotarix_landing_page",
+      "target": "feature_ai_business_card_ocr",
+      "relation": "presents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "feature_quick_quote",
+      "target": "feature_firsat_form_mockup",
+      "relation": "implemented_by_prototype",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/firsat-form-mockup.html"
+    },
+    {
+      "source": "arch_laravel_multipage",
+      "target": "arch_section_toggle_system",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "arch_laravel_multipage",
+      "target": "arch_teaser_homepage_pattern",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "arch_laravel_multipage",
+      "target": "arch_lazy_load_video_facade",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "arch_laravel_multipage",
+      "target": "arch_admin_panel_11_modules",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "arch_laravel_multipage",
+      "target": "arch_html_301_redirects",
+      "relation": "preserves_seo_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "quotarix_landing_page",
+      "target": "legal_kvkk",
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "quotarix_landing_page",
+      "target": "legal_privacy_policy",
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "quotarix_landing_page",
+      "target": "legal_terms_of_service",
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "quotarix_landing_page",
+      "target": "legal_mesafeli_satis",
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "quotarix_landing_page",
+      "target": "legal_iptal_iade",
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "quotarix_landing_page",
+      "target": "legal_on_bilgilendirme",
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "quotarix_landing_page",
+      "target": "legal_teslimat_bilgileri",
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "source": "legal_kvkk",
+      "target": "company_pekvera_teknoloji",
+      "relation": "specifies_data_controller",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/kvkk.html"
+    },
+    {
+      "source": "legal_privacy_policy",
+      "target": "company_pekvera_teknoloji",
+      "relation": "specifies_data_processor",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/privacy-policy.html"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "legal_compliance_suite",
+      "label": "SaaS & E-Ticaret Yasal Uyumluluk Paketi",
+      "nodes": [
+        "legal_kvkk",
+        "legal_privacy_policy",
+        "legal_terms_of_service",
+        "legal_mesafeli_satis",
+        "legal_iptal_iade",
+        "legal_on_bilgilendirme",
+        "legal_teslimat_bilgileri"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    },
+    {
+      "id": "core_crm_features",
+      "label": "Quotarix Çekirdek CRM ve Teklif Yetenekleri",
+      "nodes": [
+        "feature_quick_quote",
+        "feature_smart_crm",
+        "feature_manager_dashboard",
+        "feature_ai_business_card_ocr"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "/Users/ertu-mac/Desktop/quotarix/index.html"
+    }
+  ],
+  "input_tokens": 1200,
+  "output_tokens": 950
+}
