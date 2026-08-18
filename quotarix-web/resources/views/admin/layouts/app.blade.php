@@ -229,19 +229,27 @@
             max-width: 100% !important;
         }
 
-        /* Responsive Table Rules - Prevents single character vertical squishing */
+        .admin-content .card {
+            max-width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+
+        /* Responsive Table Rules - Prevents card widening and character squishing */
         .table-responsive {
-            -webkit-overflow-scrolling: touch;
-            border-radius: 12px;
+            width: 100% !important;
             max-width: 100% !important;
             overflow-x: auto !important;
-            display: block;
-            width: 100%;
+            overflow-y: hidden !important;
+            display: block !important;
+            -webkit-overflow-scrolling: touch;
+            border-radius: 12px;
         }
 
         .table-responsive table {
-            min-width: 650px;
+            min-width: 600px;
             width: 100%;
+            margin-bottom: 0;
         }
 
         .table-responsive th {
